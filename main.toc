@@ -1,0 +1,58 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{Abstract}{iii}{section*.1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.3}
+\contentsline {section}{\numberline {1.1}Calibration of KAGRA}{1}{section.4}
+\contentsline {section}{\numberline {1.2}Requirement of KAGRA}{1}{section.5}
+\contentsline {section}{\numberline {1.3}Schedule of KAGRA}{1}{section.6}
+\contentsline {chapter}{\numberline {2}Photon calibrator}{3}{chapter.7}
+\contentsline {section}{\numberline {2.1}Photon calibrator}{3}{section.8}
+\contentsline {section}{\numberline {2.2}Purpose of photon calibrator}{3}{section.11}
+\contentsline {subsection}{\numberline {2.2.1}Interferometer Calibration}{3}{subsection.12}
+\contentsline {subsection}{\numberline {2.2.2}Hardware injection test}{3}{subsection.13}
+\contentsline {subsection}{\numberline {2.2.3}Photon pressure actuator}{3}{subsection.14}
+\contentsline {section}{\numberline {2.3}Calibration line of KAGRA}{3}{section.15}
+\contentsline {chapter}{\numberline {3}Instruments overview}{5}{chapter.16}
+\contentsline {section}{\numberline {3.1}Optical layout }{6}{section.17}
+\contentsline {section}{\numberline {3.2}Transmitter module}{6}{section.18}
+\contentsline {subsection}{\numberline {3.2.1}Laser}{6}{subsection.19}
+\contentsline {subsection}{\numberline {3.2.2}Lens}{6}{subsection.20}
+\contentsline {subsection}{\numberline {3.2.3}Mirror}{6}{subsection.21}
+\contentsline {subsection}{\numberline {3.2.4}Optical follower servo}{6}{subsection.22}
+\contentsline {subsection}{\numberline {3.2.5}Beam splitter}{6}{subsection.23}
+\contentsline {subsection}{\numberline {3.2.6}View window}{6}{subsection.24}
+\contentsline {subsection}{\numberline {3.2.7}Structure}{6}{subsection.25}
+\contentsline {section}{\numberline {3.3}Periscope}{6}{section.26}
+\contentsline {subsection}{\numberline {3.3.1}Lens}{6}{subsection.27}
+\contentsline {subsection}{\numberline {3.3.2}Structure}{6}{subsection.28}
+\contentsline {subsection}{\numberline {3.3.3}Alignment}{6}{subsection.29}
+\contentsline {section}{\numberline {3.4}Receiver module}{6}{section.30}
+\contentsline {subsection}{\numberline {3.4.1}Integrating sphere}{6}{subsection.31}
+\contentsline {subsection}{\numberline {3.4.2}Mirror}{6}{subsection.32}
+\contentsline {subsection}{\numberline {3.4.3}QPD}{6}{subsection.33}
+\contentsline {subsection}{\numberline {3.4.4}Structure}{6}{subsection.34}
+\contentsline {section}{\numberline {3.5}Camera module}{6}{section.35}
+\contentsline {subsection}{\numberline {3.5.1}Camera}{6}{subsection.36}
+\contentsline {subsection}{\numberline {3.5.2}Telecamera}{6}{subsection.37}
+\contentsline {subsection}{\numberline {3.5.3}Focuser}{6}{subsection.38}
+\contentsline {subsection}{\numberline {3.5.4}View window}{6}{subsection.39}
+\contentsline {subsection}{\numberline {3.5.5}Mirror}{6}{subsection.40}
+\contentsline {subsection}{\numberline {3.5.6}Structure}{6}{subsection.41}
+\contentsline {subsection}{\numberline {3.5.7}Iluminator}{6}{subsection.42}
+\contentsline {section}{\numberline {3.6}Summary}{6}{section.43}
+\contentsline {chapter}{\numberline {4}Elastic deformation}{7}{chapter.44}
+\contentsline {chapter}{\numberline {5}Absolute power calibration}{9}{chapter.45}
+\contentsline {section}{\numberline {5.1}Introduction}{9}{section.46}
+\contentsline {section}{\numberline {5.2}Theory of Operation}{9}{section.47}
+\contentsline {section}{\numberline {5.3}Instrument Settings}{9}{section.50}
+\contentsline {subsection}{\numberline {5.3.1}DAC Calibration:}{9}{subsection.51}
+\contentsline {subsection}{\numberline {5.3.2}Setting up the Current Amplifier}{9}{subsection.54}
+\contentsline {subsection}{\numberline {5.3.3}Additional Checks}{10}{subsection.66}
+\contentsline {section}{\numberline {5.4}Data Retrieval and Ratio calculation}{11}{section.74}
+\contentsline {subsection}{\numberline {5.4.1}Data Acquisition, Plots and Report}{11}{subsection.75}
+\contentsline {section}{\numberline {5.5}End-station}{12}{section.98}
+\contentsline {section}{\numberline {5.6}Gold standard}{12}{section.99}
+\contentsline {section}{\numberline {5.7}Working standard}{12}{section.100}
+\contentsline {chapter}{\numberline {6}Camera module}{13}{chapter.101}
+\contentsline {chapter}{\numberline {7}Summary}{15}{chapter.102}
