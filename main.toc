@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.2.3}Photon pressure actuator}{3}{subsection.14}
 \contentsline {section}{\numberline {2.3}Calibration line of KAGRA}{3}{section.15}
 \contentsline {chapter}{\numberline {3}Instruments overview}{5}{chapter.16}
-\contentsline {section}{\numberline {3.1}Optical layout }{6}{section.17}
+\contentsline {section}{\numberline {3.1}Layout of Photon calibrator}{5}{section.17}
 \contentsline {section}{\numberline {3.2}Transmitter module}{6}{section.18}
 \contentsline {subsection}{\numberline {3.2.1}Laser}{6}{subsection.19}
 \contentsline {subsection}{\numberline {3.2.2}Lens}{6}{subsection.20}
