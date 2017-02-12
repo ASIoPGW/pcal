@@ -27,87 +27,87 @@ The following formula is used to obtain the calibration factor that will give th
 %\end{figure}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Instrument Settings}
-\subsection{DAC Calibration:}
-\begin{enumerate}
-\item Provide a calibrated voltage using Martel voltage source and read it through the read back channel \verb|($(IFO):CAL-PCAL$(END)_WS_PD_INMON)|. One unit voltage should give back 1638 counts.  Provide 3 different voltages (0V, 1V and 2V) and record 15 seconds of data.  Record the values in the Calibration Log (T1500062).
-\item Check that the OFS loop is closed and stable.
-\end{enumerate}
-\subsection{Setting up the Current Amplifier}
-\begin{enumerate}
-\item Plug the power cable of the Current Amplifier into a dedicated wall socket which no other equipment is using.  It is very important that the Current Amplifier is on its own circuit as compromised data can result from using a shared power source.
-\item Set the gain to 10E6 V/A
-\item Set the Filter rise time = 100 ms
-\item Turn filter on and make the sure the light is on.
-\item Connect the BNC cable from the Working standard to the input and the BNC cable from the DAQ to the output. 
-\item Zero-check the instrument by pressing, “Shift” and “zero check” after the setup is complete and the laser is blocked at the Working Standard.
-\item Make sure the “zero check” light is off before taking measurements.
-\item Unplug the BNC cable from the Working Standard.
-\item Remove small-side cover from TX module.
-\item Place Working Standard into small-side of TX module.  Take extra care when moving Working Standard from floor level to TX module.
-\item Reconnect BNC cable to Working Standard.
-\end{enumerate}
+%\section{Instrument Settings}
+%\subsection{DAC Calibration:}
+%\begin{enumerate}
+%\item Provide a calibrated voltage using Martel voltage source and read it through the read back channel \verb|($(IFO):CAL-PCAL$(END)_WS_PD_INMON)|. One unit voltage should give back 1638 counts.  Provide 3 different voltages (0V, 1V and 2V) and record 15 seconds of data.  Record the values in the Calibration Log (T1500062).
+%\item Check that the OFS loop is closed and stable.
+%\end{enumerate}
+%\subsection{Setting up the Current Amplifier}
+%\begin{enumerate}
+%\item Plug the power cable of the Current Amplifier into a dedicated wall socket which no other equipment is using.  It is very important that the Current Amplifier is on its own circuit as compromised data can result from using a shared power source.
+%\item Set the gain to 10E6 V/A
+%\item Set the Filter rise time = 100 ms
+%\item Turn filter on and make the sure the light is on.
+%\item Connect the BNC cable from the Working standard to the input and the BNC cable from the DAQ to the output. 
+%\item Zero-check the instrument by pressing, “Shift” and “zero check” after the setup is complete and the laser is blocked at the Working Standard.
+%\item Make sure the “zero check” light is off before taking measurements.
+%\item Unplug the BNC cable from the Working Standard.
+%\item Remove small-side cover from TX module.
+%\item Place Working Standard into small-side of TX module.  Take extra care when moving Working Standard from floor level to TX module.
+%\item Reconnect BNC cable to Working Standard.
+%\end{enumerate}
 
-\subsection{Additional Checks}
-Do the following checks before proceeding to ratio measurements:
-\begin{enumerate}
-\item Check that the test mass is aligned, that the ISI is isolated with sensor correction turned off.  Open the appropriate test mass suspension MEDM screen from the SITEMAP.  The Guardian node \verb|(SUS_ETM$(END))| is located at the top-center position of the MEDM screen.  Select ALIGNED from the drop-down menu.
-\item Check that the ISI sensor correction is off.
-\item Check that both beams are entering the RX integrating sphere. If they are not, realignment is required before this procedure can be completed.
-\item Turn off all excitations, including hardware injections. \verb|$(IFO):CAL-PCAL(END)_OSC_SUM_ON| = 0, \verb|$(IFO):CAL-PCAL(END)_SWEPT_SINE_ON| = 0, and \verb|$(IFO):CAL-PINJ(END)_HARDWARE_SW1| = OFF.
-\item Let the Optical Follower Servo (OFS) stabilize before each reading. This is done by visual observation of the OFSPD signal (\verb|$(IFO):CAL-PCAL(END)_OFS_PD_OUTMON|) on the MEDM screen. 
-\item Have the Calibration Log (T1500062) ready in front of you and follow the instruction in the Calibration Log to take the data. 
-\item For these measurements, the TxPD and RxPD are always in its original position whereas WS occupies two different positions, at TX just before the beam enters the vacuum system and at RxPD position, depending on the requirements.
+%\subsection{Additional Checks}
+%Do the following checks before proceeding to ratio measurements:
+%\begin{enumerate}
+%\item Check that the test mass is aligned, that the ISI is isolated with sensor correction turned off.  Open the appropriate test mass suspension MEDM screen from the SITEMAP.  The Guardian node \verb|(SUS_ETM$(END))| is located at the top-center position of the MEDM screen.  Select ALIGNED from the drop-down menu.
+%\item Check that the ISI sensor correction is off.
+%\item Check that both beams are entering the RX integrating sphere. If they are not, realignment is required before this procedure can be completed.
+%\item Turn off all excitations, including hardware injections. \verb|$(IFO):CAL-PCAL(END)_OSC_SUM_ON| = 0, \verb|$(IFO):CAL-PCAL(END)_SWEPT_SINE_ON| = 0, and \verb|$(IFO):CAL-PINJ(END)_HARDWARE_SW1| = OFF.
+%\item Let the Optical Follower Servo (OFS) stabilize before each reading. This is done by visual observation of the OFSPD signal (\verb|$(IFO):CAL-PCAL(END)_OFS_PD_OUTMON|) on the MEDM screen. 
+%\item Have the Calibration Log (T1500062) ready in front of you and follow the instruction in the Calibration Log to take the data. 
+%\item For these measurements, the TxPD and RxPD are always in its original position whereas WS occupies two different positions, at TX just before the beam enters the vacuum system and at RxPD position, depending on the requirements.
 
-\end{enumerate}
+%\end{enumerate}
 
-\section{Data Retrieval and Ratio calculation}
-\label{sec:factors}
-\subsection{Data Acquisition, Plots and Report}
-\begin{enumerate}
-\item Make sure pcalEndstation is installed in the machine where you are trying to do the calibration calculation. You can check out the whole Pcal repository by following the instruction in T1500095.
-\item From CDS computer you can access 'pcalEndStation' by going to this location:
+%\section{Data Retrieval and Ratio calculation}
+%\label{sec:factors}
+%\subsection{Data Acquisition, Plots and Report}
+%\begin{enumerate}
+%\item Make sure pcalEndstation is installed in the machine where you are trying to do the calibration calculation. You %can check out the whole Pcal repository by following the instruction in T1500095.
+%\item From CDS computer you can access 'pcalEndStation' by going to this location:
 
-/ligo/svncommon/CalSVN/aligocalibration/trunk/Projects/PhotonCalibrator/.. \\ scripts/pcalEndStation/
-\item Do 'svn update' to make sure you have the latest version of the scripts.
-\item Also `kinit einstein@LIGO.ORG' to establish connection to external server. This will be required for obtaining data later
-\item Open ‘parametersforScript01.m’ script. 
-\begin{enumerate}
-\item Enter appropriate calibration date, location and GPS time. 
-\item Make sure the workingcopy\_location has appropriate path.  
-\item This parameter file is associated with Script01.
-\end{enumerate}
+%/ligo/svncommon/CalSVN/aligocalibration/trunk/Projects/PhotonCalibrator/.. \\ scripts/pcalEndStation/
+%\item Do 'svn update' to make sure you have the latest version of the scripts.
+%\item Also `kinit einstein@LIGO.ORG' to establish connection to external server. This will be required for obtaining data later
+%\item Open ‘parametersforScript01.m’ script. 
+%\begin{enumerate}
+%\item Enter appropriate calibration date, location and GPS time. 
+%\item Make sure the workingcopy\_location has appropriate path.  
+%\item This parameter file is associated with Script01.
+%\end{enumerate}
 
-\item Run Script01\_pcaldateandtime.m. 
+%\item Run Script01\_pcaldateandtime.m. 
 
-\begin{enumerate}
-\item It will create a folder in ‘DYYYYMMDD’ format at appropriate location.
-\item It also creates a matlab file named ‘DYYYYMMDD\_time.m’ with GPS time information within the folder.
-\end{enumerate}
+%\begin{enumerate}
+%\item It will create a folder in ‘DYYYYMMDD’ format at appropriate location.
+%\item It also creates a matlab file named ‘DYYYYMMDD\_time.m’ with GPS time information within the folder.
+%\end{enumerate}
 
-\item Open ‘parametersforScript02.m’ script. 
-\begin{enumerate}
-\item Enter appropriate calibration date, location and GPS time (This is usually same as the one for first parameter file unless you are re-running the analysis code). 
-\item Make sure the workingcopy\_location has appropriate path.  
-\item This parameter file is associated with Script02.
-\end{enumerate}
+%\item Open ‘parametersforScript02.m’ script. 
+%\begin{enumerate}
+%\item Enter appropriate calibration date, location and GPS time (This is usually same as the one for first parameter file unless you are re-running the analysis code). 
+%\item Make sure the workingcopy\_location has appropriate path.  
+%\item This parameter file is associated with Script02.
+%\end{enumerate}
 
-\item Run ‘Script02\_pcalDataandResults.m’.
-\begin{enumerate}
-\item This will fetch the data from the server; write it as txt files into the folder. 
-\item It also plots the ratios and saves the plots to the same folder. Make sure the plots are satisfactory before closing it.
-\item Additionally it will save a ‘DYYYYMMDD\_Ratio.mat’ and ‘DYYYYMMDD\_Results.mat’ file that contains calibration results.
-\end{enumerate}
+%\item Run ‘Script02\_pcalDataandResults.m’.
+%\begin{enumerate}
+%\item This will fetch the data from the server; write it as txt files into the folder. 
+%\item It also plots the ratios and saves the plots to the same folder. Make sure the plots are satisfactory before closing it.
+%\item Additionally it will save a ‘DYYYYMMDD\_Ratio.mat’ and ‘DYYYYMMDD\_Results.mat’ file that contains %calibration results.
+%\end{enumerate}
 
-\item In Matlab Command window run the following command.\\
-pcalPublishReport(ifo\_arm, outputFilename)
-\begin{enumerate}
-\item ifo\_arm = `LHOX' or `LHOY' or `LLOX' or `LLOY'
-\item outputFilename 
-\subitem - `' (empty string will return default filename)
-\subitem - `XXXXX.pdf' 
-\end{enumerate}
-\end{enumerate}
+%\item In Matlab Command window run the following command.\\
+%pcalPublishReport(ifo\_arm, outputFilename)
+%\begin{enumerate}
+%\item ifo\_arm = `LHOX' or `LHOY' or `LLOX' or `LLOY'
+%\item outputFilename 
+%\subitem - `' (empty string will return default filename)
+%\subitem - `XXXXX.pdf' 
+%\end{enumerate}
+%\end{enumerate}
 
 
 %-------------------------------

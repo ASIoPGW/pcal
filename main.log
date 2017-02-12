@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  11 FEB 2017 22:04
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  11 FEB 2017 22:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2071,63 +2071,23 @@ Chapter 4.
 
 ]
 Chapter 5.
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . )
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 33.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-Overfull \hbox (5.56467pt too wide) in paragraph at lines 33--34
-\T1/ppl/m/n/10.95 the read back chan-nel \T1/pcr/m/n/10.95 ($(IFO):CAL-PCAL$(EN
-D)_WS_PD_INMON)\T1/ppl/m/n/10.95 . One unit
- []
-
 1: section
 [11]
-Overfull \hbox (87.14063pt too wide) in paragraph at lines 57--58
-[]\T1/ppl/m/n/10.95 Turn off all ex-ci-ta-tions, in-clud-ing hard-ware in-jec-t
-ions. \T1/pcr/m/n/10.95 $(IFO):CAL-PCAL(END)_OSC_SUM_ON
- []
-
-
-Overfull \hbox (124.51509pt too wide) in paragraph at lines 57--58
-\T1/ppl/m/n/10.95 = 0, \T1/pcr/m/n/10.95 $(IFO):CAL-PCAL(END)_SWEPT_SINE_ON \T1
-/ppl/m/n/10.95 = 0, and \T1/pcr/m/n/10.95 $(IFO):CAL-PINJ(END)_HARDWARE_SW1
- []
-
-
-Overfull \hbox (56.31639pt too wide) in paragraph at lines 58--59
-\T1/ppl/m/n/10.95 by vi-sual ob-ser-va-tion of the OF-SPD sig-nal (\T1/pcr/m/n/
-10.95 $(IFO):CAL-PCAL(END)_OFS_PD_OUTMON\T1/ppl/m/n/10.95 )
- []
-
-[12]
-Overfull \hbox (23.54124pt too wide) in paragraph at lines 71--72
-[]\T1/ppl/m/n/10.95 /ligo/svncommon/CalSVN/aligocalibration/trunk/Projects/Phot
-onCalibrator/.. 
- []
-
-
-Overfull \hbox (0.49066pt too wide) in paragraph at lines 73--74
-[]\T1/ppl/m/n/10.95 Also `kinit ein-stein@LIGO.ORG' to es-tab-lish con-nec-tion
- to ex-ter-nal server. This
- []
-
-) [13] [14]
 \openout2 = `Chapters/Chapter7.aux'.
 
- (./Chapters/Chapter7.tex
-Chapter 6.
-)
-1: section
-[15
+ (./Chapters/Chapter7.tex [12
 
 
 
 ]
+Chapter 6.
+)
+1: section
+[13]
 \openout2 = `Chapters/Chapter8.aux'.
 
- (./Chapters/Chapter8.tex [16
+ (./Chapters/Chapter8.tex [14
 
 
 
@@ -2135,7 +2095,7 @@ Chapter 6.
 Chapter 7.
 )
 1: section
-[17]
+[15]
 
 LaTeX Warning: Empty bibliography on input line 286.
 
@@ -2153,8 +2113,8 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: A29B8AE855DC444BF18E344790E9CBDE;7859
-(rerunfilecheck)             After:  8CA6788394A580ACA5632147166E480F;8089.
+(rerunfilecheck)             Before: 5BB1918EA03B58F2EACA82F85BBCE593;7625
+(rerunfilecheck)             After:  A87CFCF9FF7176F34BF23B373E4D5046;7766.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2166,12 +2126,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31205 strings out of 493693
- 633502 string characters out of 6149787
+ 31163 strings out of 493693
+ 632948 string characters out of 6149787
  842463 words of memory out of 5000000
- 34434 multiletter control sequences out of 15000+600000
- 37064 words of font info for 87 fonts, out of 8000000 for 9000
+ 34404 multiletter control sequences out of 15000+600000
+ 36742 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  54i,20n,81p,10377b,2246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (23 pages, 101188 bytes).
+Output written on main.dvi (21 pages, 86668 bytes).
