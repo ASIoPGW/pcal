@@ -15,44 +15,49 @@
 \contentsline {section}{\numberline {2.3}Calibration line of KAGRA}{3}{section.15}
 \contentsline {chapter}{\numberline {3}Instruments overview}{5}{chapter.16}
 \contentsline {section}{\numberline {3.1}Layout of Photon calibrator}{5}{section.17}
-\contentsline {section}{\numberline {3.2}Transmitter module}{6}{section.18}
-\contentsline {subsection}{\numberline {3.2.1}Laser}{6}{subsection.19}
-\contentsline {subsection}{\numberline {3.2.2}Lens}{6}{subsection.20}
-\contentsline {subsection}{\numberline {3.2.3}Mirror}{6}{subsection.21}
-\contentsline {subsection}{\numberline {3.2.4}Optical follower servo}{6}{subsection.22}
-\contentsline {subsection}{\numberline {3.2.5}Beam splitter}{6}{subsection.23}
-\contentsline {subsection}{\numberline {3.2.6}View window}{6}{subsection.24}
-\contentsline {subsection}{\numberline {3.2.7}Structure}{6}{subsection.25}
-\contentsline {section}{\numberline {3.3}Periscope}{6}{section.26}
-\contentsline {subsection}{\numberline {3.3.1}Lens}{6}{subsection.27}
-\contentsline {subsection}{\numberline {3.3.2}Structure}{6}{subsection.28}
-\contentsline {subsection}{\numberline {3.3.3}Alignment}{6}{subsection.29}
-\contentsline {section}{\numberline {3.4}Receiver module}{6}{section.30}
-\contentsline {subsection}{\numberline {3.4.1}Integrating sphere}{6}{subsection.31}
-\contentsline {subsection}{\numberline {3.4.2}Mirror}{6}{subsection.32}
-\contentsline {subsection}{\numberline {3.4.3}QPD}{6}{subsection.33}
-\contentsline {subsection}{\numberline {3.4.4}Structure}{6}{subsection.34}
-\contentsline {section}{\numberline {3.5}Camera module}{6}{section.35}
-\contentsline {subsection}{\numberline {3.5.1}Camera}{6}{subsection.36}
-\contentsline {subsection}{\numberline {3.5.2}Telecamera}{6}{subsection.37}
-\contentsline {subsection}{\numberline {3.5.3}Focuser}{6}{subsection.38}
-\contentsline {subsection}{\numberline {3.5.4}View window}{6}{subsection.39}
-\contentsline {subsection}{\numberline {3.5.5}Mirror}{6}{subsection.40}
-\contentsline {subsection}{\numberline {3.5.6}Structure}{6}{subsection.41}
-\contentsline {subsection}{\numberline {3.5.7}Iluminator}{6}{subsection.42}
-\contentsline {section}{\numberline {3.6}Summary}{6}{section.43}
-\contentsline {chapter}{\numberline {4}Elastic deformation}{7}{chapter.44}
-\contentsline {chapter}{\numberline {5}Absolute power calibration}{9}{chapter.45}
-\contentsline {section}{\numberline {5.1}Introduction}{9}{section.46}
-\contentsline {section}{\numberline {5.2}Theory of Operation}{9}{section.47}
-\contentsline {section}{\numberline {5.3}Instrument Settings}{9}{section.50}
-\contentsline {subsection}{\numberline {5.3.1}DAC Calibration:}{9}{subsection.51}
-\contentsline {subsection}{\numberline {5.3.2}Setting up the Current Amplifier}{9}{subsection.54}
-\contentsline {subsection}{\numberline {5.3.3}Additional Checks}{10}{subsection.66}
-\contentsline {section}{\numberline {5.4}Data Retrieval and Ratio calculation}{11}{section.74}
-\contentsline {subsection}{\numberline {5.4.1}Data Acquisition, Plots and Report}{11}{subsection.75}
-\contentsline {section}{\numberline {5.5}End-station}{12}{section.98}
-\contentsline {section}{\numberline {5.6}Gold standard}{12}{section.99}
-\contentsline {section}{\numberline {5.7}Working standard}{12}{section.100}
-\contentsline {chapter}{\numberline {6}Camera module}{13}{chapter.101}
-\contentsline {chapter}{\numberline {7}Summary}{15}{chapter.102}
+\contentsline {section}{\numberline {3.2}Transmitter (Tx) module}{5}{section.18}
+\contentsline {subsection}{\numberline {3.2.1}Fiber laser}{5}{subsection.19}
+\contentsline {subsection}{\numberline {3.2.2}Beam shutter}{6}{subsection.20}
+\contentsline {subsection}{\numberline {3.2.3}Half wave plate}{6}{subsection.21}
+\contentsline {subsection}{\numberline {3.2.4}Polarizer}{6}{subsection.22}
+\contentsline {subsection}{\numberline {3.2.5}Lens}{6}{subsection.23}
+\contentsline {subsection}{\numberline {3.2.6}Mirror}{7}{subsection.26}
+\contentsline {subsection}{\numberline {3.2.7}Beam splitter}{7}{subsection.27}
+\contentsline {subsection}{\numberline {3.2.8}Optical follower servo}{7}{subsection.28}
+\contentsline {subsection}{\numberline {3.2.9}beam sampler}{7}{subsection.29}
+\contentsline {subsection}{\numberline {3.2.10}2 inch integrating sphere}{7}{subsection.30}
+\contentsline {subsection}{\numberline {3.2.11}Structure}{7}{subsection.31}
+\contentsline {section}{\numberline {3.3}Periscope}{7}{section.32}
+\contentsline {subsection}{\numberline {3.3.1}View window}{7}{subsection.33}
+\contentsline {subsection}{\numberline {3.3.2}Mirrors}{7}{subsection.34}
+\contentsline {subsection}{\numberline {3.3.3}Structure}{7}{subsection.35}
+\contentsline {subsection}{\numberline {3.3.4}Alignment}{7}{subsection.36}
+\contentsline {section}{\numberline {3.4}Receiver module}{7}{section.37}
+\contentsline {subsection}{\numberline {3.4.1}6inch Integrating sphere}{7}{subsection.38}
+\contentsline {subsection}{\numberline {3.4.2}Mirror}{7}{subsection.39}
+\contentsline {subsection}{\numberline {3.4.3}QPD}{8}{subsection.40}
+\contentsline {subsection}{\numberline {3.4.4}Structure}{8}{subsection.41}
+\contentsline {section}{\numberline {3.5}Camera module}{8}{section.42}
+\contentsline {subsection}{\numberline {3.5.1}Camera}{8}{subsection.43}
+\contentsline {subsection}{\numberline {3.5.2}Telecamera}{8}{subsection.44}
+\contentsline {subsection}{\numberline {3.5.3}Focuser}{8}{subsection.45}
+\contentsline {subsection}{\numberline {3.5.4}View window}{8}{subsection.46}
+\contentsline {subsection}{\numberline {3.5.5}Mirror}{8}{subsection.47}
+\contentsline {subsection}{\numberline {3.5.6}Structure}{8}{subsection.48}
+\contentsline {subsection}{\numberline {3.5.7}Illuminator}{8}{subsection.49}
+\contentsline {section}{\numberline {3.6}Summary}{8}{section.50}
+\contentsline {chapter}{\numberline {4}Elastic deformation}{9}{chapter.51}
+\contentsline {chapter}{\numberline {5}Absolute power calibration}{11}{chapter.52}
+\contentsline {section}{\numberline {5.1}Introduction}{11}{section.53}
+\contentsline {section}{\numberline {5.2}Theory of Operation}{11}{section.54}
+\contentsline {section}{\numberline {5.3}Instrument Settings}{11}{section.57}
+\contentsline {subsection}{\numberline {5.3.1}DAC Calibration:}{11}{subsection.58}
+\contentsline {subsection}{\numberline {5.3.2}Setting up the Current Amplifier}{11}{subsection.61}
+\contentsline {subsection}{\numberline {5.3.3}Additional Checks}{12}{subsection.73}
+\contentsline {section}{\numberline {5.4}Data Retrieval and Ratio calculation}{13}{section.81}
+\contentsline {subsection}{\numberline {5.4.1}Data Acquisition, Plots and Report}{13}{subsection.82}
+\contentsline {section}{\numberline {5.5}End-station}{14}{section.105}
+\contentsline {section}{\numberline {5.6}Gold standard}{14}{section.106}
+\contentsline {section}{\numberline {5.7}Working standard}{14}{section.107}
+\contentsline {chapter}{\numberline {6}Camera module}{15}{chapter.108}
+\contentsline {chapter}{\numberline {7}Summary}{17}{chapter.109}

@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  11 FEB 2017 13:11
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  11 FEB 2017 22:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1712,7 +1712,12 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-No file main.aux.
+(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux
+
+LaTeX Warning: Label `Chapter1' multiply defined.
+
+) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter6.aux)
+(./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -1735,6 +1740,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
+
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 90.
@@ -1909,12 +1915,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 90.
 LaTeX Info: Redefining \pageref on input line 90.
 LaTeX Info: Redefining \nameref on input line 90.
+
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 \c__siunitx_mathsf_int=\count352
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1924,6 +1928,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 90.
 \c__siunitx_mathtt_int=\count353
+
 1: section
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sc' undefined
@@ -1989,14 +1994,13 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 197.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 197.
+ (./main.toc
+1: section
+[5])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
-
-1: section
-[5] [6
-
-]
+ [6]
 1: section
 \openout2 = `Chapters/Chapter1.aux'.
 
@@ -2017,6 +2021,7 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 )
 1: section
 [1
+
 
 
 ]
@@ -2045,23 +2050,22 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 ]
 Chapter 3.
-)
 1: section
-[5] [6]
+[5] [6] [7]) [8]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
 Chapter 4.
 )
 1: section
-[7
+[9
 
 
 
 ]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [8
+ (./Chapters/Chapter6.tex [10
 
 
 
@@ -2079,7 +2083,7 @@ D)_WS_PD_INMON)\T1/ppl/m/n/10.95 . One unit
  []
 
 1: section
-[9]
+[11]
 Overfull \hbox (87.14063pt too wide) in paragraph at lines 57--58
 []\T1/ppl/m/n/10.95 Turn off all ex-ci-ta-tions, in-clud-ing hard-ware in-jec-t
 ions. \T1/pcr/m/n/10.95 $(IFO):CAL-PCAL(END)_OSC_SUM_ON
@@ -2097,7 +2101,7 @@ Overfull \hbox (56.31639pt too wide) in paragraph at lines 58--59
 10.95 $(IFO):CAL-PCAL(END)_OFS_PD_OUTMON\T1/ppl/m/n/10.95 )
  []
 
-[10]
+[12]
 Overfull \hbox (23.54124pt too wide) in paragraph at lines 71--72
 []\T1/ppl/m/n/10.95 /ligo/svncommon/CalSVN/aligocalibration/trunk/Projects/Phot
 onCalibrator/.. 
@@ -2109,21 +2113,21 @@ Overfull \hbox (0.49066pt too wide) in paragraph at lines 73--74
  to ex-ter-nal server. This
  []
 
-) [11] [12]
+) [13] [14]
 \openout2 = `Chapters/Chapter7.aux'.
 
  (./Chapters/Chapter7.tex
 Chapter 6.
 )
 1: section
-[13
+[15
 
 
 
 ]
 \openout2 = `Chapters/Chapter8.aux'.
 
- (./Chapters/Chapter8.tex [14
+ (./Chapters/Chapter8.tex [16
 
 
 
@@ -2131,7 +2135,7 @@ Chapter 6.
 Chapter 7.
 )
 1: section
-[15]
+[17]
 
 LaTeX Warning: Empty bibliography on input line 286.
 
@@ -2149,33 +2153,25 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  30A3DE716F7A0A39B354B9DA82FBC7FC;7291.
+(rerunfilecheck)             Before: A29B8AE855DC444BF18E344790E9CBDE;7859
+(rerunfilecheck)             After:  8CA6788394A580ACA5632147166E480F;8089.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31114 strings out of 493693
- 632146 string characters out of 6149787
- 840463 words of memory out of 5000000
- 34365 multiletter control sequences out of 15000+600000
+ 31205 strings out of 493693
+ 633502 string characters out of 6149787
+ 842463 words of memory out of 5000000
+ 34434 multiletter control sequences out of 15000+600000
  37064 words of font info for 87 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 54i,20n,75p,10377b,1882s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,20n,81p,10377b,2246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (21 pages, 48292 bytes).
+Output written on main.dvi (23 pages, 101188 bytes).

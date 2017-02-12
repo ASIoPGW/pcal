@@ -8,32 +8,66 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Layout  of Photon calibrator}
-The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed 36 m away from the end test mass (ETM). We push the mirror surface with the modulated photon pressure directly. Figure XXX shows the optical layout of photon calibrator. The photon calibrator consists of transmitter module (Tx module), receiver module (Rx module), periscope, and telephoto camera module (TCam module). We place the 20~W laser in Tx module, whose frequency is 1047 nm. We do not use 1064 nm laser due to avoid the coupling with main beams.   
+\section{Layout of Photon calibrator}
+The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed 36 m away from the end test mass (ETM). We push the mirror surface with the modulated photon pressure directly. Figure XXX shows the layout of the KAGRA photon calibrator. The photon calibrator consists of transmitter module (Tx module), receiver module (Rx module), periscope, and telephoto camera module (TCam module). We place the 20~W laser in Tx module, whose frequency is 1047 nm. The 1064 nm laser is not used due to avoid the coupling with main beams.   The power of the laser is modulated by the optical follower servo (OFS). We split the beams in Tx module for pushing the drum head node points of the ETM due to elastic deformation. We transfer the beams to the ETM though the periscope. All the periscope structures are placed into the EXA/EYA chamber. The beam is received by the Rx module. We place a 6 inches integrating sphere for the accurate measurement of the laser power and two quadrant photo detector (QPD) for the beam position monitor. We also measure the beam position on the ETM surface using the telephoto camera (TCam). The Tcam is consists of the astronomical telescope, focuser, and high resolution digital camera. The specification of the Pcal system is shown in Table.XXXX. Details of instruments are described following section.
+
 %----------------------------------------------------------------------------------------
 
-\section{Transmitter module}
+\section{Transmitter (Tx) module}
+The Tx module is placed at the side of the EXA/EYA chamber. Figure XXX shows the view of Transmitter module. All the optical components are mounted on the $900~\mathrm{mm}\times  900~{mm}$ breadboard (B9090L; Thorlabs). The bread board is placed on the support structure. The electrical module for the control and readout are hosed in the support structure. 
 
-\subsection{Laser}
+Figure. XXX shows the optical layout of Tx module. All the optical components are listed in Table XXX.
+
+
+\subsection{Fiber laser}
+We employ the fiber laser made by the LER photonics as shown in Fig. XXX. The maximum power and frequency are 20 W and 1047 nm, respectively. The model number of the laser is CYFL-TERA-20-LP-1047-AM1-RGO-OM1-T305-C1. The maximum laser power of KAGRA Pcal is 10 times larger than that of LIGO. This is because that we need the high power laser for the injection test and photon pressure actuator technique. The typical beam width of the laser is 0.5~mm when we mount the isolator. We summarize the specification of the laser as shown in Table XXX.
+\subsection{Beam shutter}
+We have to pay attention to safety for the operation of the high power laser. In order to dump the beam, we use the beam shutter made by lasermet company. The model number of the shutter is LS-10-12. The aperture size and  Max laser power are 15 mm and 20 W. These number meet our requirement due to the laser spot size and maximum power. We control the beam shutter on the GUI. The specification of the beam shutter is shown in Table. XXX.
+\subsection{Half wave plate}
+To control the polarization angle of incident beam, we employ the zero order half wave plate (HWP) made by the CVI laser optics. The model number of the HWP is QWPO-1047-05-2-R10 whose diameter are 12.7mm. The HWP is mounted on the rotation mount made by Thorlabs. The thick ness are optimized at 1047 nm.
+The specification of the HWP is listed in Table.XXX.
+\subsection{Polarizer}
+We place two polarizers to define the polarization angle accurately. This is because that the power of the laser is modulated by acousto-optic modulator (AOM) whose performance strongly depend on the incident polarization angle.
+One polarizer is placed behind HWP. Another one is placed after AOM. The Polarizer is made by Karl-Lambrecht. We purchased TFPC12-1047 that is optimized at 1047 nm. 
 \subsection{Lens}
+We have dane a mode matching simulation using JamMt. We assumed laser beam to be gaussian distribution. We have to place the focus of the laser at the AOM. Thus, we decide the optimal position and focal length of the 1 inch lens (L1), where the assumed beam waist of the fiber laser and AOM are 0.5 mm and XXX mm, respectively. 
+Furthermore, we place two lenses for placing the focus at the surface of the ETM. We employ the combination of 1 inch negative lens and 2 inch positive lens. The Gaussian beam can describe the following relation:
+\begin{equation}
+w(z)=\sqrt(1+),
+\end{equation}
+where $\lambda$ is wavelength of the laser, $w_0$ is beam waist, $z$ is direction from the focus. We estimate the minimum differential beam spot by changing beam waist because it make the alignment easier. The minimum beam spot is written by 
+\begin{equation}
+\frac{dw(z=36m)}{w_0}=0.
+\end{equation}
+The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig. XXXX.
+We also place the lens at the front of the photo detector for the OFS. The parameters of the simulation results are listed in Table.XXXX. All lenses are made by CVI laser optics. The material of lenses are fused silica. The AR coating is placed at both surface. 
 \subsection{Mirror}
-\subsection{Optical follower servo}
+We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Figure. XXXX.
+ The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as TxM1-TxM11, TxtM1-TxtM2, and TxbM1. The specification of mirrors are summarized in Table.XXXX. All mirror is aligned with optical mirror mount made by Newport company.
 \subsection{Beam splitter}
-\subsection{View window}
+To reduce the elastic deformation, we sepalate the beam with the beam splitter made by CVI laser optics. The diameter of the beam splitter is 2 inch. Figure. XXX shows the separation ratio of beam splitter.
+\subsection{Optical follower servo}
+\subsection{beam sampler}
+\subsection{2 inch integrating sphere}
 \subsection{Structure}
+The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
 
 %----------------------------------------------------------------------------------------
 \section{Periscope}
-\subsection{Lens}
+\subsection{View window}
+\subsection{Mirrors}
 \subsection{Structure}
 \subsection{Alignment}
 
 %----------------------------------------------------------------------------------------
 \section{Receiver module}
-\subsection{Integrating sphere}
+\subsection{6inch Integrating sphere}
 \subsection{Mirror}
+We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as shown in Fig. XXXX. For two mirrors, we make the AR coating on the back surface to pick up the beams. The specification of the mirrors are listed in Table XXXX.
 \subsection{QPD}
 \subsection{Structure}
+The breadboard is placed on the support structure. The material of this structure is SUS 306. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
+
 %----------------------------------------------------------------------------------------
 
 \section{Camera module}
@@ -43,7 +77,7 @@ The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed
 \subsection{View window}
 \subsection{Mirror}
 \subsection{Structure}
-\subsection{Iluminator}
+\subsection{Illuminator}
 %----------------------------------------------------------------------------------------
 
 \section{Summary}
