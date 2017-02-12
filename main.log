@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  11 FEB 2017 22:59
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  12 FEB 2017 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2106,15 +2106,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
 (./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: A87CFCF9FF7176F34BF23B373E4D5046;7766.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 5BB1918EA03B58F2EACA82F85BBCE593;7625
-(rerunfilecheck)             After:  A87CFCF9FF7176F34BF23B373E4D5046;7766.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2126,12 +2120,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31163 strings out of 493693
- 632948 string characters out of 6149787
+ 31164 strings out of 493693
+ 632963 string characters out of 6149787
  842463 words of memory out of 5000000
- 34404 multiletter control sequences out of 15000+600000
+ 34405 multiletter control sequences out of 15000+600000
  36742 words of font info for 86 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  54i,20n,81p,10377b,2246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (21 pages, 86668 bytes).
+Output written on main.dvi (21 pages, 87404 bytes).
