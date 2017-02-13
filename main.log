@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  12 FEB 2017 11:36
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  12 FEB 2017 21:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2050,22 +2050,41 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 ]
 Chapter 3.
+File: Figures/Pcal_overview.eps Graphic file (type eps)
+<Figures/Pcal_overview.eps>
+File: Figures/Tx_module_overview.eps Graphic file (type eps)
+ <Figures/Tx_module_overview.eps>
+File: Figures/Tx_module_layout.eps Graphic file (type eps)
+
+<Figures/Tx_module_layout.eps>
 1: section
-[5] [6] [7]) [8]
+[5] [6]
+File: Figures/Laser.eps Graphic file (type eps)
+ <Figures/Laser.eps>
+Overfull \hbox (30.68684pt too wide) in paragraph at lines 72--99
+ [][] 
+ []
+
+[7] [8] [9]
+
+LaTeX Warning: Reference `yab:Tx_mirror_spec' on page 10 undefined on input lin
+e 179.
+
+[10] [11] [12]) [13]
 \openout2 = `Chapters/Chapter4.aux'.
 
- (./Chapters/Chapter4.tex
-Chapter 4.
-)
-1: section
-[9
+ (./Chapters/Chapter4.tex [14
 
 
 
 ]
+Chapter 4.
+)
+1: section
+[15]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [10
+ (./Chapters/Chapter6.tex [16
 
 
 
@@ -2073,10 +2092,10 @@ Chapter 4.
 Chapter 5.
 )
 1: section
-[11]
+[17]
 \openout2 = `Chapters/Chapter7.aux'.
 
- (./Chapters/Chapter7.tex [12
+ (./Chapters/Chapter7.tex [18
 
 
 
@@ -2084,10 +2103,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[13]
+[19]
 \openout2 = `Chapters/Chapter8.aux'.
 
- (./Chapters/Chapter8.tex [14
+ (./Chapters/Chapter8.tex [20
 
 
 
@@ -2095,7 +2114,7 @@ Chapter 6.
 Chapter 7.
 )
 1: section
-[15]
+[21]
 
 LaTeX Warning: Empty bibliography on input line 286.
 
@@ -2107,10 +2126,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A87CFCF9FF7176F34BF23B373E4D5046;7766.
+(rerunfilecheck)             Checksum: ABC549AF576D4DF3C32AFE6BD01E02E8;8157.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2120,12 +2142,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31164 strings out of 493693
- 632963 string characters out of 6149787
- 842463 words of memory out of 5000000
- 34405 multiletter control sequences out of 15000+600000
- 36742 words of font info for 86 fonts, out of 8000000 for 9000
+ 31197 strings out of 493693
+ 633541 string characters out of 6149787
+ 845495 words of memory out of 5000000
+ 34432 multiletter control sequences out of 15000+600000
+ 39248 words of font info for 88 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 54i,20n,81p,10377b,2246s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,20n,81p,10377b,2246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (21 pages, 87404 bytes).
+Output written on main.dvi (27 pages, 108936 bytes).
