@@ -149,11 +149,11 @@ One polarizer is placed behind HWP. Another one is placed after AOM. The Polariz
 We have dane a mode matching simulation using JamMt. We assumed laser beam to be gaussian distribution. We have to place the focus of the laser at the AOM. Thus, we decide the optimal position and focal length of the 1 inch lens (L1), where the assumed beam waist of the fiber laser and AOM are 0.5 mm and XXX mm, respectively. 
 Furthermore, we place two lenses for placing the focus at the surface of the ETM. We employ the combination of 1 inch negative lens and 2 inch positive lens. The Gaussian beam can describe the following relation:
 \begin{equation}
-w(z)=\sqrt(1+),
+w(z)=\omega_0\sqrt{1+\left( \frac{\lambda z}{\pi \omega_0^2}\right)^2},
 \end{equation}
 where $\lambda$ is wavelength of the laser, $w_0$ is beam waist, $z$ is direction from the focus. We estimate the minimum differential beam spot by changing beam waist because it make the alignment easier. The minimum beam spot is written by 
 \begin{equation}
-\frac{dw(z=36m)}{dw_0}=0.
+\left .\frac{dw(z)}{dw_0} \right|_{z=36m}=0.
 \end{equation}
 The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig. XXXX.
 We also place the lens at the front of the photo detector for the OFS. The parameters of the simulation results are listed in Table.~\ref{tab:Tx_lenses_spec}. All lenses are made by CVI laser optics. The material of lenses are fused silica. The AR coating is placed at both surface. 
@@ -205,14 +205,56 @@ M-Tx-b-1 &  & 50.8 & \\
 \end{table}
  
 \subsection{Beam splitter}
-To reduce the elastic deformation, we separate the beam with the beam splitter made by CVI laser optics. The diameter of the beam splitter is 2 inch. Figure. XXX shows the separation ratio of beam splitter.
+To reduce the elastic deformation, we separate the beam with the beam splitter made by CVI laser optics for pushing the node points of mirror. The part number of beam splitter is BS1-1064-50-2025-45P. The diameter of the beam splitter is 2 inch. Table~\ref{tab:BS_spec} shows the separation ratio of beam splitter.
+\begin{table}
+\caption{Specification of beam splitter.}
+\label{tab:BS_spec}
+\centering
+\begin{tabular}{ ccccc}
+\toprule
+\tabhead{Charactaristic} & \tabhead{Typical value} & \tabhead{Unit} & \tabhead{Note} \\
+\midrule
+
+Beamsplitter Type&Laser Line Plate Beamsplitters&&\\
+Beamsplitter Shape& Round&&\\
+Wavelength Range &800 &nm&\\
+Bevel/Chamfer & 0.35 mm $\times$ 45 Degree &&\\
+Wedge Angle Tolerance & 5& arcmin &\\
+Coating Material & Laser Line Dielectric&&\\
+Angle of Incidence & 45& Degree&\\
+Clear Aperture & 85&\%& \\
+Substrate/Material & Fused Silica&&\\
+Surface Flatness & λ/10 &&\\
+Surface Quality & 10-5& scratch-dig& \\
+Beamsplitter Diameter & 50.8& mm&\\
+Beamsplitter Thickness & 6.35 mm&&\\
+Thickness Tolerance &$ \pm0.25~\mathrm{mm}$&&\\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
 \subsection{Optical follower servo}
 \subsection{Photo detector}
+To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
+We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. We housed the circuit board into the aluminum case coated by the alumite. 
+
 \subsubsection{Cover}
+The design of the cover is 
 \subsubsection{InGaAs detector}
-\subsubsection{Electrical Cirkit}
+\subsubsection{Electrical Circuit}
+We newly improved the electrical circuit of the photon detector as shown in Fig, \ref{fig:Photo_detector}. The electrical circuit is housed in the aluminum cover. We place the photo detector at the the behind of the electrical circuit. The layers of the circuit consists of 4 layer. We change the differential gain by changing the register and capacitor of the circuit. The electrical circuit are shown in Fig. XXX.
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/Photo_detector.eps}
+\caption{.} 
+\label{fig:Photo_detector} 
+\end{center}
+\end{figure}
+
 \subsection{beam sampler}
 \subsection{2 inch integrating sphere}
+The 2 inches integrating sphere is used for absolute power measurement of the laser. We receive the separated laser beam at beam sampler. The typical power of the laser is XXX W. We mount the photo detector at the port of integrating sphere. The integrating sphere is made by the Lab sphere. The inner surface of the integrating sphere in mounted on the Spectralon.
+
 \subsection{Structure}
 The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
 
@@ -220,24 +262,20 @@ The breadboard is placed on the support structure. The material of this structur
 \section{Periscope}
 \subsection{Geometric optics}
 \subsection{View window}
-One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure XXX shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are XXXX degree. 
+One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure~\ref{fig:Pcal_window} shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are XXXX degree. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/Pcal_view_window.eps}
+\caption{.} 
+\label{fig:Pcal_window} 
+\end{center}
+\end{figure}
 
 The flange type of the view port is ICF152. We remodeled the blank flange of ICF 152 made by Cosmotech. Figure XXX shows the drawing of the view port. We employ the G-85 o-ring for vacuum sealing. 
 \subsection{Mirrors}
 We employ eight 3 inch mirrors. We place the HR coating on the polished fused silica disc. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Figure. XXXX.
- The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M1, XXXX. The specification of mirrors are summarized in Table.XXXX. All mirror is aligned with optical mirror mount made by XXXXXX.
-
-\subsection{Structure}
-\subsection{Alignment}
-
-%----------------------------------------------------------------------------------------
-\section{Receiver module}
-\subsection{6inch Integrating sphere}
-The 6 inches integrating sphere is used for absolute power measurement of the laser. We receive the laser beam from two paths. To receive the power perfectly, we need a sufficiently large diameter hole of integrating sphere. We use for the 2 inch hole integrating sphere. We mounted the photo detector at the top of port. Details of the photo detector is explained in XXXXX.
-
-\subsection{Mirror}
-We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as shown in Fig. XXXX. For two mirrors, we make the AR coating on the back surface to pick up the beams. The specification of the mirrors are listed in Table~\ref{tab:Periscope_mirror_spec}.
-
+ The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M1, XXXX. The specification of mirrors are summarized in Table.~\ref{tab:Periscope_mirror_spec}. All mirror is aligned with optical mirror mount made by XXXXXX.
  \begin{table}
 \caption{Specification of Mirrors in periscope.}
 \label{tab:Periscope_mirror_spec}
@@ -258,6 +296,34 @@ M-P-6 &  &76.2   & \\
 \bottomrule\\
 \end{tabular}
 \end{table}
+\subsection{Structure}
+\subsection{Alignment}
+
+%----------------------------------------------------------------------------------------
+\section{Receiver module}
+\subsection{6inch Integrating sphere}
+The 6 inches integrating sphere is used for absolute power measurement of the laser. We receive the laser beam from two paths. To receive the power perfectly, we need a sufficiently large diameter hole of integrating sphere. We use for the 2 inch hole integrating sphere. We mounted the photo detector at the top of port. Details of the photo detector is explained in XXXXX.
+
+\subsection{Mirror}
+We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as shown in Fig. XXXX. For two mirrors, we make the AR coating on the back surface to pick up the beams. The specification of the mirrors are listed in Table~\ref{tab:Rx_mirror_spec}.
+ \begin{table}
+\caption{Specification of Mirrors in Rx module.}
+\label{tab:Rx_mirror_spec}
+\centering
+\begin{tabular}{ ccccc}
+\toprule
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Polarization}  \\
+\midrule
+M-Rx-1 &  &  & \\
+M-Rx-2 &  &  & \\
+M-Rx-3 &  &   & \\
+M-Rx-4 &  &   & \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+\subsection{Structure}
+\subsection{Alignment}
+
 
 \subsection{QPD}
 \subsection{Structure}
@@ -275,7 +341,15 @@ We employ the Maksutov-Cassegrain type telescope for observing the ETM surface. 
 A focuser, which is made by Moonlight, is used for the automatic focus control. 
 We connect focuser between telescope and camera. The model number is XXXXX.
 \subsection{View window}
-The flange type of the view port is ICF203. We remodeled the blank flange of ICF 203 made by Cosmotech. Figure XXX shows the drawing of the view port. We employ the G-135 o-ring for vacuum sealing. 
+The flange type of the view port is ICF203. We remodeled the blank flange of ICF 203 made by Cosmotech. Figure~\ref{fig:Camera_window} shows the drawing of the view port. We employ the G-135 o-ring for vacuum sealing. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/Camera_view_window.eps}
+\caption{.} 
+\label{fig:Camera_window} 
+\end{center}
+\end{figure}
 \subsection{Mirror}
 We place the mirror in the EXA/EYA chamber. The mirror size is $100 \times 80 mm$, which is mounted on the aluminum holder and optical mount. The mirror is made by Thorlab.The reflectance of the mirror is shown in Fig XXXX.
 \subsection{Illuminator}
