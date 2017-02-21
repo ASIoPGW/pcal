@@ -4,7 +4,7 @@ NAME=main
 all: ${NAME}.pdf
 
 ${NAME}.pdf: ${NAME}.dvi
-	@dvipdfm ${NAME}
+	@dvipdfmx ${NAME}
 
 ${NAME}.dvi: ${NAME}.tex\
              Chapters/Chapter1.tex Chapters/Chapter2.tex Chapters/Chapter3.tex\
