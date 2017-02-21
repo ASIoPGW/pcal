@@ -15,54 +15,81 @@
 
 %----------------------------------------------------------------------------------------
 
-\section{Calibration of KAGRA}
- 
+\section{Calibration of a Gravitational-Wave detector}
+
+KAGRA is a laser interferometer using four mirrors (test masses) suspended 
+from multi-stage pendulums to form two perpendicular optical cavities (arms).
+Gravitation Wave (GW) strain causes differential variations of the arm length
+and generates power fluctuations in the detector readout port. 
+The power fluctuations measured by photodetectors work as the GW readout 
+signal and an error signal to control the differential arm length. 
+For the stable operation of the instrument, a feedback control of the 
+differential arm length is required. This control is achieved by taking 
+a digitized readout signal, applying a set of digital filters, and sending 
+the control signal to the test mass actuators. Therefore, estimation 
+of the equivalent GW strain sensed by the interferometer requires 
+detailed characterization and correction for the feedback control loop.
+
+The uncertainties are directly translated to the systematic errors on 
+the absolute GW signal amplitude. In case of LIGO GW150914 event, 
+the calibration was established to an uncertainty (1$\sigma$) of less than 
+10\% in amplitude and 10 degrees in phase~\cite{GW150914}.
+In case of LIGO GW151226 event, the calibration uncertainty (1$\sigma$) 
+in both detectors at the time of the signal is better than 8\% 
+in amplitude and 5 degrees in phase~\cite{GW151226}.
+
+The calibration uncertainties also affect the coordinate reconstruction 
+particularly in the case that only up to three detectors in the world 
+GW detector network can detect the GW signal. This can often happen 
+because the sensitivity of interferometer has directional dependence. 
+The effect of calibration uncertainties is visible at high signal-to-noise 
+ratio events where the angular resolution is less affected by the detector 
+noise. In such cases, the pointing accuracy can get worse by factor of 
+2$\sim$4 with 10\% calibration uncertainties~\cite{Klimenko}.
+
 %----------------------------------------------------------------------------------------
 
-\section{Requirement of KAGRA}
-(1) GW 信号の符号の確認
-フィードバック回路で、何重ものフィルターを介して反転を繰り返しているため、
-検出した重力波信号の符号が正しいと確信するのは意外に難しい。
-回路を一つでも見逃したり、極性を間違えると符号が反転するリスクがある。
-一方で、万が一符号を間違えると物理結果には甚大な影響を及ぼす。
-その点、Pcal は原理的に一方向しか押せないので、GW 信号の符号確認に適している。
-実際、LIGO/Virgo ではこのような議論が度々起きており、
-Pcal 導入の最初のモチベーションになっている
+\section{Purposes of the photon calibrator}
 
-(2) 観測中でのキャリブレーション
-Pcal が無い場合は、Laser wavelength などを使ったキャリブレーションが必要だが、
-これは、観測状態では行えないので、キャリブレーションランから観測ランの
-間にキャリブレーションパラメータが変わってしまうリスクをどのように
-系統誤差に反映させるかが問題となる。一方で、Pcal があると、観測中及び、
-観測感度を達成した状態でのキャリブレーションランが可能
+Photon calibrators are the primary calibration tool in the Advanced LIGO 
+and Advanced Virgo detectors~\cite{LIGO-CAL,Karki}. Earlier versions have 
+been tested on various interferometers~\cite{Virgo-PCAL},
+and they have evolved significantly in LIGO over the past ten 
+years~\cite{Accadia,Clubley:2001,Mossavi:2006}.
 
-(3) インジェクション
-アクチュエータを使ったインジェクションでは、フィードバック回路のサーボの抑制により、
-高周波でのインジェクションが難しくなる。その点、Pcal はアクチュエータよりも
-効率よく高周波でのハードウェアインジェクションを可能にする
+There are several purposes for the photon calibrator:
 
-(4)キャリブレーション手法の独立性、干渉計の信頼性担保
-制御ループにキャリブレーション信号を注入する従来の方法では、
-いわば自分で自分を較正することになるので、あるレベル以上の系統
-誤差は詰められない。
-PCALの結果をだすことで、主干渉計の信頼性はぐっと増す。
-従来の方法は、アクチュエータ効率の推定など、ループ内部にある誤
-差・不定性の分離や評価が難しい。
-PCALはそれを可能にする。PCAL自体にも誤差や不定性はあるが、制御
-ループと独立な手段で基準信号を注入できることは意味がある。
-手法が独立故に、系統誤差を減らす工夫が可能になるからだ。
+\begin{enumerate}
+\item Check of the sign of $h(t)$\\
+Since the direction of the movement of test mass is proportional to the 
+laser power, photon calibrator allows a direct check of the sign of the 
+reconstructed $h(t)$ channel compared to the definition taken in agreement 
+with other experiments. In initial phase of Virgo, he primary purpose of 
+photon calibrator was to check the sign of h(t)~\cite{VIR-018}.
 
-(5)国際化
-KAGRA, LIGO, Virgoで絶対値で正しい（お互いのズレを評価できる）
-キャリブレーションが必要である。
-ずれがあると、方向推定の誤差など、あらゆる物理をずらす。
-このことは、例えば、宇宙線空気シャワー観測とX線観測の議論の違
-いを見ると実感できる。標準エネルギーソースがない宇宙線空気シ
-ャワー観測では常にそして長い間宇宙線のエネルギー推定の正しさを
-巡って常に苦労している。一方、放射線源で較正が可能なX線観測で
-は、検出したX線自体のエネルギーの中央値についての疑義はほとんど
-でない。放射性同位体が較正線源として利用できる。重力実験では
-とくに「絶対較正」が難しく、しかしそれが実験の要だったりする。
+\item Calibration during the observing periods\\
+Calibration methods without using photon calibrator such as using 
+radio-frequency oscillator and laser wavelength can be done only under the 
+limited condition where the interferometer is not operating in the optimum 
+sensitivity. The propagation of calibration parameters from the high noise 
+condition to the low noise condition can introduce additional unknown source 
+of systematic errors. On the other hand, the photon calibrator is a completely 
+independent instrument of the interferometer and therefore, actuate 
+the test masses during the observation periods with optimum sensitivity. 
+
+\item Hardware injection\\
+Hardware injection in the high frequency region is important to verify the 
+response of the detector system. Since actuators are inside the feedback 
+control loop, the amplitude is more suppressed for higher frequencies. 
+Photon calibrator can inject the high frequency signal more efficiently. 
+
+\item Independence of calibration method
+      and reliability assurance of interferometer\\
+
+\end{enumerate}
+
+
+
 %----------------------------------------------------------------------------------------
 
 \section{Schedule of KAGRA}
