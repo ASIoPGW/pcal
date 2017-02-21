@@ -269,7 +269,7 @@ KS &  0.5 & V/W \\
 The KS corresponds to the trans impedance gain of detector. The detail of photo detector is descrived in Sec.\ref{PD}.
 According to Table.~\ref{tab:OFS_Gain}, we regard $G_2KS$ as unity. Therefore, we can simplify the transfer function as follows:
 \begin{equation}
-\frac{AG_1}{a+AG_1}
+\frac{AG_1}{1+AG_1}
 \end{equation}
 We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is XXXXXX. 
 \subsection{Photo detector} \label{PD}
@@ -346,7 +346,26 @@ They consist of four periscopes. The first periscope is mounted at the vacuum si
 \end{figure}
 
 \subsection{Geometric optics}
-We consider the beam separation and focus position of the optical system for the laser to be sent and received to the ETM. We fixed 80~mm separation of the mirror in transmitter module.  Figure XXX shows the schematic view of optical layout, where $D_{win}$, $D_{m2}$, and $D_{m3}$ are separation of beams, $L_{win}$, $L_{m2}$, and $L_{m3}$ are distance of each components.  We calculated the beam separation of the vacuum window, second mirror, and third mirrors by changing the focus point as shown in Fig. XXXX. X axis shows the distance from the window. We find a optimal point of minimum separation of the window because of clear aperture of window and second mirror. The optimal focus point is at XXXX mm from the window corresponding to XXXX separation of the mirror. We also find a incident angle of window with optimal focus point as 1.6 degree.
+We consider the beam separation and focus position of the optical system for the laser to be sent and received to the ETM. We fixed 80~mm separation of the mirror in transmitter module.  Figure~\ref{fig:Kikakougaku_position} shows the schematic view of optical layout, where $D_{win}$, $D_{m2}$, and $D_{m3}$ are separation of beams, $L_{win}$, $L_{m2}$, and $L_{m3}$ are distance of each components.  We calculated the beam separation of the vacuum window, second mirror, and third mirrors by changing the focus point as shown in Fig.~\ref{fig:Kikakougaku}. X axis shows the distance from the window. We find a optimal point of minimum separation of the window because of clear aperture of window and second mirror. The optimal focus point is at 370 mm from the window corresponding to 108~mm separation of the mirror. We also find a incident angle of window with optimal focus point as 1.6 degree.
+
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/Kikakougaku_position.eps}
+\caption{.} 
+\label{fig:Kikakougaku_position} 
+\end{center}
+\end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/Kikakougaku.eps}
+\caption{.} 
+\label{fig:Kikakougaku} 
+\end{center}
+\end{figure}
+
 \subsection{View window}
 One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure XXX shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are 1.6 degree. We mounted the first periscope at the vacuum side of the window because we should avoid optical lever path. We set the incident angle of periscope mirror as 50 degrees.
 
@@ -397,7 +416,7 @@ M-P-6 &  &76.2   &50deg& \\
 \end{center}
 \end{figure}
 \subsection{6inch Integrating sphere}
-The 6 inches integrating sphere is used for absolute power measurement of the laser. We receive the laser beam from two paths. To receive the power perfectly, we need a sufficiently large diameter hole of integrating sphere. We use for the 2 inch hole integrating sphere. We mounted the photo detector at the top of port. Details of the photo detector is explained in XXXXX.
+The 6 inches integrating sphere is used for absolute power measurement of the laser. We receive the laser beam from two paths. To receive the power perfectly, we need a sufficiently large diameter hole of integrating sphere. We use for the 2 inch hole integrating sphere. We mounted the photo detector at the top of port. Details of the photo detector is explained in Sec.~\ref{PD}.
 
 \subsection{Mirror}
 We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as shown in Fig. XXXX. For two mirrors, we make the AR coating on the back surface to pick up the beams. The specification of the mirrors are listed in Table~\ref{tab:Rx_mirror_spec}.
@@ -443,7 +462,7 @@ The breadboard is placed on the support structure. The material of this structur
 %----------------------------------------------------------------------------------------
 
 \section{Camera module}
-The beam position of the ETM surface corresponds to systematic error of the rotation and elastic deformation. To measure the beam position, we measure the mirror surface directly. However, the KAGRA EXA/EYA chambers are placed at 36m far from the ETM. Thus, we employ the combination of telescope and high resolution camera, we call telephoto camera (TCam). We are tuning with focus point of the mirror using focuser.  We place the view port and mirror between the ETM and TCam. Figure XXX shows the drawing of TCam unit.
+The beam position of the ETM surface corresponds to systematic error of the rotation and elastic deformation. To measure the beam position, we measure the mirror surface directly. However, the KAGRA EXA/EYA chambers are placed at 36m far from the ETM. Thus, we employ the combination of telescope and high resolution camera, we call telephoto camera (TCam). We are tuning with focus point of the mirror using focuser.  We place the view port and mirror between the ETM and TCam. Figure~\ref{fig:Camera} shows the drawing of TCam unit.
 \subsection{Camera}
 Purpose of using the high resolution camera, we have to measure the beam position within 1 mm accuracy. Ww solved this problem by D810 digital camera made by Nikon. The D810 reprises the 36-megapixel resolution with $35.9 \times 24.0~\mathrm{mm}$ CMOS sensor. We remove the IR filter because the commercial camera is not sensitive to laser wavelength (1047 nm).
 \subsection{Telescope}
@@ -453,6 +472,14 @@ A focuser, which is made by Moonlight, is used for the automatic focus control.
 We connect focuser between telescope and camera. The model number is XXXXX.
 \subsection{View window}
 The flange type of the view port is ICF203. We remodeled the blank flange of ICF 203 made by Cosmotech. Figure~\ref{fig:Camera_window} shows the drawing of the view port. We employ the G-135 o-ring for vacuum sealing. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/Camera.eps}
+\caption{.} 
+\label{fig:Camera} 
+\end{center}
+\end{figure}
 
 \begin{figure}
 \begin{center}
