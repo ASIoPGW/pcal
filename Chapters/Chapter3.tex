@@ -238,10 +238,41 @@ Thickness Tolerance &$ \pm0.25~\mathrm{mm}$&&\\
 \end{table}
 
 \subsection{Optical follower servo}
-In order to achieve low-noise and accurate modulation, an active controller (servo) can modulate the waveform by means of feedback control. This feedback loop used for the Pcal is called as the Optical Follower Servo.
-The Optical Follower Servo will be used in the KAGRA Photon Calibrator as a means to reduce the relative power noise (RPN) of the laser. We will achieve maximum sideband to carrier suppression of the modulated output waveform. 
+In order to achieve low-noise and accurate modulation, an active controller (servo) can modulate the waveform by means of feedback control. This feedback loop used for the Pcal is called as the Optical Follower Servo (OFS).
+The OFS will be used in the KAGRA Photon Calibrator as a means to reduce the relative power noise (RPN) of the laser. We will achieve maximum sideband to carrier suppression of the modulated output waveform. 
+The block diagram of the OFS is shown in Fig. XXX. The transfer function of this diagram can be described as
+\begin{equation}
+\frac{AG_1}{1+AKSG_1G_2},
+\end{equation}
+where A is actuation factor, S is sensing factor, K is percentage of light power sampled, $G_1$ and $G_2$ are gain of feedforward and feedback.
+We monitor the difference between input and feed back signal at the error point.
+For monitoring the performance of OFS, we read the location of monitor point.
+When we inject the signal, such as swept sine, gauss sine and hardware injection signal, we use input port.
+ The estimation of the expected gain parameter is listed in Table.~\ref{tub:OFS_Gain}.
 
-\subsection{Photo detector}
+\begin{table}
+\caption{OFS gain.}
+\label{tab:OFS_Gain}
+\centering
+\begin{tabular}{ ccc}
+\toprule
+\tabhead{} & \tabhead{Gain}& \tabhead{unit} \\
+\midrule
+A &  0.5 & W/V\\
+$G_1$ & 10-100 & V/V(dB) \\
+$G_2$ & 2 & V/V(dB) \\
+KS &  0.5 & V/W \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+The KS corresponds to the trans impedance gain of detector. The detail of photo detector is descrived in Sec.\ref{PD}.
+According to Table.~\ref{tab:OFS_Gain}, we regard $G_2KS$ as unity. Therefore, we can simplify the transfer function as follows:
+\begin{equation}
+\frac{AG_1}{a+AG_1}
+\end{equation}
+We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is XXXXXX. 
+\subsection{Photo detector} \label{PD}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
 We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
 

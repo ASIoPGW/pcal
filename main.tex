@@ -76,18 +76,18 @@ bookmarksopen=true,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 %----------------------------------------------------------------------------------------
 
 \thesistitle{KAGRA photon calibrator} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
-\supervisor{Dr. James \textsc{Smith}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\supervisor{Prof. Rick \textsc{Savage}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
 \author{Yuki \textsc{Inoue}, Sadakazu Haino \\on the behalf of Calibration sub-group} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
-\subject{Biological Sciences} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\subject{} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
-\university{{KAGRA}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
-\department{{Academia Sinica}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
-\group{Institute of Physics} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
-\faculty{{Institute of physics}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+\university{{}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{{Calibration subsystem}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{KAGRA} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{{KAGRA}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
@@ -110,7 +110,7 @@ bookmarksopen=true,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 
 \vspace*{.06\textheight}
 {\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
-\textsc{\Large Instruments Summary}\\[0.5cm] % Thesis type
+\textsc{\Large Design Report}\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line
 {\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
@@ -138,47 +138,13 @@ bookmarksopen=true,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 \vfill
 
 {\large \today}\\[4cm] % Date
-%\includegraphics{Logo} % University/department logo - uncomment to place it
+%\includegraphics{Figures/KAGRA-logo.eps}
  
 \vfill
 \end{center}
 \end{titlepage}
 
-%----------------------------------------------------------------------------------------
-%	DECLARATION PAGE
-%----------------------------------------------------------------------------------------
-
-%\begin{declaration}
-%\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
-%\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
-
-%\begin{itemize} 
-%\item This work was done wholly or mainly while in candidature for a research degree at this University.
-%\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-%\item Where I have consulted the published work of others, this is always clearly attributed.
-%\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-%\item I have acknowledged all main sources of help.
-%\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
-%\end{itemize}
- 
-%\noindent Signed:\\
-%\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
- 
-%\noindent Date:\\
-%\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
-%\end{declaration}
-
-%\cleardoublepage
-
-%----------------------------------------------------------------------------------------
-%	QUOTATION PAGE
-%----------------------------------------------------------------------------------------
-
-%\vspace*{0.2\textheight}
-
-%\noindent\enquote{\itshape Thanks to my solid academic training, today I can write hundreds of words on virtually any topic without possessing a shred of information, which is how I got a good job in journalism.}\bigbreak
-
-%\hfill Dave Barry
+\cleardoublepage
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE
@@ -186,17 +152,28 @@ bookmarksopen=true,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-The Thesis Abstract is written here (and usually kept to just this page). The page is kept centered vertically so can expand into the blank space above the title too\ldots
+Accurate calibration of the output of the Gravitational Wave (GW) signal is 
+crucial to determine the physics parameters of the sources. The primary tools 
+used in the advanced GW detectors are photon calibrators based on the 
+radiation pressure. In this document, we report the design of the KAGRA 
+photon calibrator in order to achieve the absolute accuracy of 1\% to meet 
+the calibration requirements of second-generation GW detectors 
+in the new era of GW astronomy.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS
 %----------------------------------------------------------------------------------------
 
-%\begin{acknowledgements}
+\begin{acknowledgements}
 %\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-%The acknowledgments and the people to thank go here, don't forget to include your project advisor\ldots
-%\end{acknowledgements}
+We thank LIGO Pcal team lead by Prof. Rick Savage of LIGO Hanford Observatory 
+who strongly encouraged and supported this work by sharing all the technical 
+details and giving numerous critical comments and suggestions.
+KAGRA project is supported by MEXT and JSPS in Japan as well 
+as its collaborating institutes.
+YI and SH acknowledge the supports by Academia Sinica and MoST in Taiwan.
+\end{acknowledgements}
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
