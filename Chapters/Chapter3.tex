@@ -26,7 +26,7 @@ The Tx module is placed at the side of the EXA/EYA chamber. Figure~\ref{fig:Tx_m
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{Figures/Tx_module_overview.eps}
-\caption{.} 
+\caption{Transmitter module of KAGRA Pcal. We place the optical table on the triangle table. The readout and control device is housed into the legs of table.} 
 \label{fig:Tx_module_overview} 
 \end{center}
 \end{figure}
@@ -36,7 +36,7 @@ Figure~\ref{fig:Tx_module_layout} shows the optical layout of Tx module. All the
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{Figures/Tx_module_layout.eps}
-\caption{.} 
+\caption{Optical layout of KAGRA photon calibrator. The laser power is modulated and controlled by the acousto-optic modulator (AOM). This modulated laser is sent to a 50:50 beam splitter, where we monitor the modulated laser power by using the integrating sphere.} 
 \label{fig:Tx_module_layout} 
 \end{center}
 \end{figure}
@@ -175,35 +175,39 @@ L4 &  & 50.8 & \\
 \end{table}
 
 \subsection{Mirror}
-We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Figure. XXXX.
- The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M-Tx1 toM-Tx-11, M-Tx-t-1,M-Tx-t-2, and M-Tx-b-1. The specification of mirrors are summarized in Table.~\ref{yab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
+We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Fig.~\ref{fig:Tx_module_layout}.
+ The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M-Tx1 toM-Tx-11, M-Tx-t-1,M-Tx-t-2, and M-Tx-b-1. The specification of mirrors are summarized in Table.\ref{yab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
  
  \begin{table}
 \caption{Specification of Mirrors.}
 \label{tab:Tx_mirror_spec}
 \centering
-\begin{tabular}{ ccccc}
+\begin{tabular}{ cccccc}
 \toprule
-\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Polarization}  \\
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}  & \tabhead{Incident angle}  & \tabhead{Polarization}  \\
 \midrule
-M-Tx-1 &  &25.4  & \\
-M-Tx-2 &  &25.4  & \\
-M-Tx-3 &  &25.4   & \\
-M-Tx-4 &  &25.4   & \\
-M-Tx-5 &  & 25.4  & \\
-M-Tx-6 &  &25.4  & \\
-M-Tx-7 &  &25.4   & \\
-M-Tx-8 &  &25.4   & \\
-M-Tx-9 &  &25.4   & \\
-M-Tx-10 &  & 50.8& \\
-M-Tx-11 &  &  50.8& \\
-M-Tx-t-1 &  &  50.8& \\
-M-Tx-t-2 &  & 50.8 & \\
-M-Tx-b-1 &  & 50.8 & \\
+M-Tx-1 &  &25.4  &45& \\
+M-Tx-2 &  &25.4  &45& \\
+M-Tx-3 &  &25.4   &45& \\
+M-Tx-4 &  &25.4   &45& \\
+M-Tx-5 &  & 25.4  &45& \\
+M-Tx-6 &  &25.4  &48& \\
+M-Tx-7 &  &25.4   &42& \\
+M-Tx-8 &  &25.4   &45& \\
+M-Tx-9 &  &25.4   &45& \\
+M-Tx-10 &  & 50.8&45& \\
+M-Tx-t-1 &  &  50.8&45& \\
+M-Tx-t-2 &  &  50.8&23.3& \\
+M-Tx-b-1 &  & 50.8 &45& \\
+M-Tx-b-2 &  & 50.8 &21.8& \\
 \bottomrule\\
 \end{tabular}
 \end{table}
- 
+\subsection{Optical mount with Pico-motor}
+The uncertainty of the beam position on the ETM is one of the largest.
+To control the beam position, we employ the Pico-motor after flip mirrors for changing mirror angle. 
+The pico-motor is made by New port, whose part number is 8822. 
+
 \subsection{Beam splitter}
 To reduce the elastic deformation, we separate the beam with the beam splitter made by CVI laser optics for pushing the node points of mirror. The part number of beam splitter is BS1-1064-50-2025-45P. The diameter of the beam splitter is 2 inch. Table~\ref{tab:BS_spec} shows the separation ratio of beam splitter.
 \begin{table}
@@ -236,7 +240,7 @@ Thickness Tolerance &$ \pm0.25~\mathrm{mm}$&&\\
 \subsection{Optical follower servo}
 \subsection{Photo detector}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
-We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. We housed the circuit board into the aluminum case coated by the alumite. 
+We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. We housed the circuit board into the aluminum case coated by the black anodized aluminum. 
 
 \subsubsection{Cover}
 The design of the cover is 
@@ -280,18 +284,18 @@ We employ eight 3 inch mirrors. We place the HR coating on the polished fused si
 \caption{Specification of Mirrors in periscope.}
 \label{tab:Periscope_mirror_spec}
 \centering
-\begin{tabular}{ ccccc}
+\begin{tabular}{cccccc}
 \toprule
-\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Polarization}  \\
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}   & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-M-P-1 &  &76.2  & \\
-M-P-2 &  &76.2  & \\
-M-P-t-3 &  &76.2   & \\
-M-P-t-4 &  &76.2   & \\
-M-P-b-3 &  & 76.2  & \\
-M-P-b-4 &  &76.2  & \\
-M-P-5 &  &76.2  & \\
-M-P-6 &  &76.2   & \\
+M-P-1 &  &76.2  &50deg& \\
+M-P-2 &  &76.2  &50deg& \\
+M-P-t-3 &  &76.2   &22.5deg& \\
+M-P-t-4 &  &76.2   &45deg& \\
+M-P-b-3 &  & 76.2  &22.5deg& \\
+M-P-b-4 &  &76.2  &45deg& \\
+M-P-5 &  &76.2  &50deg& \\
+M-P-6 &  &76.2   &50deg& \\
 
 \bottomrule\\
 \end{tabular}
@@ -301,6 +305,14 @@ M-P-6 &  &76.2   & \\
 
 %----------------------------------------------------------------------------------------
 \section{Receiver module}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/Rx_module_layout.eps}
+\caption{} 
+\label{fig:Rx_module_layout} 
+\end{center}
+\end{figure}
 \subsection{6inch Integrating sphere}
 The 6 inches integrating sphere is used for absolute power measurement of the laser. We receive the laser beam from two paths. To receive the power perfectly, we need a sufficiently large diameter hole of integrating sphere. We use for the 2 inch hole integrating sphere. We mounted the photo detector at the top of port. Details of the photo detector is explained in XXXXX.
 
@@ -310,22 +322,24 @@ We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as sh
 \caption{Specification of Mirrors in Rx module.}
 \label{tab:Rx_mirror_spec}
 \centering
-\begin{tabular}{ ccccc}
+\begin{tabular}{ cccccc}
 \toprule
-\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Polarization}  \\
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} &  & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-M-Rx-1 &  &  & \\
-M-Rx-2 &  &  & \\
-M-Rx-3 &  &   & \\
-M-Rx-4 &  &   & \\
+M-Rx-1 &  &  &21.7deg& \\
+M-Rx-2 &  &  &23.3deg& \\
+M-Rx-3 &  &   &21.7deg& \\
+M-Rx-4 &  &   &23.3deg& \\
 \bottomrule\\
 \end{tabular}
 \end{table}
-\subsection{Structure}
-\subsection{Alignment}
+
 
 
 \subsection{QPD}
+We will implement QPDs for beam position control, which made by Tholabs.  They also help us to understand the alignment drifts of the beams. 
+
+
 \subsection{Structure}
 The breadboard is placed on the support structure. The material of this structure is SUS 306. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
 
