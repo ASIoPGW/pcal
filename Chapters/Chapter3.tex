@@ -176,7 +176,7 @@ L4 &  & 50.8 & \\
 
 \subsection{Mirror}
 We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Fig.~\ref{fig:Tx_module_layout}.
- The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M-Tx1 toM-Tx-11, M-Tx-t-1,M-Tx-t-2, and M-Tx-b-1. The specification of mirrors are summarized in Table.\ref{yab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
+ The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M-Tx1 toM-Tx-11, M-Tx-t-1,M-Tx-t-2, and M-Tx-b-1. The specification of mirrors are summarized in Table.\ref{tab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
  
  \begin{table}
 \caption{Specification of Mirrors.}
@@ -238,15 +238,47 @@ Thickness Tolerance &$ \pm0.25~\mathrm{mm}$&&\\
 \end{table}
 
 \subsection{Optical follower servo}
+In order to achieve low-noise and accurate modulation, an active controller (servo) can modulate the waveform by means of feedback control. This feedback loop used for the Pcal is called as the Optical Follower Servo.
+The Optical Follower Servo will be used in the KAGRA Photon Calibrator as a means to reduce the relative power noise (RPN) of the laser. We will achieve maximum sideband to carrier suppression of the modulated output waveform. 
+
 \subsection{Photo detector}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
-We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. We housed the circuit board into the aluminum case coated by the black anodized aluminum. 
+We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
 
 \subsubsection{Cover}
-The design of the cover is 
-\subsubsection{InGaAs detector}
+The design of the cover is done by LIGO Pcal group. We make the detector cover in Academia Sinica, Institute of Physics. Figure~\ref{fig:detector_cover} shows the machined detector covers. We housed the circuit board into the cover coated by the black anodized aluminum. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/Detector_cover.eps}
+\caption{.} 
+\label{fig:detector_cover} 
+\end{center}
+\end{figure}
+
+\subsubsection{InGaAs detector}	
+We employ the C30665GH, large area InGaAs PIN photodiode with diameter of 3.0 mm with a flat glass window. The C30665GH provides high quantum efficiency from 800nm to 1700nm. This detector is fabricated by Excelitas. The specification of detector is shown in Table.~\ref{tab:detector_spec}.
+
+\begin{table}
+\caption{Specification of InGaAs detector.}
+\label{tab:detector_spec}
+\centering
+\begin{tabular}{ ccccc}
+\toprule
+\tabhead{Charactaristic} & \tabhead{Typical value} & \tabhead{Unit} & \tabhead{Note} \\
+\midrule
+Dark Current &25& nA& \\
+Peak Wavelength&1550& nm& \\
+Responsivity&0.95 &A/W&\\
+Breakdown Voltage &50 &V& \\
+Capacitance & 200 &pF&\\
+\bottomrule\\
+\end{tabular}
+\end{table}
+ditector
+
 \subsubsection{Electrical Circuit}
-We newly improved the electrical circuit of the photon detector as shown in Fig, \ref{fig:Photo_detector}. The electrical circuit is housed in the aluminum cover. We place the photo detector at the the behind of the electrical circuit. The layers of the circuit consists of 4 layer. We change the differential gain by changing the register and capacitor of the circuit. The electrical circuit are shown in Fig. XXX.
+We newly improved the electrical circuit of the photon detector as shown in Fig, \ref{fig:Photo_detector}. The electrical circuit is housed in the aluminum cover. We place the photo detector at the the behind of the electrical circuit. The layers of the circuit consists of 4 layer. We change the differential gain by changing the register and capacitor of the circuit. The electrical circuit are shown in Fig.~\ref{fig:Detector_circuit}.
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{Figures/Photo_detector.eps}
@@ -254,29 +286,49 @@ We newly improved the electrical circuit of the photon detector as shown in Fig,
 \label{fig:Photo_detector} 
 \end{center}
 \end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/Detector_circuit.eps}
+\caption{D1300210.} 
+\label{fig:Detector_circuit} 
+\end{center}
+\end{figure}
 
-\subsection{beam sampler}
+\subsection{Beam sampler}
 \subsection{2 inch integrating sphere}
-The 2 inches integrating sphere is used for absolute power measurement of the laser. We receive the separated laser beam at beam sampler. The typical power of the laser is XXX W. We mount the photo detector at the port of integrating sphere. The integrating sphere is made by the Lab sphere. The inner surface of the integrating sphere in mounted on the Spectralon.
+The 2 inches integrating sphere is used for absolute power measurement of the laser. We receive the separated laser beam at beam sampler. We mount the photo detector at the port of integrating sphere. The integrating sphere is made by the Lab sphere. The inner surface of the integrating sphere in mounted on the Spectralon.
 
 \subsection{Structure}
 The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
 
 %----------------------------------------------------------------------------------------
 \section{Periscope}
-\subsection{Geometric optics}
-\subsection{View window}
-One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure~\ref{fig:Pcal_window} shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are XXXX degree. 
+The periscope is used for sending the beams to ETM. We place the periscopes in EXA/EYA chamber as shown in Fig.~\ref{fig:Periscope_overview}.
+They consist of four periscopes. The first periscope is mounted at the vacuum side of the window. The laser is send to second periscope on optical table. We share one first mirror and one second mirror for the two beams of the laser. We send the two laser to two third periscope. The third periscope is sent to fourth periscope, which is aligned to same hight of the injected beam to the ETM. 
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Pcal_view_window.eps}
+\includegraphics[width=15cm]{Figures/Periscope_overview.eps}
+\caption{Periscope.} 
+\label{fig:Periscope_overview} 
+\end{center}
+\end{figure}
+
+\subsection{Geometric optics}
+We consider the beam separation and focus position of the optical system for the laser to be sent and received to the ETM. We fixed 80~mm separation of the mirror in transmitter module.  Figure XXX shows the schematic view of optical layout, where $D_{win}$, $D_{m2}$, and $D_{m3}$ are separation of beams, $L_{win}$, $L_{m2}$, and $L_{m3}$ are distance of each components.  We calculated the beam separation of the vacuum window, second mirror, and third mirrors by changing the focus point as shown in Fig. XXXX. X axis shows the distance from the window. We find a optimal point of minimum separation of the window because of clear aperture of window and second mirror. The optimal focus point is at XXXX mm from the window corresponding to XXXX separation of the mirror. We also find a incident angle of window with optimal focus point as 1.6 degree.
+\subsection{View window}
+One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure XXX shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are 1.6 degree. We mounted the first periscope at the vacuum side of the window because we should avoid optical lever path. We set the incident angle of periscope mirror as 50 degrees.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/Periscope_window.eps}
 \caption{.} 
 \label{fig:Pcal_window} 
 \end{center}
 \end{figure}
 
-The flange type of the view port is ICF152. We remodeled the blank flange of ICF 152 made by Cosmotech. Figure XXX shows the drawing of the view port. We employ the G-85 o-ring for vacuum sealing. 
+The flange type of the view port is ICF152. We remodeled the blank flange of ICF 152 made by Cosmotech. Figure ~\ref{fig:Pcal_window} shows the drawing of the view port. We employ the G-85 o-ring for vacuum sealing. 
+
 \subsection{Mirrors}
 We employ eight 3 inch mirrors. We place the HR coating on the polished fused silica disc. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Figure. XXXX.
  The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M1, XXXX. The specification of mirrors are summarized in Table.~\ref{tab:Periscope_mirror_spec}. All mirror is aligned with optical mirror mount made by XXXXXX.
@@ -326,10 +378,10 @@ We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as sh
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} &  & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-M-Rx-1 &  &  &21.7deg& \\
-M-Rx-2 &  &  &23.3deg& \\
-M-Rx-3 &  &   &21.7deg& \\
-M-Rx-4 &  &   &23.3deg& \\
+M-Rx-1 &&76.2 &21.7deg& \\
+M-Rx-2 & &76.2 &23.3deg& \\
+M-Rx-3 &&76.2   &21.7deg& \\
+M-Rx-4 &&76.2     &23.3deg& \\
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -337,8 +389,22 @@ M-Rx-4 &  &   &23.3deg& \\
 
 
 \subsection{QPD}
-We will implement QPDs for beam position control, which made by Tholabs.  They also help us to understand the alignment drifts of the beams. 
-
+We will implement QPDs for beam position control, which made by Tholabs.  They also help us to understand the alignment drifts of the beams. The part number of QPD is PDQ30C.
+\begin{table}
+\caption{Specification of QPD.}
+\label{tab:detector_spec}
+\centering
+\begin{tabular}{ ccccc}
+\toprule
+\tabhead{Charactaristic} & \tabhead{Typical value} & \tabhead{Unit} & \tabhead{Note} \\
+\midrule
+Substrate&	InGaAs&&\\
+Wavelength Range&1000 - 1700& nm&\\
+Detector Bandwidth	&150 &kHz& \\
+Recommended Spot Size	&$\phi0.2$ - $0.5$ & mm &\\
+\bottomrule\\
+\end{tabular}
+\end{table}
 
 \subsection{Structure}
 The breadboard is placed on the support structure. The material of this structure is SUS 306. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.

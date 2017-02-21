@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  20 FEB 2017 17:07
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  21 FEB 2017 10:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1716,8 +1716,12 @@ Package csquotes Info: ... found 'babel' package.
 
 LaTeX Warning: Label `Chapter1' multiply defined.
 
-) (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter6.aux)
-(./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux))
+) (./Chapters/Chapter3.aux
+
+LaTeX Warning: Label `tab:detector_spec' multiply defined.
+
+) (./Chapters/Chapter4.aux) (./Chapters/Chapter6.aux) (./Chapters/Chapter7.aux)
+(./Chapters/Chapter8.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
@@ -1740,11 +1744,11 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
 LaTeX Font Info:    ... okay on input line 90.
-
-(I search kanjifont definition file: . . ) (I search font definition file: . .
-. . . . . )
+ (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 90.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 Now handling font encoding TS1 ...
@@ -2066,47 +2070,60 @@ Overfull \hbox (30.68684pt too wide) in paragraph at lines 72--99
  []
 
 [7] [8] [9]
-
-LaTeX Warning: Reference `yab:Tx_mirror_spec' on page 10 undefined on input lin
-e 179.
-
-
 Overfull \hbox (3.29082pt too wide) in paragraph at lines 185--205
  [][] 
  []
 
-[10] [11]
+[10]
+File: Figures/Detector_cover.eps Graphic file (type eps)
+ <Figures/Detector_cover.eps> [11] [12]
 File: Figures/Photo_detector.eps Graphic file (type eps)
- <Figures/Photo_detector.eps> [12]
-File: Figures/Pcal_view_window.eps Graphic file (type eps)
- <Figures/Pcal_view_window.eps>
-Overfull \hbox (3.29082pt too wide) in paragraph at lines 284--299
- [][] 
+ <Figures/Photo_detector.eps>
+File: Figures/Detector_circuit.eps Graphic file (type eps)
+
+<Figures/Detector_circuit.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 291--292
+ [] 
  []
 
-File: Figures/Rx_module_layout.eps Graphic file (type eps)
-<Figures/Rx_module_layout.eps> [13] [14]
-Overfull \hbox (52.47679pt too wide) in paragraph at lines 322--332
+[13]
+File: Figures/Periscope_overview.eps Graphic file (type eps)
+ <Figures/Periscope_overview.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 311--312
+ [] 
+ []
+
+[14]
+File: Figures/Periscope_window.eps Graphic file (type eps)
+ <Figures/Periscope_window.eps>
+Overfull \hbox (3.29082pt too wide) in paragraph at lines 339--354
  [][] 
  []
 
 [15]
+File: Figures/Rx_module_layout.eps Graphic file (type eps)
+ <Figures/Rx_module_layout.eps> [16]
+Overfull \hbox (52.47679pt too wide) in paragraph at lines 377--387
+ [][] 
+ []
+
+[17]
 File: Figures/Camera_view_window.eps Graphic file (type eps)
- <Figures/Camera_view_window.eps>) [16]
+ <Figures/Camera_view_window.eps>) [18]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
 Chapter 4.
 )
 1: section
-[17
+[19
 
 
 
 ]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [18
+ (./Chapters/Chapter6.tex [20
 
 
 
@@ -2114,10 +2131,10 @@ Chapter 4.
 Chapter 5.
 )
 1: section
-[19]
+[21]
 \openout2 = `Chapters/Chapter7.aux'.
 
- (./Chapters/Chapter7.tex [20
+ (./Chapters/Chapter7.tex [22
 
 
 
@@ -2125,10 +2142,10 @@ Chapter 5.
 Chapter 6.
 )
 1: section
-[21]
+[23]
 \openout2 = `Chapters/Chapter8.aux'.
 
- (./Chapters/Chapter8.tex [22
+ (./Chapters/Chapter8.tex [24
 
 
 
@@ -2136,7 +2153,7 @@ Chapter 6.
 Chapter 7.
 )
 1: section
-[23]
+[25]
 
 LaTeX Warning: Empty bibliography on input line 286.
 
@@ -2147,20 +2164,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
 (./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 782B885351B5915C0E9401D62B43E843;8374.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 249CC427ED414E21A520A6F04A06613C;8162
-(rerunfilecheck)             After:  21C91903B1E214C68BFE2A4E965D7F94;8270.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2170,12 +2178,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31211 strings out of 493693
- 633844 string characters out of 6149787
+ 31221 strings out of 493693
+ 634068 string characters out of 6149787
  846495 words of memory out of 5000000
- 34442 multiletter control sequences out of 15000+600000
+ 34449 multiletter control sequences out of 15000+600000
  39248 words of font info for 88 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  57i,20n,82p,10377b,2246s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (29 pages, 124228 bytes).
+Output written on main.dvi (31 pages, 134268 bytes).
