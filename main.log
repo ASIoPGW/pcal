@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  21 FEB 2017 15:10
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  21 FEB 2017 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1701,16 +1701,7 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux
-
-LaTeX Warning: Label `Chapter1' multiply defined.
-
-) (./Chapters/Chapter3.aux
-
-LaTeX Warning: Label `tab:detector_spec' multiply defined.
-
-) (./Chapters/Chapter4.aux) (./Chapters/Chapter6.aux) (./Chapters/Chapter7.aux)
-(./Chapters/Chapter8.aux))
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
@@ -1886,6 +1877,10 @@ LaTeX Info: Redefining \nameref on input line 98.
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1896,7 +1891,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
- (./main.bbl
+(./main.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <10.95> on input line 49.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -1996,13 +1991,17 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 182.
- (./main.toc
-1: section
-[7])
+
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [8]
+1: section
+[7] [8
+
+]
 1: section
 \openout2 = `Chapters/Chapter1.aux'.
 
@@ -2022,7 +2021,6 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
 1: section
 [1
-
 
 
 ]
@@ -2057,81 +2055,186 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 ]
 Chapter 3.
+
+LaTeX Warning: Reference `fig:Pcal_overview' on page 5 undefined on input line 
+12.
+
 File: Figures/Pcal_overview.eps Graphic file (type eps)
 <Figures/Pcal_overview.eps>
-File: Figures/Tx_module_overview.eps Graphic file (type eps)
- <Figures/Tx_module_overview.eps>
-File: Figures/Tx_module_layout.eps Graphic file (type eps)
 
+LaTeX Warning: Reference `fig:Tx_module_overview' on page 5 undefined on input 
+line 24.
+
+File: Figures/Tx_module_overview.eps Graphic file (type eps)
+<Figures/Tx_module_overview.eps>
+
+LaTeX Warning: Reference `fig:Tx_module_layout' on page 5 undefined on input li
+ne 34.
+
+
+LaTeX Warning: Reference `tab:item_list' on page 5 undefined on input line 34.
+
+File: Figures/Tx_module_layout.eps Graphic file (type eps)
 <Figures/Tx_module_layout.eps>
+
+LaTeX Warning: Reference `fig:Laser' on page 5 undefined on input line 58.
+
+
+LaTeX Warning: Reference `tab:Laser_spec' on page 5 undefined on input line 58.
+
+
 1: section
-[5] [6]
+[5] [6] [7]
 File: Figures/Laser.eps Graphic file (type eps)
  <Figures/Laser.eps>
 Overfull \hbox (30.68684pt too wide) in paragraph at lines 72--99
  [][] 
  []
 
-[7] [8] [9]
+
+LaTeX Warning: Reference `tab:Beam_shutter_spec' on page 8 undefined on input l
+ine 102.
+
+
+LaTeX Warning: Reference `tab:HWP_spec' on page 8 undefined on input line 123.
+
+[8] [9]
+
+LaTeX Warning: Reference `tab:Tx_lenses_spec' on page 10 undefined on input lin
+e 159.
+
+
+LaTeX Warning: Reference `fig:Tx_module_layout' on page 10 undefined on input l
+ine 178.
+
+
+LaTeX Warning: Reference `tab:Tx_mirror_spec' on page 10 undefined on input lin
+e 179.
+
+
 Overfull \hbox (3.29082pt too wide) in paragraph at lines 185--205
  [][] 
  []
 
-[10]
 
-LaTeX Warning: Reference `tub:OFS_Gain' on page 11 undefined on input line 251.
+LaTeX Warning: Reference `tab:BS_spec' on page 10 undefined on input line 212.
+
+[10]
+File: Figures/OFS_diagram.eps Graphic file (type eps)
+ <Figures/OFS_diagram.eps>
+
+LaTeX Warning: Reference `tub:OFS_Gain' on page 11 undefined on input line 261.
+
+
+
+LaTeX Warning: Reference `PD' on page 11 undefined on input line 279.
+
+
+LaTeX Warning: Reference `tab:OFS_Gain' on page 11 undefined on input line 280.
 
 
 [11] [12]
-File: Figures/Detector_cover.eps Graphic file (type eps)
- <Figures/Detector_cover.eps>
-File: Figures/Photo_detector.eps Graphic file (type eps)
- <Figures/Photo_detector.eps>
-File: Figures/Detector_circuit.eps Graphic file (type eps)
 
-<Figures/Detector_circuit.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 322--323
+LaTeX Warning: Reference `fig:detector_cover' on page 13 undefined on input lin
+e 290.
+
+File: Figures/Detector_cover.eps Graphic file (type eps)
+<Figures/Detector_cover.eps>
+
+LaTeX Warning: Reference `tab:detector_spec' on page 13 undefined on input line
+ 301.
+
+
+LaTeX Warning: Reference `fig:Photo_detector' on page 13 undefined on input lin
+e 322.
+
+
+LaTeX Warning: Reference `fig:Detector_circuit' on page 13 undefined on input l
+ine 322.
+
+File: Figures/Photo_detector.eps Graphic file (type eps)
+<Figures/Photo_detector.eps>
+File: Figures/Detector_circuit.eps Graphic file (type eps)
+ <Figures/Detector_circuit.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 332--333
  [] 
  []
 
 [13]
+
+LaTeX Warning: Reference `fig:Periscope_overview' on page 14 undefined on input
+ line 347.
+
+[14]
 File: Figures/Periscope_overview.eps Graphic file (type eps)
  <Figures/Periscope_overview.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 342--343
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 352--353
  [] 
  []
 
-[14] [15]
+
+LaTeX Warning: Reference `fig:Kikakougaku_position' on page 15 undefined on inp
+ut line 359.
+
+
+LaTeX Warning: Reference `fig:Kikakougaku' on page 15 undefined on input line 3
+59.
+
 File: Figures/Kikakougaku_position.eps Graphic file (type eps)
- <Figures/Kikakougaku_position.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 356--357
+<Figures/Kikakougaku_position.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 366--367
  [] 
  []
 
 File: Figures/Kikakougaku.eps Graphic file (type eps)
 <Figures/Kikakougaku.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 363--364
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 373--374
  [] 
  []
 
-[16]
+[15] [16]
 File: Figures/Periscope_window.eps Graphic file (type eps)
  <Figures/Periscope_window.eps>
-Overfull \hbox (3.29082pt too wide) in paragraph at lines 389--404
+
+LaTeX Warning: Reference `fig:Pcal_window' on page 17 undefined on input line 3
+90.
+
+
+LaTeX Warning: Reference `tab:Periscope_mirror_spec' on page 17 undefined on in
+put line 394.
+
+
+Overfull \hbox (3.29082pt too wide) in paragraph at lines 399--414
  [][] 
  []
 
 File: Figures/Rx_module_layout.eps Graphic file (type eps)
 <Figures/Rx_module_layout.eps> [17]
-Overfull \hbox (52.47679pt too wide) in paragraph at lines 427--437
+
+LaTeX Warning: Reference `PD' on page 18 undefined on input line 429.
+
+
+LaTeX Warning: Reference `tab:Rx_mirror_spec' on page 18 undefined on input lin
+e 432.
+
+
+Overfull \hbox (52.47679pt too wide) in paragraph at lines 437--447
  [][] 
  []
 
 [18]
+
+LaTeX Warning: Reference `fig:Camera' on page 19 undefined on input line 475.
+
+[19]
+
+LaTeX Warning: Reference `fig:Camera_window' on page 20 undefined on input line
+ 484.
+
 File: Figures/Camera.eps Graphic file (type eps)
- <Figures/Camera.eps>
+<Figures/Camera.eps>
 File: Figures/Camera_view_window.eps Graphic file (type eps)
- <Figures/Camera_view_window.eps> [19] [20]) [21]
+ <Figures/Camera_view_window.eps>) [20] [21]
 \openout2 = `Chapters/Chapter4.aux'.
 
 
@@ -2597,9 +2700,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
 (./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 275.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D83F99F01C81A861EDAA89D282AE29F6;4112.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  077B8C7E6937A31985A3ADADD9EE211F;4112.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2607,19 +2716,24 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run BibTeX on the file(s):
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28255 strings out of 493693
- 596853 string characters out of 6149787
- 816771 words of memory out of 5000000
- 31489 multiletter control sequences out of 15000+600000
+ 28223 strings out of 493693
+ 596301 string characters out of 6149787
+ 817771 words of memory out of 5000000
+ 31472 multiletter control sequences out of 15000+600000
  40642 words of font info for 91 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 56i,20n,83p,10377b,2238s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,20n,83p,10377b,1834s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (39 pages, 118212 bytes).
+Output written on main.dvi (39 pages, 79672 bytes).

@@ -35,7 +35,7 @@ Figure~\ref{fig:Tx_module_layout} shows the optical layout of Tx module. All the
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Tx_module_layout.eps}
+\includegraphics[width=12cm]{Figures/Tx_module_layout.eps}
 \caption{Optical layout of KAGRA photon calibrator. The laser power is modulated and controlled by the acousto-optic modulator (AOM). This modulated laser is sent to a 50:50 beam splitter, where we monitor the modulated laser power by using the integrating sphere.} 
 \label{fig:Tx_module_layout} 
 \end{center}
@@ -245,10 +245,20 @@ The block diagram of the OFS is shown in Fig. XXX. The transfer function of this
 \frac{AG_1}{1+AKSG_1G_2},
 \end{equation}
 where A is actuation factor, S is sensing factor, K is percentage of light power sampled, $G_1$ and $G_2$ are gain of feedforward and feedback.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=14cm]{Figures/OFS_diagram.eps}
+\caption{r.} 
+\label{fig:OFS_diagram} 
+\end{center}
+\end{figure}
+
+
 We monitor the difference between input and feed back signal at the error point.
 For monitoring the performance of OFS, we read the location of monitor point.
 When we inject the signal, such as swept sine, gauss sine and hardware injection signal, we use input port.
- The estimation of the expected gain parameter is listed in Table.~\ref{tub:OFS_Gain}.
+ The estimation of the expected gain parameter is listed in Table.~\ref{tab:OFS_Gain}.
 
 \begin{table}
 \caption{OFS gain.}
@@ -271,7 +281,7 @@ According to Table.~\ref{tab:OFS_Gain}, we regard $G_2KS$ as unity. Therefore, w
 \begin{equation}
 \frac{AG_1}{1+AG_1}
 \end{equation}
-We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is XXXXXX. 
+We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is M1080-T80L-M. 
 \subsection{Photo detector} \label{PD}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
 We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
@@ -483,7 +493,7 @@ The flange type of the view port is ICF203. We remodeled the blank flange of ICF
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Camera_view_window.eps}
+\includegraphics[width=12cm]{Figures/Camera_view_window.eps}
 \caption{.} 
 \label{fig:Camera_window} 
 \end{center}
