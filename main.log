@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  22 FEB 2017 10:28
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  22 FEB 2017 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1701,19 +1701,16 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-(./main.aux
-No file Chapters/Chapter1.aux.
-No file Chapters/Chapter2.aux.
-(./Chapters/Chapter3.aux
+(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux
+
+LaTeX Warning: Label `Chapter1' multiply defined.
+
+) (./Chapters/Chapter3.aux
 
 LaTeX Warning: Label `tab:detector_spec' multiply defined.
 
-)
-No file Chapters/Chapter4.aux.
-No file Chapters/Chapter6.aux.
-No file Chapters/Chapter7.aux.
-No file Chapters/Chapter8.aux.
-)
+) (./Chapters/Chapter4.aux) (./Chapters/Chapter6.aux) (./Chapters/Chapter7.aux)
+(./Chapters/Chapter8.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 98.
@@ -1734,10 +1731,11 @@ LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 98.
 LaTeX Font Info:    ... okay on input line 98.
- (I search kanjifont definition file: . . ) (I search font definition file: .
-. . . . . . )
+ (I search kanjifont definition file: . . )
+(I search font definition file: . . . . . . . )
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 98.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 Now handling font encoding TS1 ...
@@ -1988,16 +1986,22 @@ LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
 --------------------
  Acknowledgements
 --------------------
+
+Overfull \hbox (2.1573pt too wide) in paragraph at lines 174--175
+\T1/ppl/m/n/10.95 Evan Goetz, Su-dar-shan Karki, Wang-Yau Cheng, To-mo-tada Aku
+tsu, Ken-taro Somiya,
+ []
+
 1: section
 [5] [6
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 182.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 182.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 185.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 182.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 185.
  (./main.toc
 1: section
 [7])
@@ -2028,25 +2032,9 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 
 
 ]
-
-LaTeX Warning: Citation 'Goetz:2009' on page 2 undefined on input line 68.
-
-
 Overfull \hbox (22.52303pt too wide) in paragraph at lines 79--88
 []\T1/ppl/m/n/10.95 Calibration meth-ods with-out us-ing pho-ton cal-i-bra-tor 
 such as us-ing radio-frequency
- []
-
-
-LaTeX Warning: Citation 'LV-obs' on page 2 undefined on input line 125.
-
-
-LaTeX Warning: Citation 'KAGRA-obs' on page 2 undefined on input line 127.
-
-
-Overfull \hbox (44.06044pt too wide) in paragraph at lines 125--128
-\T1/ppl/m/n/10.95 cur-rently in-stalling the in-stru-ment to meet the fol-low-i
-ng ob-ser-va-tion sched-ule [[]]: 
  []
 
 [2]) [3]
@@ -2602,49 +2590,71 @@ mily. Using \mkbibnamefamily.
 Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
 uffix. Using \mkbibnamesuffix.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 278.
 1: section
 [33]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 278.
  (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter6.aux)
 (./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 278.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 278.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 339C1D71B209FE0CC38F8812FA189062;4202.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 077B8C7E6937A31985A3ADADD9EE211F;4112
-(rerunfilecheck)             After:  339C1D71B209FE0CC38F8812FA189062;4202.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
-
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28239 strings out of 493693
- 596510 string characters out of 6149787
- 817771 words of memory out of 5000000
- 31484 multiletter control sequences out of 15000+600000
+ 28263 strings out of 493693
+ 597100 string characters out of 6149787
+ 817803 words of memory out of 5000000
+ 31496 multiletter control sequences out of 15000+600000
  40642 words of font info for 91 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  58i,20n,83p,10377b,2238s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (41 pages, 123448 bytes).
+Output written on main.dvi (41 pages, 126392 bytes).
