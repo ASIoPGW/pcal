@@ -65,5 +65,6 @@
 \contentsline {section}{\numberline {5.4}Gold standard}{27}{section.5.4}
 \contentsline {section}{\numberline {5.5}Working standard}{27}{section.5.5}
 \contentsline {chapter}{\numberline {6}Beam position monitor}{29}{chapter.6}
-\contentsline {chapter}{\numberline {7}Summary}{31}{chapter.7}
-\contentsline {chapter}{Bibliography}{33}{chapter*.34}
+\contentsline {chapter}{\numberline {7}Discussion}{31}{chapter.7}
+\contentsline {chapter}{\numberline {8}Summary}{33}{chapter.8}
+\contentsline {chapter}{Bibliography}{35}{chapter*.34}
