@@ -18,7 +18,7 @@
 \section{Calibration of a Gravitational-Wave detector}
 
 KAGRA is a laser interferometer using four mirrors (test masses) suspended 
-from multi-stage pendulums to form two perpendicular optical cavities (arms).
+from multi-stage pendula to form two perpendicular optical cavities (arms).
 Gravitation Wave (GW) strain causes differential variations of the arm length
 and generates power fluctuations in the detector readout port. 
 The power fluctuations measured by photodetectors work as the GW readout 
@@ -30,13 +30,21 @@ the control signal to the test mass actuators. Therefore, estimation
 of the equivalent GW strain sensed by the interferometer requires 
 detailed characterization and correction for the feedback control loop.
 
-The uncertainties are directly translated to the systematic errors on 
-the absolute GW signal amplitude. In case of LIGO GW150914 event, 
+The calibration uncertainties are directly translated to the systematic 
+errors on the absolute GW signal amplitude. In case of LIGO GW150914 event, 
 the calibration was established to an uncertainty (1$\sigma$) of less than 
 10\% in amplitude and 10 degrees in phase~\cite{GW150914}.
 In case of LIGO GW151226 event, the calibration uncertainty (1$\sigma$) 
 in both detectors at the time of the signal is better than 8\% 
 in amplitude and 5 degrees in phase~\cite{GW151226}.
+
+The primary impact of the calibration uncertainties to the physics parameters 
+is the determination of the distance to the source. The 10\% uncertainties of 
+the GW amplitude directly correspond to 10\% uncertainties on the estimation 
+of the luminosity distance. Furthermore, since the estimation of the 
+population of the GW sources depends on the third power of the source 
+distance, 10\% calibration uncertainties will be translated into $\sim$30\% 
+uncertainties on the population estimation.
 
 The calibration uncertainties also affect the coordinate reconstruction 
 particularly in the case that only up to three detectors in the world 
@@ -49,51 +57,94 @@ noise. In such cases, the pointing accuracy can get worse by factor of
 
 %----------------------------------------------------------------------------------------
 
-\section{Purposes of the photon calibrator}
+\newpage
+\section{Roles of the photon calibrator}
 
-Photon calibrators are the primary calibration tool in the Advanced LIGO 
-and Advanced Virgo detectors~\cite{LIGO-CAL,Karki}. Earlier versions have 
-been tested on various interferometers~\cite{Virgo-PCAL},
+Photon calibrators are the primary calibration tools in the Advanced LIGO 
+and Advanced Virgo detectors~\cite{LIGO-CAL,Karki,Virgo-PCAL}.
+Earlier versions have been tested on various 
+interferometers~\cite{Accadia,Clubley:2001,Mossavi:2006},
 and they have evolved significantly in LIGO over the past ten 
-years~\cite{Accadia,Clubley:2001,Mossavi:2006}.
-
-There are several purposes for the photon calibrator:
+years~\cite{Goetz:2009}.
+There are several unique roles required to the photon calibrator:
 
 \begin{enumerate}
-\item Check of the sign of $h(t)$\\
+\item {\bf Check of the sign of \sl h(t)}\\
 Since the direction of the movement of test mass is proportional to the 
 laser power, photon calibrator allows a direct check of the sign of the 
 reconstructed $h(t)$ channel compared to the definition taken in agreement 
 with other experiments. In initial phase of Virgo, he primary purpose of 
-photon calibrator was to check the sign of h(t)~\cite{VIR-018}.
+photon calibrator was to check the sign of $h(t)$~\cite{VIR-018}.
 
-\item Calibration during the observing periods\\
+\item {\bf Calibration during the observing periods}\\
 Calibration methods without using photon calibrator such as using 
 radio-frequency oscillator and laser wavelength can be done only under the 
 limited condition where the interferometer is not operating in the optimum 
 sensitivity. The propagation of calibration parameters from the high noise 
 condition to the low noise condition can introduce additional unknown source 
 of systematic errors. On the other hand, the photon calibrator is a completely 
-independent instrument of the interferometer and therefore, actuate 
+independent instrument of the interferometer and therefore can actuate 
 the test masses during the observation periods with optimum sensitivity. 
 
-\item Hardware injection\\
+\item {\bf Hardware injection}\\
 Hardware injection in the high frequency region is important to verify the 
 response of the detector system. Since actuators are inside the feedback 
 control loop, the amplitude is more suppressed for higher frequencies. 
 Photon calibrator can inject the high frequency signal more efficiently. 
 
-\item Independence of calibration method
-      and reliability assurance of interferometer\\
+\item {\bf Independence of calibration method\\
+      and reliability assurance of interferometer}\\
+Injecting calibration signals into the control feedback loop has a limitation 
+to reduce the systematic errors because it is calibrating the loop itself.
+Without Pcal, it is difficult to disentangle each uncertainty inside the loop, 
+such as optical gain and actuator efficiency. On the other hand, Pcal has a 
+strong advantage to enable to inject calibration signals independent of the 
+control loop and provide an additional way to reduce the systematic 
+uncertainties.
+
+\item {\bf Globalization of the calibration}\\
+It is necessary to calibrate and compare the absolute accuracies of KAGRA, 
+LIGO and Virgo, or at least we need to have a way to evaluate the difference 
+of absolute GW amplitude between different detectors. This kind of difference 
+introduces bias on the physics parameters such as the source localization. 
+Typical examples are cosmic-ray air shower observations and X-ray 
+observations. In the long history of the air shower experiments, 
+there have been always discussions about the absolute energy estimation. 
+On the other hand, X-ray detector can be calibrated by the radio isotope 
+sources and there is no question raised. In the GW experiment, absolute 
+calibration is a difficult work but therefore it will be the key issue of the 
+experimental verifications in the next decades.
 
 \end{enumerate}
-
 
 
 %----------------------------------------------------------------------------------------
 
 \section{Schedule of KAGRA}
 
+In order to coincide the observation plan by LIGO and Virgo~\cite{LV-obs},
+KAGRA is currently installing the instrument to meet the following observation
+schedule~\cite{KAGRA-obs}:
+
+\begin{enumerate}
+\item Phase-1: 2017.3 -- 2018.3\\
+      Operation of Michelson interferometer in cryogenic condition 
+      followed by introducing Fabry P\'{e}rot cabity.
+\item Phase-2: 2018.4 -- 2019.3 (Opening)\\
+      Full lock of RSE (Resonant Sideband Extraction)
+\item Phase-3: 2019.4 -- 2020.3 (Early) \\
+      One year commissioning after the first full operation, 
+      then improve the sensitivities to achieve the design goal
+\item 2020 -- 2021: Middle term observation
+\item 2021 -- 2022: Late term observation
+\item 2022 -- : Observation with the designed sensitivity
+
+\end{enumerate}
+
+
+%----------------------------------------------------------------------------------------
+
+\section{Calibration requirements from data analysis}
 
 %----------------------------------------------------------------------------------------
 
