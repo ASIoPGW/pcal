@@ -17,39 +17,39 @@
 \contentsline {chapter}{\numberline {3}Instruments descriptions}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Layout of Photon calibrator}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Transmitter (Tx) module}{7}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Fiber laser}{10}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Beam shutter}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Half wave plate}{10}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Polarizer}{10}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Lens}{10}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Mirror}{12}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Optical mount with Pico-motor}{12}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.1}Fiber laser}{9}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Beam shutter}{9}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Half wave plate}{9}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Polarizer}{12}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Lens}{12}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Mirror}{13}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}Optical mount with Pico-motor}{13}{subsection.3.2.7}
 \contentsline {subsection}{\numberline {3.2.8}Beam splitter}{13}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}Optical follower servo}{13}{subsection.3.2.9}
+\contentsline {subsection}{\numberline {3.2.9}Optical follower servo}{14}{subsection.3.2.9}
 \contentsline {subsection}{\numberline {3.2.10}Photo detector}{15}{subsection.3.2.10}
-\contentsline {subsubsection}{Cover}{15}{section*.17}
-\contentsline {subsubsection}{InGaAs detector}{15}{section*.19}
-\contentsline {subsubsection}{Electrical Circuit}{16}{section*.21}
-\contentsline {subsection}{\numberline {3.2.11}Beam sampler}{16}{subsection.3.2.11}
-\contentsline {subsection}{\numberline {3.2.12}2 inch integrating sphere}{16}{subsection.3.2.12}
-\contentsline {subsection}{\numberline {3.2.13}Structure}{16}{subsection.3.2.13}
-\contentsline {section}{\numberline {3.3}Periscope}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Geometric optics}{17}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}View window}{17}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Mirrors}{19}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Structure}{20}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Alignment}{20}{subsection.3.3.5}
-\contentsline {section}{\numberline {3.4}Receiver module}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}6inch Integrating sphere}{20}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Mirror}{20}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}QPD}{20}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Structure}{21}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Camera module}{21}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Camera}{21}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Telescope}{21}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Focuser}{22}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}View window}{22}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Mirror}{22}{subsection.3.5.5}
+\contentsline {subsubsection}{Cover}{15}{section*.18}
+\contentsline {subsubsection}{InGaAs detector}{15}{section*.20}
+\contentsline {subsubsection}{Electrical Circuit}{17}{section*.22}
+\contentsline {subsection}{\numberline {3.2.11}Beam sampler}{17}{subsection.3.2.11}
+\contentsline {subsection}{\numberline {3.2.12}2 inch integrating sphere}{17}{subsection.3.2.12}
+\contentsline {subsection}{\numberline {3.2.13}Structure}{17}{subsection.3.2.13}
+\contentsline {section}{\numberline {3.3}Periscope}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Geometric optics}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}View window}{20}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Mirrors}{21}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Structure}{21}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Alignment}{21}{subsection.3.3.5}
+\contentsline {section}{\numberline {3.4}Receiver module}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}6inch Integrating sphere}{21}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Mirror}{22}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}QPD}{22}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Structure}{22}{subsection.3.4.4}
+\contentsline {section}{\numberline {3.5}Camera module}{22}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Camera}{22}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Telescope}{23}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Focuser}{23}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}View window}{23}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Mirror}{23}{subsection.3.5.5}
 \contentsline {subsection}{\numberline {3.5.6}Illuminator}{23}{subsection.3.5.6}
 \contentsline {section}{\numberline {3.6}Summary}{23}{section.3.6}
 \contentsline {chapter}{\numberline {4}Elastic deformation}{25}{chapter.4}
@@ -67,15 +67,14 @@
 \contentsline {section}{\numberline {5.5}Gold standard}{27}{section.5.5}
 \contentsline {section}{\numberline {5.6}Working standard}{27}{section.5.6}
 \contentsline {chapter}{\numberline {6}Beam position monitor}{29}{chapter.6}
-\contentsline {section}{\numberline {6.1}Instration}{29}{section.6.1}
+\contentsline {section}{\numberline {6.1}Instlation}{29}{section.6.1}
 \contentsline {section}{\numberline {6.2}Operation}{29}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Strategy}{29}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Beam monitor system}{29}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}Analysis}{29}{section.6.3}
-\contentsline {section}{\numberline {6.4}Demonstration test}{29}{section.6.4}
-\contentsline {section}{\numberline {6.5}Summary}{29}{section.6.5}
+\contentsline {section}{\numberline {6.3}Analysis}{30}{section.6.3}
+\contentsline {section}{\numberline {6.4}Demonstration test}{30}{section.6.4}
+\contentsline {section}{\numberline {6.5}Summary}{30}{section.6.5}
 \contentsline {chapter}{\numberline {7}Discussion}{31}{chapter.7}
 \contentsline {section}{\numberline {7.1}Two AOM}{31}{section.7.1}
-\contentsline {section}{\numberline {7.2}Crosscheck WS}{31}{section.7.2}
+\contentsline {section}{\numberline {7.2}KAGRA Gold Standard}{31}{section.7.2}
+\contentsline {section}{\numberline {7.3}Crosscheck WS}{31}{section.7.3}
 \contentsline {chapter}{\numberline {8}Summary}{33}{chapter.8}
-\contentsline {chapter}{Bibliography}{35}{chapter*.34}
+\contentsline {chapter}{Bibliography}{35}{chapter*.35}

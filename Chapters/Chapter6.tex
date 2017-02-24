@@ -9,10 +9,38 @@ Previous study in LIGO have achieved 0.3~\% of uncertainty by using Telephoto ca
 They place the telephoto camera at 8~m far from the ETM. On the other hand, That of KAGRA is 36 m where is 4.5 times larger. Therefore, one of the most difficult technologies of calibration is beam position measurement.
 
 We will demonstrate the system of BMS as  the new technology. The BMS system is consists of XXXX parts as shown in Fig.XXXX.
-\section{Instration}
+
+According to Eq.(\ref{eq:dx}), vector $\vec{a}$ and $\vec{b}$ corresponds to the rotation effect. $\vec{a}$ can be written as
+\begin{equation}
+\vec{a}=\vec{a_1} + \vec{a_2},
+\end{equation}
+where $\vec{a_1}$ and $\vec{a_2}$ are position vectors of two Pcal beams. We can measure the beam position of main interferometer, $\vec{b}$, as well.
+We can obtain the rotation term as
+\begin{equation}
+\frac{I}{M}\vec{a} \cdot \vec{b}
+\end{equation}
+,where $I$ and $M$ are inertial moment and mass of test mass.
+
+Furthermore, the misaligned beam positions make the elastic deformation on the mirror surface due to asymmetry. It is one of the serious systematic errors.
+Detail of the elastic deformation is described in Sec.~\ref{Chapter4}.
+
+\section{Instlation}
+The installation phase of beam position monitor consists of two phases.
+In first phase, we place the TCam system at the side of EXA and EYA chamber.
+Detail of TCam is described in XXX. We connect the TCam and control PC (Raspberry pi) and operate it.
+The purpose of TCam is not only calibration work but also other application.
+We will monitor the pollution of water due to cryo-pumping effect. The taken picture will be analyzed automatically.
+In second phase, we place the QPD and the pico motor. We will control the beam position using these components.
 \section{Operation}
-\subsection{Strategy}
-\subsection{Beam monitor system}
+All the system is operated by MEDM system as shown in Fig.XXX.
+The operation strategy is listed as follows:
+\begin{enumerate}
+ \item Take a picture with illuminator. We set the integration time to 30 sec.
+ \item Estimate the origin of mirror coordinate using edge shape of the mirror.
+ \item Turn off the illuminator and take picture with 30 sec integration time.
+  \item Estimate the Pcal beam position and main interferometer position with no illumination picture.
+   \item Make a picture overplayed the coordinate of Pcal and origin as shown in Fig.XXXX.
+\end{enumerate}
 \section{Analysis}
 \section{Demonstration test}
 \section{Summary}

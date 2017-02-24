@@ -9,15 +9,32 @@
 %----------------------------------------------------------------------------------------
 
 \section{Layout of Photon calibrator}
-The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed 36 m away from the end test mass (ETM). We push the mirror surface with the modulated photon pressure directly. Figure \ref{fig:Pcal_overview} shows the layout of the KAGRA photon calibrator. The photon calibrator consists of transmitter module (Tx module), receiver module (Rx module), periscope, and telephoto camera module (TCam module). We place the 20~W laser in Tx module, whose frequency is 1047 nm. The 1064 nm laser is not used due to avoid the coupling with main beams.   The power of the laser is modulated by the optical follower servo (OFS). We split the beams in Tx module for pushing the drum head node points of the ETM due to elastic deformation. We transfer the beams to the ETM though the periscope. All the periscope structures are placed into the EXA/EYA chamber. The beam is received by the Rx module. We place a 6 inches integrating sphere for the accurate measurement of the laser power and two quadrant photo detector (QPD) for the beam position monitor. We also measure the beam position on the ETM surface using the telephoto camera (TCam). The Tcam is consists of the astronomical telescope, focuser, and high resolution digital camera.  Details of instruments are described following section.
+The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed 36 m away from the end test mass (ETM). We push the mirror surface with the modulated photon pressure directly. Figure \ref{fig:Pcal_overview} shows the layout of the KAGRA photon calibrator. The photon calibrator consists of transmitter module (Tx module), receiver module (Rx module), periscope, and telephoto camera module (TCam module). We place the 20~W laser in Tx module, whose frequency is 1047 nm. The 1064 nm laser is not used due to avoid the coupling with main beams.   The power of the laser is modulated by the optical follower servo (OFS). We split the beams in Tx module for pushing the drum head node points of the ETM due to elastic deformation. We transfer the beams to the ETM though the periscope. All the periscope structures are placed into the EXA/EYA chamber. The beam is received by the Rx module. We place a 6 inches integrating sphere for the accurate measurement of the laser power and two quadrant photo detector (QPD) for the beam position monitor. We also measure the beam position on the ETM surface using the telephoto camera (TCam). The Tcam is consists of the astronomical telescope, focuser, and high resolution digital camera. The specification summary of KAGRA photon calibrator is shown in Tabel.~\ref{tab:KAGRA_spec}. Details of instruments are described following section.
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/Pcal_overview.eps}
-\caption{KAGRA photon calibrator. The calibration system is placed around the EXA/EYA chamber. We mount the optical lever and optical baffle as well.} 
+\caption{KAGRA photon calibrator. The calibration system is placed around the EXA/EYA chamber. We mount the optical lever and optical baffle as well. The EXA/EYA chamber is placed at 36 m far from the ETM.} 
 \label{fig:Pcal_overview} 
 \end{center}
 \end{figure}
 
+\begin{table}
+\caption{Specification summary of photon calibrator.}
+\label{tab:KAGRA_spec}
+\centering
+\begin{tabular}{cccc}
+\toprule
+\tabhead{} & \tabhead{KAGRA} & \tabhead{advanced LIGO} & \tabhead{advanced Virgo} \\
+\midrule
+ Mirror material & Sapphire & Silica & Silica \\
+ Mirror mass & 22.8 kg & 42 kg & 40 kg \\
+  Mirror diameter & 220 mm & 340 mm & 350 mm \\
+  Pcal laser power & 20 W & 2W & 3 W \\
+  Laser frequency & 1047 nm & 1047 nm &1047 nm\\
+  Incident angle& 0.72 deg & 8.75 deg &30 deg \\
+\bottomrule\\
+\end{tabular}
+\end{table}
 %----------------------------------------------------------------------------------------
 
 \section{Transmitter (Tx) module}
@@ -31,7 +48,7 @@ The Tx module is placed at the side of the EXA/EYA chamber. Figure~\ref{fig:Tx_m
 \end{center}
 \end{figure}
 
-Figure~\ref{fig:Tx_module_layout} shows the optical layout of Tx module. All the optical components are listed in Table \ref{tab:item_list}.
+Figure~\ref{fig:Tx_module_layout} shows the optical layout of Tx module.
 
 \begin{figure}
 \begin{center}
@@ -41,26 +58,13 @@ Figure~\ref{fig:Tx_module_layout} shows the optical layout of Tx module. All the
 \end{center}
 \end{figure}
 
-\begin{table}
-\caption{.}
-\label{tab:item_list}
-\centering
-\begin{tabular}{ lclc|c|}
-\toprule
-\tabhead{\#} & \tabhead{Name} & \tabhead{Type} \\
-\midrule
-1 &Fiber laser & CYFL-TERA-20-LP-1047-AM1-RGO-OM1-T305-C1\\
-\bottomrule\\\\
-\end{tabular}
-\end{table}
-
 \subsection{Fiber laser}
 We employ the CW fiber laser made by the LER photonics as shown in Fig.~\ref{fig:Laser}. The maximum power and frequency are 20 W and 1047 nm, respectively. The model number of the laser is CYFL-TERA-20-LP-1047-AM1-RGO-OM1-T305-C1. The maximum laser power of KAGRA Pcal is 10 times larger than that of LIGO. This is because that we need the high power laser for the injection test and photon pressure actuator technique. The typical beam width of the laser is 0.5~mm when we mount the isolator. We summarize the specification of the laser as shown in Table~\ref{tab:Laser_spec}.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/Laser.eps}
-\caption{The fiber laser and drawing of isolator.} 
+\caption{The fiber laser and drawing of isolator. The module is placed under the Tx module.} 
 \label{fig:Laser} 
 \end{center}
 \end{figure}
@@ -153,9 +157,9 @@ w(z)=\omega_0\sqrt{1+\left( \frac{\lambda z}{\pi \omega_0^2}\right)^2},
 \end{equation}
 where $\lambda$ is wavelength of the laser, $w_0$ is beam waist, $z$ is direction from the focus. We estimate the minimum differential beam spot by changing beam waist because it make the alignment easier. The minimum beam spot is written by 
 \begin{equation}
-\left .\frac{dw(z)}{dw_0} \right|_{z=36m}=0.
+\left .\frac{dw(z)}{dw_0} \right|_{z=36~\mathrm{m}}=0.
 \end{equation}
-The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig. XXXX.
+The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig.XXXX.
 We also place the lens at the front of the photo detector for the OFS. The parameters of the simulation results are listed in Table.~\ref{tab:Tx_lenses_spec}. All lenses are made by CVI laser optics. The material of lenses are fused silica. The AR coating is placed at both surface. 
 
 \begin{table}
@@ -166,17 +170,17 @@ We also place the lens at the front of the photo detector for the OFS. The param
 \toprule
 \tabhead{Lens number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Focal length}  \\
 \midrule
-L1 &  & 25.4 & \\
-L2 &  & 25.4& \\
-L3 &  & 25.4 & \\
-L4 &  & 50.8 & \\
+L-Tx-1 &(CVI laser optics) & 25.4 & \\
+L-Tx-2 &(CVI laser optics)  & 25.4& \\
+L-Tx-3 &(CVI laser optics)  & 25.4 & \\
+L-Tx-4 & (CVI laser optics) & 50.8 & \\
 \bottomrule\\
 \end{tabular}
 \end{table}
 
 \subsection{Mirror}
 We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Fig.~\ref{fig:Tx_module_layout}.
- The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M-Tx1 toM-Tx-11, M-Tx-t-1,M-Tx-t-2, and M-Tx-b-1. The specification of mirrors are summarized in Table.\ref{tab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
+ The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as shown in Fig.~\ref{fig:Tx_module_layout}. The specification of mirrors are summarized in Table.~\ref{tab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
  
  \begin{table}
 \caption{Specification of Mirrors.}
@@ -196,10 +200,10 @@ M-Tx-7 &  &25.4   &42& \\
 M-Tx-8 &  &25.4   &45& \\
 M-Tx-9 &  &25.4   &45& \\
 M-Tx-10 &  & 50.8&45& \\
-M-Tx-t-1 &  &  50.8&45& \\
-M-Tx-t-2 &  &  50.8&23.3& \\
-M-Tx-b-1 &  & 50.8 &45& \\
-M-Tx-b-2 &  & 50.8 &21.8& \\
+M-Tx-u-1 &  &  50.8&45& \\
+M-Tx-tu2 &  &  50.8&24.1& \\
+M-Tx-l-1 &  & 50.8 &45& \\
+M-Tx-l-2 &  & 50.8 &20.9& \\
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -240,7 +244,7 @@ Thickness Tolerance &$ \pm0.25~\mathrm{mm}$&&\\
 \subsection{Optical follower servo}
 In order to achieve low-noise and accurate modulation, an active controller (servo) can modulate the waveform by means of feedback control. This feedback loop used for the Pcal is called as the Optical Follower Servo (OFS).
 The OFS will be used in the KAGRA Photon Calibrator as a means to reduce the relative power noise (RPN) of the laser. We will achieve maximum sideband to carrier suppression of the modulated output waveform. 
-The block diagram of the OFS is shown in Fig. XXX. The transfer function of this diagram can be described as
+The block diagram of the OFS is shown in Fig.~\ref{fig:OFS_diagram}. The transfer function of this diagram can be described as
 \begin{equation}
 \frac{AG_1}{1+AKSG_1G_2},
 \end{equation}
@@ -261,7 +265,7 @@ When we inject the signal, such as swept sine, gauss sine and hardware injection
  The estimation of the expected gain parameter is listed in Table.~\ref{tab:OFS_Gain}.
 
 \begin{table}
-\caption{OFS gain.}
+\caption{Typical gein parameter of OFS. }
 \label{tab:OFS_Gain}
 \centering
 \begin{tabular}{ ccc}
@@ -281,24 +285,57 @@ According to Table.~\ref{tab:OFS_Gain}, we regard $G_2KS$ as unity. Therefore, w
 \begin{equation}
 \frac{AG_1}{1+AG_1}
 \end{equation}
-We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is M1080-T80L-M. 
+We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is M1080-T80L-M. The specification is shown in Table~\ref{tab:AOM_spec} 
+
+\begin{table}
+\caption{Specification of InGaAs detector.}
+\label{tab:AOM_spec}
+\centering
+\begin{tabular}{ ccccc}
+\toprule
+\tabhead{Charactaristic} & \tabhead{Typical value} & \tabhead{Unit} & \tabhead{Note} \\
+\midrule
+Spectral Range&$0.36 > 1.5$&$\mu m$&\\
+AR Wavelengths& 700 -900 or 1064 & nm &\\
+Interaction Medium &Tellurium Dioxide (TeO2)&&\\
+Acoustic Velocity & 4.2&$\mathrm{m/\mu s}$&\\
+Centre Frequency (Fc) &80& MHz&\\
+RF Bandwidth & 30&MHz& \\
+Input Impedance&50 &$\Omega$& \\
+VSWR&<1.5:1 @ Fc&&\\
+Clear Aperture&3.5&mm&\\
+Active aperture&1.5&mm&\\
+Static Insertion Loss Reflectivity&<3&\%&\\
+Laser Polarization&Any&&\\
+DC Contrast Ratio&1000:1 min&&\\
+Cooling & conduction &&\\
+Optical Power&20&W&\\
+Beam Diameter&0.5&mm&\\
+Optical Rise Time&77&ns&\\
+Deflection efficiency & >85 &\%&Pol.: Perpendicular to Base\\
+RF power&2.8&W&\@1064nm\\
+Bragg angle&10.5&mrad&\@1064nm\\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
 \subsection{Photo detector} \label{PD}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
 We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
 
 \subsubsection{Cover}
-The design of the cover is done by LIGO Pcal group. We make the detector cover in Academia Sinica, Institute of Physics. Figure~\ref{fig:detector_cover} shows the machined detector covers. We housed the circuit board into the cover coated by the black anodized aluminum. 
+The design of the cover is done by LIGO Pcal group. We make the detector cover in Academia Sinica, Institute of Physics. Figure~\ref{fig:detector_cover} shows the machined detector covers. We housed the circuit board into the cover coated by the black anodized aluminum (MIL-A-8625F, TYPEII,CLASS2). 
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Figures/Detector_cover.eps}
-\caption{.} 
+\caption{Fabricated covor.} 
 \label{fig:detector_cover} 
 \end{center}
 \end{figure}
 
 \subsubsection{InGaAs detector}	
-We employ the C30665GH, large area InGaAs PIN photodiode with diameter of 3.0 mm with a flat glass window. The C30665GH provides high quantum efficiency from 800nm to 1700nm. This detector is fabricated by Excelitas. The specification of detector is shown in Table.~\ref{tab:detector_spec}.
+We employ the C30665GH, large area InGaAs PIN photodiode with diameter of 3.0 mm with a flat glass window. The C30665GH provides high quantum efficiency from 800~nm to 1700~nm. This detector is fabricated by Excelitas. The specification of detector is shown in Table.~\ref{tab:detector_spec}.
 
 \begin{table}
 \caption{Specification of InGaAs detector.}
@@ -316,21 +353,21 @@ Capacitance & 200 &pF&\\
 \bottomrule\\
 \end{tabular}
 \end{table}
-ditector
+
 
 \subsubsection{Electrical Circuit}
-We newly improved the electrical circuit of the photon detector as shown in Fig, \ref{fig:Photo_detector}. The electrical circuit is housed in the aluminum cover. We place the photo detector at the the behind of the electrical circuit. The layers of the circuit consists of 4 layer. We change the differential gain by changing the register and capacitor of the circuit. The electrical circuit are shown in Fig.~\ref{fig:Detector_circuit}.
+We newly improved the electrical circuit of the photon detector as shown in Fig.~\ref{fig:Photo_detector}. The electrical circuit is housed in the aluminum cover. We place the photo detector at the the behind of the electrical circuit. The layers of the circuit consists of 4 layer. We change the differential gain by changing the register and capacitor of the circuit. The electrical circuit are shown in Fig.~\ref{fig:Detector_circuit}.
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{Figures/Photo_detector.eps}
-\caption{.} 
+\caption{The picture of photo detector. The diameter of photo detector is 3~mm. We control the incident power by changing diameter of the collimator and resistance of trans impedance amplifier} 
 \label{fig:Photo_detector} 
 \end{center}
 \end{figure}
 \begin{figure}
 \begin{center}
 \includegraphics[width=15cm]{Figures/Detector_circuit.eps}
-\caption{D1300210.} 
+\caption{Circuit of photo detector designed by LIGO (D1300210).} 
 \label{fig:Detector_circuit} 
 \end{center}
 \end{figure}
@@ -340,7 +377,7 @@ We newly improved the electrical circuit of the photon detector as shown in Fig,
 The 2 inches integrating sphere is used for absolute power measurement of the laser. We receive the separated laser beam at beam sampler. We mount the photo detector at the port of integrating sphere. The integrating sphere is made by the Lab sphere. The inner surface of the integrating sphere in mounted on the Spectralon.
 
 \subsection{Structure}
-The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
+The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. We simulated the resonance frequency using ANSYS. Then, we fix the foot of stracture. The estimated frequency is XXX Hz.
 
 %----------------------------------------------------------------------------------------
 \section{Periscope}
@@ -350,7 +387,7 @@ They consist of four periscopes. The first periscope is mounted at the vacuum si
 \begin{figure}
 \begin{center}
 \includegraphics[width=15cm]{Figures/Periscope_overview.eps}
-\caption{Periscope.} 
+\caption{Periscope structure. We place the twelve 3-inch mirrors in total. The red and blue line corresponds to lower and upper beam path, respectively. The upper and lower beams push the node point of the mirror surface.} 
 \label{fig:Periscope_overview} 
 \end{center}
 \end{figure}
