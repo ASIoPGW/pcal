@@ -64,14 +64,19 @@ in case of using full laser power to one frequency. Figure.~\ref{fig:kagrap_pcal
 
 One of the main calibration method to reconstruct $\Delta L_{\rm ext}$, differenctial arm length (DARM), 
 uses the combination of obtained error signal($d_{\rm err}$) and feedback signal($d_{\rm ctrl}$) 
-with considering the slow temporal variations in aLIGO
-\footnote{The detail document is https://arxiv.org/pdf/1608.05134.pdf}. 
+with considering the slow temporal variations in 
+aLIGO~\cite{LIGO-CAL,Tuyenbayev}.
+%\footnote{The detail document is https://arxiv.org/pdf/1608.05134.pdf}. 
 In this document, we assume the LIGO DARM control system which is shown in Figure~\ref{fig:L_DARM_control_loop}
 ({\bf Ask experts how to control in bKAGRA, especially Actuator part}). 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/L_DARM_control_loop.eps}
-\caption{Schematic diagram of the LIGO DARM control loop.}
+%\includegraphics[width=8cm]{Figures/L_DARM_control_loop.eps}
+\includegraphics[width=10cm]{Figures/DARM_loop_and_CAL.eps}
+%\caption{Schematic diagram of the LIGO DARM control loop.}
+\caption{Schematic diagram of the real-time interferometer differential 
+arm (DARM) control loop and calibration pipeline adopted 
+from~\cite{LIGO-CAL,Tuyenbayev}.}
 \label{fig:L_DARM_control_loop} 
 \end{center}
 \end{figure}
