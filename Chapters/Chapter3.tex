@@ -252,7 +252,7 @@ where A is actuation factor, S is sensing factor, K is percentage of light power
 
 \begin{figure}
 \begin{center}
-%\includegraphics[width=14cm]{Figures/OFS_diagram.eps}
+\includegraphics[width=14cm]{Figures/OFS_diagram.eps}
 \caption{r.} 
 \label{fig:OFS_diagram} 
 \end{center}
@@ -401,14 +401,14 @@ We consider the beam separation and focus position of the optical system for the
 \begin{figure}
 \begin{center}
 \includegraphics[width=15cm]{Figures/Kikakougaku_position.eps}
-\caption{.} 
+\caption{Schematic view of periscope position. We optimized the periscope positions. We fix the separation of Tx module mirror, and each distance, $L_{win}, L_{m1},L_{m2}$ and $L_{m3}$. $x$ is distance from the window.} 
 \label{fig:Kikakougaku_position} 
 \end{center}
 \end{figure}
 \begin{figure}
 \begin{center}
 \includegraphics[width=15cm]{Figures/Kikakougaku.eps}
-\caption{.} 
+\caption{Calculated separation of $D_{win}$, $D_{m2}$, and $D_{m3}$ by changing the distance from the window. Blue, Green and Red curves are separation position on the window, M-P-2 and M-P-3. Purple dashed lines are incident angle of the laser to window. We find the optimal point at 350 mm point corresponding to 1.6 degree incident angle.} 
 \label{fig:Kikakougaku} 
 \end{center}
 \end{figure}
@@ -418,17 +418,41 @@ One of the serious systematic errors are optical efficiency of the view port. Th
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Periscope_window.eps}
-\caption{.} 
+\includegraphics[width=12cm]{Figures/Periscope_window.eps}
+\caption{View window with periscope. We mounted the AR coated fused silica window on  the ICF152 flange. The AR coating is optimized at 1047~nm. We mount the periscope at the vacuum side of the window. The incident angle of the periscope is 50 degrees.} 
 \label{fig:Pcal_window} 
 \end{center}
 \end{figure}
 
 The flange type of the view port is ICF152. We remodeled the blank flange of ICF 152 made by Cosmotech. Figure ~\ref{fig:Pcal_window} shows the drawing of the view port. We employ the G-85 o-ring for vacuum sealing. 
+We have simulated the deformation of window using ANSYS. The assumed Young's module, Poison ratio and density are listed in Table XXX. The deformation of the window center is $XXX~\mathrm{\mu m}$.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/Ansys_window.eps}
+\caption{.} 
+\label{fig:Ansys_window} 
+\end{center}
+\end{figure}
+
+ \begin{table}
+\caption{Specification of Mirrors in Rx module.}
+\label{tab:Rx_mirror_spec}
+\centering
+\begin{tabular}{ cc}
+\toprule
+\tabhead{Name} & \tabhead{Value}  \\
+\midrule
+Young's module & \\
+Poison ratio & \\
+Density & \\
+\bottomrule\\
+\end{tabular}
+\end{table}
 
 \subsection{Mirrors}
 We employ eight 3 inch mirrors. We place the HR coating on the polished fused silica disc. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Figure. XXXX.
- The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as M1, XXXX. The specification of mirrors are summarized in Table.~\ref{tab:Periscope_mirror_spec}. All mirror is aligned with optical mirror mount made by XXXXXX.
+ The reflectance of HR coating depends on the incident angle and the polarization angle. The specification of mirrors are summarized in Table.~\ref{tab:Periscope_mirror_spec}. All mirror is aligned with optical mirror mount made by XXXXXX.
  \begin{table}
 \caption{Specification of Mirrors in periscope.}
 \label{tab:Periscope_mirror_spec}
@@ -437,28 +461,35 @@ We employ eight 3 inch mirrors. We place the HR coating on the polished fused si
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}   & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-M-P-1 &  &76.2  &50deg& \\
-M-P-2 &  &76.2  &50deg& \\
-M-P-t-3 &  &76.2   &22.5deg& \\
-M-P-t-4 &  &76.2   &45deg& \\
-M-P-b-3 &  & 76.2  &22.5deg& \\
-M-P-b-4 &  &76.2  &45deg& \\
-M-P-5 &  &76.2  &50deg& \\
-M-P-6 &  &76.2   &50deg& \\
+M-P-1 &  &76.2  &50.0deg& \\
+M-P-2 &  &76.2  &50.0deg& \\
+M-P-u-3 &  &76.2   &26.3deg& \\
+M-P-u4 &  &76.2   &42.9deg& \\
+M-P-l-3 &  & 76.2  &26.5deg& \\
+M-P-l-4 &  &76.2  &41.7deg& \\
+M-P-u-5 &  &76.2   &26.5deg& \\
+M-P-u6 &  &76.2   &41.7deg& \\
+M-P-l-5 &  & 76.2  &26.3deg& \\
+M-P-l-6 &  &76.2  &42.9deg& \\
+M-P-7 &  &76.2  &50.0deg& \\
+M-P-8 &  &76.2   &50.0deg& \\
 
 \bottomrule\\
 \end{tabular}
 \end{table}
-\subsection{Structure}
-\subsection{Alignment}
+
 
 %----------------------------------------------------------------------------------------
 \section{Receiver module}
-
+The purpose of the receiver module is to measure the absolute power of laser and beam position control.
+All the components are mounted on the optical bench $300 \times 600 \mathrm{mm}$ optical table (B6030L, Tourlabs). 
+The optical bench is mounted on the structure.
+To accomplish the purpose, we introduce QPD and  6 inch integrating sphere.
+The accuracy of beam position and absolute power are corresponding to the systematic errors. 
 \begin{figure}
 \begin{center}
 \includegraphics[width=8cm]{Figures/Rx_module_layout.eps}
-\caption{} 
+\caption{Optical layout of receiver module. We mounted QPD for monitoring beam position drift. Total power of the laser is measured by the integrating sphere.} 
 \label{fig:Rx_module_layout} 
 \end{center}
 \end{figure}
@@ -473,7 +504,7 @@ We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as sh
 \centering
 \begin{tabular}{ cccccc}
 \toprule
-\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} &  & \tabhead{Incident angle}& \tabhead{Polarization}  \\
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
 M-Rx-1 &&76.2 &21.7deg& \\
 M-Rx-2 & &76.2 &23.3deg& \\
@@ -517,27 +548,67 @@ We employ the Maksutov-Cassegrain type telescope for observing the ETM surface. 
 \subsection{Focuser}
 A focuser, which is made by Moonlight, is used for the automatic focus control. 
 We connect focuser between telescope and camera. The model number is XXXXX.
-\subsection{View window}
-The flange type of the view port is ICF203. We remodeled the blank flange of ICF 203 made by Cosmotech. Figure~\ref{fig:Camera_window} shows the drawing of the view port. We employ the G-135 o-ring for vacuum sealing. 
+The picture of focuser is show in Fig.~\ref{fig:ML_focus}.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Camera.eps}
-\caption{.} 
+\includegraphics[width=8cm]{Figures/ML_focus.eps}
+\caption{Moon light focuser.}
+\label{fig:ML_focus} 
+\end{center}
+\end{figure}
+
+
+\subsection{View window}
+The flange type of the view port is ICF203. We remodeled the blank flange of ICF 203 made by Cosmotech. Figure~\ref{fig:Camera_window} shows the drawing of the view port. We employ the G-135 o-ring for vacuum sealing. 
+We also simulated the deformation of window surface using Ansys. The parameter of the simulation is listed in Table.XXX.
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/Camera.eps}
+\caption{Mirror and Telephoto camera(Tcam). We place the Tcam on the structure. The hight of the table is XXXX mm. The image of ETM is referred by two mirrors. One mirror is mounted in vacuums. Another is placed at outside of chamber. The specification of mirrors are listed in Table.XXX.} 
 \label{fig:Camera} 
 \end{center}
 \end{figure}
+ \begin{table}
+\caption{Specification of Mirrors in periscope.}
+\label{tab:Periscope_mirror_spec}
+\centering
+\begin{tabular}{cccccc}
+\toprule
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Size [mm]}   & \tabhead{Incident angle}& \tabhead{Polarization}  \\
+\midrule
+M-Tcam-1 &&  $\phi150$  &45deg& \\
+M-Tcam-2 &&  $100 \times 80$  && \\
+\bottomrule\\
+\end{tabular}
+\end{table}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Figures/Camera_view_window.eps}
-\caption{.} 
+\caption{Window design. We employ the AR coated fused silica window.} 
 \label{fig:Camera_window} 
 \end{center}
 \end{figure}
 \subsection{Mirror}
 We place the mirror in the EXA/EYA chamber. The mirror size is $100 \times 80 mm$, which is mounted on the aluminum holder and optical mount. The mirror is made by Thorlab.The reflectance of the mirror is shown in Fig XXXX.
 \subsection{Illuminator}
+To illuminate the mirror surface for taking picture, we place the illuminator
+
 %----------------------------------------------------------------------------------------
+\section{MEDM}
+\begin{figure}
+\begin{center}
+\includegraphics[width=8cm]{Figures/MEDM.eps}
+\caption{.}
+\label{fig:MEDM} 
+\end{center}
+\end{figure}
 
 \section{Summary}
+There is a need for future demonstration to better under standing how accurate measurement can we do.
+Im particular, we should test the improved performance of high power laser, and  BPS.
+Overall, our optimized instrumental design make the essential role of systematic error understanding for KARA and other experiment.
+The strengths of one design are high power laser, symmetrical optical desgn, and BPS.
+These technology make the understand character of IFO easier.
+Finally, we show that this novel techniques is a promising tools to generate significant GW data.
