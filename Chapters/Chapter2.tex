@@ -52,10 +52,30 @@ s(f)=\frac{1}{M \omega^2},
 \end{equation}
 where $\omega$ is the angular frequency of test mass.
 
-%% Following documents will be written by T.Yokozawa in 26th February
-%% plot of frequency vs displacement 
-Using the KAGRA Photon calibrator, we estimated the frequency dependence of maximum displacement 
-in case of using full laser power to one frequency. Figure.~\ref{fig:kagrap_pcal_displacement} is the result.
+Using the KAGRA Photon calibrator parameters, which are listed in Table~\ref{tab:KAGRA_spec}, we estimated the frequency dependence of maximum displacement 
+in case of using full laser power to one frequency. 
+Figure.~\ref{fig:kagra_pcal_displacement} is the result.
+In this calculation, we assume the 25$\%$ of total laser power can use for mirror displacement, 
+1/2 is caused by injecting waveform plus-minus, 
+and remaining 1/2 is caused by pessimistic investigation of 
+transmitter module optical efficiency(98.5$\%$ in LIGO) and
+AOM diffraction efficiency(96$\%$ in LIGO).
+The maximum displacement for each frequency can be written by 
+\begin{equation}
+3.7 \times 10^{-11}/f^2 {\rm   [m]}
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/pcal_disp.eps}
+\caption{Frequency dependence of maximum displacement by KAGRA Pcal. 
+Assumption 1: Using total laser power to one frequency.
+Assumption 2: pessimistic estimation of transmitter module optical efficiency and 
+AOM diffraction efficiency (total 50$\%$). }
+\label{fig:kagra_pcal_displacement} 
+\end{center}
+\end{figure}
+
  
 %----------------------------------------------------------------------------------------
 
@@ -147,7 +167,34 @@ approximately equal.
 
 
 \subsection{Hardware injection test}
-
+Hardware injection test is one of the important end-to-end test which 
+inject various waveforms to end test mass.
+To analyze the hardware injection test data, we perform 
+detector performance, data acquisition system, calibration system, 
+data transfer system, data analysis pipeline.
+We can obtain the waveforms with detector response, so 
+various information will be obtained through hardware injection test.
+\begin{itemize}
+\item test of calibration system\\
+We can test the strain signal calibration accuracy of 
+sign, amplitude, phase and timing.
+\item check of analysis tools\\
+To inject the gravitational wave signals such as inspiral signal from 
+compact binary coalescence, we can check the analysis tools/pipeline 
+and systematic error due to calibration accuracy.
+\item injection of complex signals\\
+To inject complex signals such as supernovae waveform, Cosmic string waveform, ringdown waveform, 
+we can judge that complex signals can observe correctly or not. 
+If we understood that there are un-observable signal, we can consider the update of observation scenario or
+calibration system.
+\item blind injection\\
+\end{itemize}
+When we apply hardware injection test, it will be better to inject signal without DARM control loop.
+The reasons are (i) limited by the fluctuation of feedback signals (ii) uncertainty of actuation efficiency
+(iii) uncertainty of higher frequency injection 
+(We don't know higher frequency injection by actuator works well or not.)
+Photon calibrator is also powerful tool for hardware injection test.
+To measure the laser power and to check the performance of AOM, we achieved the accurate hardware injection test.
 
 \subsection{Photon pressure actuator}
 
