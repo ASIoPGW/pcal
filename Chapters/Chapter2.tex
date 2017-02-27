@@ -44,25 +44,182 @@ during the cooling down phase.
 
 The absolute displacement is described as
 \begin{equation}
-dx=\frac{P \cos{\theta}}{c} s(f) \left( 1+\frac{I}{M}\vec{a}\cdot \vec{b}\right), \label{eq:dx}
+dx=\frac{2 P \cos{\theta}}{c} s(f) \left( 1+\frac{I}{M}\vec{a}\cdot \vec{b}\right), \label{eq:dx}
 \end{equation}
 where $P$ is an absolute power of the laser, $c$ is the speed of light, $\theta$  is an incident angle of the laser, $I$ and $M$ are moment of inertia and mass of test mass, $\vec{a}$ and $\vec{b}$ is position vector of photon calibrator lasers and interferometer laser. Then, $s(f)$ is transfer function of the test masses. We simulated the transfer function of test mass as shown in Fig. XXX. We assumed the masses, shapes and Young's modules of the each pendulum mass and fiber as shown in Fig.XXX. According to transfer function, we can regard the motion of high frequency as free mass due to higher than the natural frequency. Therefore, we are able to assume as follows:
 \begin{equation}
 s(f)=\frac{1}{M \omega^2},
 \end{equation}
 where $\omega$ is the angular frequency of test mass.
+
+Using the KAGRA Photon calibrator parameters, which are listed in Table~\ref{tab:KAGRA_spec}, we estimated the frequency dependence of maximum displacement 
+in case of using full laser power to one frequency. 
+Figure.~\ref{fig:kagra_pcal_displacement} is the result.
+In this calculation, we assume the 25$\%$ of total laser power can use for mirror displacement, 
+1/2 is caused by injecting waveform plus-minus, 
+and remaining 1/2 is caused by pessimistic investigation of 
+transmitter module optical efficiency(98.5$\%$ in LIGO) and
+AOM diffraction efficiency(96$\%$ in LIGO).
+The maximum displacement for each frequency can be written by 
+\begin{equation}
+3.7 \times 10^{-11}/f^2 {\rm   [m]}
+\end{equation}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/pcal_disp.eps}
+\caption{Frequency dependence of maximum displacement by KAGRA Pcal. 
+Assumption 1: Using total laser power to one frequency.
+Assumption 2: pessimistic estimation of transmitter module optical efficiency and 
+AOM diffraction efficiency (total 50$\%$). }
+\label{fig:kagra_pcal_displacement} 
+\end{center}
+\end{figure}
+
  
 %----------------------------------------------------------------------------------------
 
 \section{Purpose of photon calibrator}
-\subsection{Interferometer Calibration}
+\subsection{Interferometer Calibration}\label{sec:darm_calib}
+
+One of the main calibration method to reconstruct $\Delta L_{\rm ext}$, differenctial arm length (DARM), 
+uses the combination of obtained error signal($d_{\rm err}$) and feedback signal($d_{\rm ctrl}$) 
+with considering the slow temporal variations in 
+aLIGO~\cite{LIGO-CAL,Tuyenbayev}.
+%\footnote{The detail document is https://arxiv.org/pdf/1608.05134.pdf}. 
+In this document, we assume the LIGO DARM control system which is shown in Figure~\ref{fig:L_DARM_control_loop}
+({\bf Ask experts how to control in bKAGRA, especially Actuator part}). 
+\begin{figure}
+\begin{center}
+%\includegraphics[width=8cm]{Figures/L_DARM_control_loop.eps}
+\includegraphics[width=10cm]{Figures/DARM_loop_and_CAL.eps}
+%\caption{Schematic diagram of the LIGO DARM control loop.}
+\caption{Schematic diagram of the real-time interferometer differential 
+arm (DARM) control loop and calibration pipeline adopted 
+from~\cite{LIGO-CAL,Tuyenbayev}.}
+\label{fig:L_DARM_control_loop} 
+\end{center}
+\end{figure}
+This servo is described in term of 
+(i) sensing function, $C(f,t)$ 
+(ii) digital filters, $D(f)$ 
+(iii)actuation function, $A(f,t)$, 
+and $G(f,t) = C(f,t)D(f)A(f,t)$ is the DARM open loop transfer function  
+
+The sensing function$C(f,t)$ can be written in
+\begin{equation}
+C(f,t) = \frac{\kappa_{\rm C}(t)}{1+if/f_{\rm C}(t)}Q(f) \equiv P(f,t) Q(f).
+\end{equation}
+$Q(f)$ is the time-independent part of the sensing function, which includes
+photodetector response,
+electronic response
+and signal delay caused by light traveling time of interferometer arm.
+$P(f,t)$ is the time-dependent part of the sensing function, which includes
+optical gain sale factor, $\kappa_{\rm C}(t)$ and coupled-cavity response.
+Coupled-cavity response is approximated by a single pole ($f_{\rm C}(t)$).
+
+The actuation function$A(f,t)$ can be written in
+\begin{equation}
+A(f,t) = \kappa_{\rm PU}(t)(A_{\rm P,0}(f)+A_{\rm U,0}(f)) + \kappa_{\rm T}(t) A_{\rm T,0}(f).
+\end{equation}
+$A_{\rm P,0}(f)$, $A_{\rm U,0}(f)$ and $A_{\rm T,0}(f)$ are models of the actuation function 
+of the penultimate, upper-intermediate and the test mass stage 
+when both $\kappa_{\rm PU}(t_0)$ and $\kappa_{\rm T}(t_0)$ are set to 1.
+
+To monitor those four time variation parameters, 
+$\kappa_{\rm C}(t)$, $f_{\rm C}(t)$, $\kappa_{\rm PU}(t)$ and $\kappa_{\rm T}(t)$, 
+we need to inject modulated excitations into the DARM loop.
+Also, to measure the $\kappa_{\rm C}(t)$ individually form $\kappa_{\rm PU}(t)$ and $\kappa_{\rm T}(t)$,
+we need additional system to inject modulated excitations to ETM.
+Photon calibrator is powerful tool for this purpose.
+So, we should inject following four modulated excitations;
+(i) two modulated excitations using a photon calibrator system ($x_{\rm pcal1}$ and $x_{\rm pcal2}$)
+(ii) one modulated excitations into the overall DARM actuation ($x_{\rm ctrl}$)
+(iii) one modulated excitations into the test mass stage actuation ($x_{\rm T}$).
+The responses in $d_{\rm err}$ at time $t=t'$ for each modulated excitations can be written by
+\begin{eqnarray}
+d_{\rm err, t'}(f_{\rm pcal1}) &=& \frac{C(f_{\rm pcal1},t')}{1+G(f_{\rm pcal1},t')} x_{\rm pcal1} \\
+d_{\rm err, t'}(f_{\rm pcal2}) &=& \frac{C(f_{\rm pcal2},t')}{1+G(f_{\rm pcal2},t')} x_{\rm pcal2} \\
+d_{\rm err, t'}(f_{\rm ctrl}) &=& \frac{-A(f_{\rm ctrl}, t')C(f_{\rm ctrl},t')}{1+G(f_{\rm ctrl},t')} x_{\rm ctrl}  \\
+d_{\rm err, t'}(f_{\rm T}) &=& \frac{\kappa_{\rm T}(t') A_{\rm T,0}(f_{\rm T}, t')C(f_{\rm T},t')}{1+G(f_{\rm T},t')} x_{\rm T} 
+\end{eqnarray}
+Using $x_{\rm pcal1}$ and $x_{\rm T}$ modulated excitations, $\kappa_{\rm T}(t')$ is obtained.
+Using $x_{\rm ctrl}$ modulated excitation and $\kappa_{\rm T}(t')$, $\kappa_{\rm PU}(t')$ and $A(f,t')$ are obtained. 
+Using $x_{\rm pcal2}$ modulated excitation and $A(f,t')$, $\kappa_{\rm C}(t')$ and $f_{\rm C}(t')$ are obtained.
+
+Finally, $\Delta L_{\rm ext}(t)$ is reconstructed by following equation:
+\begin{eqnarray}
+\Delta L_{\rm ext}(t) = &[{\cal P}(f_{\rm C}(t))/ \kappa_{\rm C}(t) * {\cal Q} ]^{-1} * d_{\rm err}(t) \nonumber \\
+& + [ 
+  \kappa_{\rm PU}(t)({\cal A}_{\rm P,0} + {\cal A}_{\rm U,0}) + \kappa_{\rm T}(t) {\cal A}_{\rm T,0}  
+]
+* d_{\rm ctrl}(t),
+\end{eqnarray}
+where ${\cal P}(f_{\rm C}(t))$, ${\cal Q}$, ${\cal A_{\rm P,0}}$, ${\cal A_{\rm U,0}}$ and ${\cal A_{\rm T,0}}$  
+are the time-domain filters created from $P(f,t)$, $Q(f)$, $A_{\rm P,0}(f)$, $A_{\rm U,0}(f)$ and $A_{\rm T,0}(f)$, and $*$ denotes convolution.
+
+To reduced the systematic uncertainty, frequencies of modulated excitations are selected with following conditions:
+(1) Frequencies of $x_{\rm pcal1}$ , $x_{\rm ctrl}$ and $x_{\rm T}$ should be in a narrow frequency band.
+(2) Such frequency band should be selected where the magnitude of the transfer functions of 
+the combined penultimate and upper intermediate mass stage and the test mass stage are 
+approximately equal.
+(3) Frequencies of $x_{\rm pcal2}$ should be near the coupled-cavity pole frequency.
+
+
 \subsection{Hardware injection test}
+Hardware injection test is one of the important end-to-end test which 
+inject various waveforms to end test mass.
+To analyze the hardware injection test data, we perform 
+detector performance, data acquisition system, calibration system, 
+data transfer system, data analysis pipeline.
+We can obtain the waveforms with detector response, so 
+various information will be obtained through hardware injection test.
+\begin{itemize}
+\item test of calibration system\\
+We can test the strain signal calibration accuracy of 
+sign, amplitude, phase and timing.
+\item check of analysis tools\\
+To inject the gravitational wave signals such as inspiral signal from 
+compact binary coalescence, we can check the analysis tools/pipeline 
+and systematic error due to calibration accuracy.
+\item injection of complex signals\\
+To inject complex signals such as supernovae waveform, Cosmic string waveform, ringdown waveform, 
+we can judge that complex signals can observe correctly or not. 
+If we understood that there are un-observable signal, we can consider the update of observation scenario or
+calibration system.
+\item blind injection\\
+\end{itemize}
+When we apply hardware injection test, it will be better to inject signal without DARM control loop.
+The reasons are (i) limited by the fluctuation of feedback signals (ii) uncertainty of actuation efficiency
+(iii) uncertainty of higher frequency injection 
+(We don't know higher frequency injection by actuator works well or not.)
+Photon calibrator is also powerful tool for hardware injection test.
+To measure the laser power and to check the performance of AOM, we achieved the accurate hardware injection test.
+
 \subsection{Photon pressure actuator}
 
 %----------------------------------------------------------------------------------------
 
 \section{Calibration line of KAGRA}
+As discussed in Section.~\ref{sec:darm_calib}, we need at least four calibration line with following characteristics:
+(i) two pcal calibration line ($x_{\rm pcal1,2}$) with $\sim$35Hz and $\sim$330Hz. 
+(ii) one calibration line to feedback signal ($x_{\rm ctrl}$) with $\sim$35Hz.
+(iii) one calibration line to end test mass ($x_{\rm T}$) with $\sim$35Hz
+More, to monitor the calibration accuracy and open loop transfer function,
+it will be better to add at least four calibration line (two for pcal and two for feedback), 
+frequencies will be $\sim$100Hz and $\sim$1000Hz.
 
+The total laser power with photon calibration can be calculated by following equation
+\begin{equation}
+P_{\rm laser} = \sum_i \sqrt{2} L S_n(f_i) \frac{1}{4} \frac{{\rm SNR}(f_i)}{\sqrt{T}} \frac{Mc(2 \pi f_i)^2}{2 \cos \theta}, 
+\end{equation}
+where $f_i$ is i-th calibration line frequency, 
+$L$ is arm length, $S_n(f_i)$ is sensitivity curve[strain(rms)/rHz], 
+$\sqrt{2}$ corresponds to conversion coefficients from peak value to effective value, 
+SNR($f_i$) is required signal to noise ratio, 
+$T_i$ is length of fourier transform, 
+$M$ is mirror mass,
+$c$ is light speed.
 
 %----------------------------------------------------------------------------------------
 
