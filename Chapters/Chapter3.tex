@@ -12,7 +12,7 @@
 The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed 36 m away from the end test mass (ETM). We push the mirror surface with the modulated photon pressure directly. Figure \ref{fig:Pcal_overview} shows the layout of the KAGRA photon calibrator. The photon calibrator consists of transmitter module (Tx module), receiver module (Rx module), periscope, and telephoto camera module (TCam module). We place the 20~W laser in Tx module, whose frequency is 1047 nm. The 1064 nm laser is not used due to avoid the coupling with main beams.   The power of the laser is modulated by the optical follower servo (OFS). We split the beams in Tx module for pushing the drum head node points of the ETM due to elastic deformation. We transfer the beams to the ETM though the periscope. All the periscope structures are placed into the EXA/EYA chamber. The beam is received by the Rx module. We place a 6 inches integrating sphere for the accurate measurement of the laser power and two quadrant photo detector (QPD) for the beam position monitor. We also measure the beam position on the ETM surface using the telephoto camera (TCam). The Tcam is consists of the astronomical telescope, focuser, and high resolution digital camera. The specification summary of KAGRA photon calibrator is shown in Tabel.~\ref{tab:KAGRA_spec}. Details of instruments are described following section.
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/Pcal_overview.eps}
+\includegraphics[width=15cm]{Figures/Pcal_overview.eps}
 \caption{KAGRA photon calibrator. The calibration system is placed around the EXA/EYA chamber. We mount the optical lever and optical baffle as well. The EXA/EYA chamber is placed at 36 m far from the ETM.} 
 \label{fig:Pcal_overview} 
 \end{center}
@@ -42,7 +42,7 @@ The Tx module is placed at the side of the EXA/EYA chamber. Figure~\ref{fig:Tx_m
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Tx_module_overview.eps}
+\includegraphics[width=12cm]{Figures/Tx_module_overview.eps}
 \caption{Transmitter module of KAGRA Pcal. We place the optical table on the triangle table. The readout and control device is housed into the legs of table.} 
 \label{fig:Tx_module_overview} 
 \end{center}
@@ -149,9 +149,18 @@ Waveplate Diameter & 12.7 & mm & \\
 \subsection{Polarizer}
 We place two polarizers to define the polarization angle accurately. This is because that the power of the laser is modulated by acousto-optic modulator (AOM) whose performance strongly depend on the incident polarization angle.
 One polarizer is placed behind HWP. Another one is placed after AOM. The Polarizer is made by Karl-Lambrecht. We purchased TFPC12-1047 that is optimized at 1047 nm. 
+
 \subsection{Lens}
-We have dane a mode matching simulation using JamMt. We assumed laser beam to be gaussian distribution. We have to place the focus of the laser at the AOM. Thus, we decide the optimal position and focal length of the 1 inch lens (L1), where the assumed beam waist of the fiber laser and AOM are 0.5 mm and XXX mm, respectively. 
-Furthermore, we place two lenses for placing the focus at the surface of the ETM. We employ the combination of 1 inch negative lens and 2 inch positive lens. The Gaussian beam can describe the following relation:
+We have dane a mode matching simulation using JamMt. We assumed laser beam to be gaussian distribution. We have to place the focus of the laser at the AOM. Thus, we decide the optimal position and focal length of the 1 inch lens (L1), where the assumed beam waist of the fiber laser and AOM are 0.25 mm (L-Tx-1), respectively. The estimated beam spot size is shown in Fig.~\ref{fig:Mode_L1}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=14cm]{Figures/Mode_L1.eps}
+\caption{Result of mode matching calculation from faber laser to AOM focus using JamMt.} 
+\label{fig:Mode_L1} 
+\end{center}
+\end{figure}
+
+Furthermore, we place two lenses for placing the focus at the surface of the ETM. We employ the combination of 1 inch negative lens (L-Tx-3) and 2 inch positive lens(L-Tx-4). The Gaussian beam can describe the following relation:
 \begin{equation}
 w(z)=\omega_0\sqrt{1+\left( \frac{\lambda z}{\pi \omega_0^2}\right)^2},
 \end{equation}
@@ -159,8 +168,25 @@ where $\lambda$ is wavelength of the laser, $w_0$ is beam waist, $z$ is directio
 \begin{equation}
 \left .\frac{dw(z)}{dw_0} \right|_{z=36~\mathrm{m}}=0.
 \end{equation}
-The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig.XXXX.
-We also place the lens at the front of the photo detector for the OFS. The parameters of the simulation results are listed in Table.~\ref{tab:Tx_lenses_spec}. All lenses are made by CVI laser optics. The material of lenses are fused silica. The AR coating is placed at both surface. 
+The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig.~\ref{fig:Mode_L3L4}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=14cm]{Figures/Mode_L3L4.eps}
+\caption{Result of mode matching calculation from the AOM to the ETM focus using JamMt..} 
+\label{fig:Mode_L3L4} 
+\end{center}
+\end{figure}
+
+We also place the 1 inch lens (L-Tx-2) at the front of the photo detector for the OFS.
+The calculated spot size is shown in Fig.~\ref{fig:Mode_L2}. The beam width at the detector is $110~\mathrm{\mu m}$
+\begin{figure}
+\begin{center}
+\includegraphics[width=14cm]{Figures/Mode_L2.eps}
+\caption{Result of mode matching calculation from AOM to photo detector focus using JamMt..} 
+\label{fig:Mode_L2} 
+\end{center}
+\end{figure}
+ The parameters of the simulation results are listed in Table.~\ref{tab:Tx_lenses_spec}. All lenses are made by CVI laser optics. The material of lenses are fused silica. The AR coating is placed at both surface. 
 
 \begin{table}
 \caption{Specification of lenses.}
@@ -168,19 +194,35 @@ We also place the lens at the front of the photo detector for the OFS. The param
 \centering
 \begin{tabular}{ ccccc}
 \toprule
-\tabhead{Lens number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Focal length}  \\
+\tabhead{Lens number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Focal length (mm)} &\tabhead{z (mm)}   \\
 \midrule
-L-Tx-1 &(CVI laser optics) & 25.4 & \\
-L-Tx-2 &(CVI laser optics)  & 25.4& \\
-L-Tx-3 &(CVI laser optics)  & 25.4 & \\
-L-Tx-4 & (CVI laser optics) & 50.8 & \\
+L-Tx-1 &PLCX250UV (CVI laser optics) & 25.4 & 286.457&507\\
+L-Tx-2 &PLCX250UV (CVI laser optics)  & 25.4& 286.457 &914\\
+L-Tx-3 &PLCC100UV (CVI laser optics)  & 25.4 & -114.538 &1080\\
+L-Tx-4 & PLCX300UV (CVI laser optics) & 50.8 & 343.615 &1323\\
 \bottomrule\\
 \end{tabular}
 \end{table}
 
 \subsection{Mirror}
-We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Fig.~\ref{fig:Tx_module_layout}.
+We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made by CVI laser optics. They place the HR coating on the surface of mirror. On the other hand, we use the HR coating on the fused silica disc of 2 inch in diameter. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectances of the mirrors with 22.5 deg and 45deg are shown in Fig.~\ref{fig:225_HR} and Fig.~\ref{fig:45_HR}.
  The reflectance of HR coating depends on the incident angle and the polarization angle. We labeled mirrors as shown in Fig.~\ref{fig:Tx_module_layout}. The specification of mirrors are summarized in Table.~\ref{tab:Tx_mirror_spec}. All mirror is aligned with optical mirror mount made by Newport company.
+ 
+ \begin{figure}
+\begin{center}
+\includegraphics[width=14cm]{Figures/225_HR.eps}
+\caption{The simulated HR coating on the fused silica mirror for 22.5 degree of incident angle.  } 
+\label{fig:225_HR} 
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=14cm]{Figures/45_HR.eps}
+\caption{The simulated HR coating on the fused silica mirror for 45 degree of incident angle. } 
+\label{fig:45_HR} 
+\end{center}
+\end{figure}
  
  \begin{table}
 \caption{Specification of Mirrors.}
@@ -190,20 +232,20 @@ We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}  & \tabhead{Incident angle}  & \tabhead{Polarization}  \\
 \midrule
-M-Tx-1 &  &25.4  &45& \\
-M-Tx-2 &  &25.4  &45& \\
-M-Tx-3 &  &25.4   &45& \\
-M-Tx-4 &  &25.4   &45& \\
-M-Tx-5 &  & 25.4  &45& \\
-M-Tx-6 &  &25.4  &48& \\
-M-Tx-7 &  &25.4   &42& \\
-M-Tx-8 &  &25.4   &45& \\
-M-Tx-9 &  &25.4   &45& \\
-M-Tx-10 &  & 50.8&45& \\
-M-Tx-u-1 &  &  50.8&45& \\
-M-Tx-tu2 &  &  50.8&24.1& \\
-M-Tx-l-1 &  & 50.8 &45& \\
-M-Tx-l-2 &  & 50.8 &20.9& \\
+M-Tx-1 &Y1S-1025-45 (CVI) &25.4  &45& \\
+M-Tx-2 &Y1S-1025-45 (CVI)  &25.4  &45& \\
+M-Tx-3 &Y1S-1025-45 (CVI) &25.4   &45& \\
+M-Tx-4 &Y1S-1025-45 (CVI)  &25.4   &45& \\
+M-Tx-5 &Y1S-1025-45 (CVI)  & 25.4  &45& \\
+M-Tx-6 &Y1S-1025-45 (CVI)&25.4  &55& \\
+M-Tx-7 &Y1S-1025-45 (CVI) &25.4   &35& \\
+M-Tx-8 &Y1S-1025-45 (CVI)&25.4   &45& \\
+M-Tx-9 &Y1S-1025-45 (CVI)  &25.4   &45& \\
+M-Tx-10 &Sigma-koki  & 50.8&45& \\
+M-Tx-u-1 &Sigma-koki  &  50.8&45& \\
+M-Tx-tu2 & Sigma-koki &  50.8&24.1& \\
+M-Tx-l-1 & Sigma-koki & 50.8 &45& \\
+M-Tx-l-2 &Sigma-koki  & 50.8 &20.9& \\
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -253,7 +295,7 @@ where A is actuation factor, S is sensing factor, K is percentage of light power
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/OFS_diagram.eps}
-\caption{r.} 
+\caption{Diagram of feedback loop for OFS.} 
 \label{fig:OFS_diagram} 
 \end{center}
 \end{figure}
@@ -288,7 +330,7 @@ According to Table.~\ref{tab:OFS_Gain}, we regard $G_2KS$ as unity. Therefore, w
 We require the band width of OFS mach larger than operation frequency. We employ the AOM as modulator, which made by ISOMET. The part number of AOM is M1080-T80L-M. The specification is shown in Table~\ref{tab:AOM_spec} 
 
 \begin{table}
-\caption{Specification of InGaAs detector.}
+\caption{Specification of AOM.}
 \label{tab:AOM_spec}
 \centering
 \begin{tabular}{ ccccc}
@@ -373,11 +415,20 @@ We newly improved the electrical circuit of the photon detector as shown in Fig.
 \end{figure}
 
 \subsection{Beam sampler}
+Diffractive beam samplers are used to monitor high power lasers where optical losses and wavefront distortions of the transmitted beam need to be kept to a minimum.
+In most applications, most of the incident light must to continue forward, "unaffected," in the "zero order" while a small amount of the beam is diffracted into a higher order, providing a "sample" of the beam.
+By directing the sampled light in the higher order(s) onto a detector, it is possible to monitor, in real time, not only the power levels of a laser beam, but also its profile.
+
+The operational principle is quite straightforward. From a collimated input beam, the output beams exit from Diffractive Optical Element (DOE) with a separation angle that is determined during the design of the DOE based on the customer's system requirements (See figure 1 below). The separation angle is highly accurate (<0.03mR error). The beams' separation is designed for far-field so that as the beams continue to propagate after DOE, they become more well-defined.
+Normally, the customer wishes to get well-focused spots at a certain distance. This is easily achieved by the addition of a simple focusing lens after the DOE, whose BFL (back focal length) determines the working distance (WD) to the multi-spot focal plane.
+A Diffractive Beam Sampler allows the high power beam (zero order) to propagate along the optical axis, but produces two side beams with low energy. These two sample beams are located to the left and right of the main beam (-1 and +1 orders), and are characterized by a given separation angle between them and by a given sample power ratio requested by customer. The separation angle is twice the sampled angle.
+
 \subsection{2 inch integrating sphere}
 The 2 inches integrating sphere is used for absolute power measurement of the laser. We receive the separated laser beam at beam sampler. We mount the photo detector at the port of integrating sphere. The integrating sphere is made by the Lab sphere. The inner surface of the integrating sphere in mounted on the Spectralon.
 
 \subsection{Structure}
-The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. We simulated the resonance frequency using ANSYS. Then, we fix the foot of stracture. The estimated frequency is XXX Hz.
+The breadboard is placed on the support structure. The material of this structure is SUS 306. This structure can be housed electrical devices, such as driver of the fiber laser, electronics of optical follower servo, and driver of laser shutter. 
+%We simulated the resonance frequency using ANSYS. Then, we fix the foot of stracture. The estimated frequency is XXX Hz.
 
 %----------------------------------------------------------------------------------------
 \section{Periscope}
@@ -414,7 +465,15 @@ We consider the beam separation and focus position of the optical system for the
 \end{figure}
 
 \subsection{View window}
-One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure XXX shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are 1.6 degree. We mounted the first periscope at the vacuum side of the window because we should avoid optical lever path. We set the incident angle of periscope mirror as 50 degrees.
+One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure~\ref{fig:Pcal_win_0} shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are 1.6 degree. We mounted the first periscope at the vacuum side of the window because we should avoid optical lever path. We set the incident angle of periscope mirror as 50 degrees.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/Pcal_win_0.eps}
+\caption{Simulated reflection of AR coating of one surface. We optimize the coating frequency at 1047 nm. This plot is provided by Sigma-koki.} 
+\label{fig:Pcal_win_0} 
+\end{center}
+\end{figure}
 
 \begin{figure}
 \begin{center}
@@ -425,34 +484,35 @@ One of the serious systematic errors are optical efficiency of the view port. Th
 \end{figure}
 
 The flange type of the view port is ICF152. We remodeled the blank flange of ICF 152 made by Cosmotech. Figure ~\ref{fig:Pcal_window} shows the drawing of the view port. We employ the G-85 o-ring for vacuum sealing. 
-We have simulated the deformation of window using ANSYS. The assumed Young's module, Poison ratio and density are listed in Table XXX. The deformation of the window center is $XXX~\mathrm{\mu m}$.
+We have simulated the deformation of window using ANSYS. The assumed Young's module, Poison ratio and density are listed in Table~\ref{tab:ANSYS_win}. The deformation of the window center is $0.85~\mathrm{\mu m}$.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Figures/Ansys_window.eps}
-\caption{.} 
+\caption{Simulated deformation of Pcal window. The center deformation is $0.85~\mathrm{\mu m}$.} 
 \label{fig:Ansys_window} 
 \end{center}
 \end{figure}
 
  \begin{table}
-\caption{Specification of Mirrors in Rx module.}
-\label{tab:Rx_mirror_spec}
+\caption{Simulation parameter for ANSYS}
+\label{tab:ANSYS_win}
 \centering
-\begin{tabular}{ cc}
+\begin{tabular}{ccc}
 \toprule
-\tabhead{Name} & \tabhead{Value}  \\
+\tabhead{Name} & \tabhead{Fused Silica} &\tabhead{SUS306}  \\
 \midrule
-Young's module & \\
-Poison ratio & \\
-Density & \\
+Young's module &73 Gpa &193 Gpa\\
+Poison ratio &0.17& 00.31\\
+Density &$2.201\mathrm{g/cm^3}$& $7.750 \mathrm{g/cm^3}$\\
 \bottomrule\\
 \end{tabular}
 \end{table}
 
 \subsection{Mirrors}
-We employ eight 3 inch mirrors. We place the HR coating on the polished fused silica disc. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Figure. XXXX.
- The reflectance of HR coating depends on the incident angle and the polarization angle. The specification of mirrors are summarized in Table.~\ref{tab:Periscope_mirror_spec}. All mirror is aligned with optical mirror mount made by XXXXXX.
+We employ eight 3 inch mirrors. We place the HR coating on the polished fused silica disc. The coating and polishing the fused silica is made by Sigma-koki corporation. The reflectance of the mirror is shown in Fig.~\ref{fig:45_HR} and \ref{fig:225_HR}.
+ The reflectance of HR coating depends on the incident angle and the polarization angle. The specification of mirrors are summarized in Table.~\ref{tab:Periscope_mirror_spec}. 
+ %All mirror is aligned with optical mirror mount made by XXXXXX.
  \begin{table}
 \caption{Specification of Mirrors in periscope.}
 \label{tab:Periscope_mirror_spec}
@@ -488,7 +548,7 @@ To accomplish the purpose, we introduce QPD and  6 inch integrating sphere.
 The accuracy of beam position and absolute power are corresponding to the systematic errors. 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/Rx_module_layout.eps}
+\includegraphics[width=14cm]{Figures/Rx_module_layout.eps}
 \caption{Optical layout of receiver module. We mounted QPD for monitoring beam position drift. Total power of the laser is measured by the integrating sphere.} 
 \label{fig:Rx_module_layout} 
 \end{center}
@@ -497,7 +557,7 @@ The accuracy of beam position and absolute power are corresponding to the system
 The 6 inches integrating sphere is used for absolute power measurement of the laser. We receive the laser beam from two paths. To receive the power perfectly, we need a sufficiently large diameter hole of integrating sphere. We use for the 2 inch hole integrating sphere. We mounted the photo detector at the top of port. Details of the photo detector is explained in Sec.~\ref{PD}.
 
 \subsection{Mirror}
-We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as shown in Fig. XXXX. For two mirrors, we make the AR coating on the back surface to pick up the beams. The specification of the mirrors are listed in Table~\ref{tab:Rx_mirror_spec}.
+We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as shown in Fig.~\ref{fig:45_HR} and \ref{fig:225_HR}. For two mirrors, we make the AR coating on the back surface to pick up the beams. The specification of the mirrors are listed in Table~\ref{tab:Rx_mirror_spec}.
  \begin{table}
 \caption{Specification of Mirrors in Rx module.}
 \label{tab:Rx_mirror_spec}
@@ -534,9 +594,6 @@ Recommended Spot Size	&$\phi0.2$ - $0.5$ & mm &\\
 \end{tabular}
 \end{table}
 
-\subsection{Structure}
-The breadboard is placed on the support structure. The material of this structure is SUS 306. We simulated the resonance frequency using ANSYS. The estimated frequency is XXX Hz.
-
 %----------------------------------------------------------------------------------------
 
 \section{Camera module}
@@ -547,12 +604,12 @@ Purpose of using the high resolution camera, we have to measure the beam positio
 We employ the Maksutov-Cassegrain type telescope for observing the ETM surface. The diameter of the primary mirror is 127 mm and its focal length is 1500 mm ($f/12$). The telescope is manufactured by Sky-watcher company. The diameter of the telescope is limited by the that of the view window size. 
 \subsection{Focuser}
 A focuser, which is made by Moonlight, is used for the automatic focus control. 
-We connect focuser between telescope and camera. The model number is XXXXX.
+We connect focuser between telescope and camera. 
 The picture of focuser is show in Fig.~\ref{fig:ML_focus}.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/ML_focus.eps}
+\includegraphics[width=12cm]{Figures/ML_focus.eps}
 \caption{Moon light focuser.}
 \label{fig:ML_focus} 
 \end{center}
@@ -561,11 +618,11 @@ The picture of focuser is show in Fig.~\ref{fig:ML_focus}.
 
 \subsection{View window}
 The flange type of the view port is ICF203. We remodeled the blank flange of ICF 203 made by Cosmotech. Figure~\ref{fig:Camera_window} shows the drawing of the view port. We employ the G-135 o-ring for vacuum sealing. 
-We also simulated the deformation of window surface using Ansys. The parameter of the simulation is listed in Table.XXX.
+
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Figures/Camera.eps}
-\caption{Mirror and Telephoto camera(Tcam). We place the Tcam on the structure. The hight of the table is XXXX mm. The image of ETM is referred by two mirrors. One mirror is mounted in vacuums. Another is placed at outside of chamber. The specification of mirrors are listed in Table.XXX.} 
+\caption{Mirror and Telephoto camera(Tcam). We place the Tcam on the structure.The image of ETM is referred by two mirrors. One mirror is mounted in vacuums. Another is placed at outside of chamber. The specification of mirrors are listed in Table.~\ref{tab:Perisocope_mirror_spec}.} 
 \label{fig:Camera} 
 \end{center}
 \end{figure}
@@ -573,12 +630,12 @@ We also simulated the deformation of window surface using Ansys. The parameter o
 \caption{Specification of Mirrors in periscope.}
 \label{tab:Periscope_mirror_spec}
 \centering
-\begin{tabular}{cccccc}
+\begin{tabular}{cccc}
 \toprule
-\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Size [mm]}   & \tabhead{Incident angle}& \tabhead{Polarization}  \\
+\tabhead{Mirror number} & \tabhead{part number}& \tabhead{Size [mm]}   & \tabhead{Incident angle}  \\
 \midrule
-M-Tcam-1 &&  $\phi150$  &45deg& \\
-M-Tcam-2 &&  $100 \times 80$  && \\
+M-Tcam-1 &TFA-150C20-10 (Siguma-koki)&  $\phi150$  &45deg \\
+M-Tcam-2 &TFA-80100R15-10 (Sigma-koki)&  $100 \times 80$  &30 deg \\
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -591,16 +648,17 @@ M-Tcam-2 &&  $100 \times 80$  && \\
 \end{center}
 \end{figure}
 \subsection{Mirror}
-We place the mirror in the EXA/EYA chamber. The mirror size is $100 \times 80 mm$, which is mounted on the aluminum holder and optical mount. The mirror is made by Thorlab.The reflectance of the mirror is shown in Fig XXXX.
+We place the mirror in the EXA/EYA chamber. The mirror size is $100 \times 80~\mathrm{mm}$, which is mounted on the aluminum holder and optical mount. The mirror is made by Thorlab.The reflectance of the mirror is shown in Fig~\ref{fig:225_HR}.
 \subsection{Illuminator}
 To illuminate the mirror surface for taking picture, we place the illuminator
 
 %----------------------------------------------------------------------------------------
 \section{MEDM}
+All the system are controlled by Epics-MEDM. Figure~\ref{fig:MEDM} shows the prototype MEDM system for KAGRA Photon calibrator.
 \begin{figure}
 \begin{center}
-\includegraphics[width=8cm]{Figures/MEDM.eps}
-\caption{.}
+\includegraphics[width=12cm]{Figures/MEDM.eps}
+\caption{MEDM of KAGRA photon calibrator. The system is based on LIGO MEDM.We improve this system for BMS.}
 \label{fig:MEDM} 
 \end{center}
 \end{figure}
@@ -608,7 +666,7 @@ To illuminate the mirror surface for taking picture, we place the illuminator
 \section{Summary}
 There is a need for future demonstration to better under standing how accurate measurement can we do.
 Im particular, we should test the improved performance of high power laser, and  BPS.
-Overall, our optimized instrumental design make the essential role of systematic error understanding for KARA and other experiment.
+Overall, our optimized instrumental design make the essential role of systematic error understanding for KAGRA and other experiment.
 The strengths of one design are high power laser, symmetrical optical desgn, and BPS.
 These technology make the understand character of IFO easier.
 Finally, we show that this novel techniques is a promising tools to generate significant GW data.

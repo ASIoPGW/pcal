@@ -8,7 +8,7 @@ We are developing Beam position monitor (BPM) for accurate measurement of beam p
 Previous study in LIGO have achieved 0.3~\% of uncertainty by using Telephoto camera system.
 They place the telephoto camera at 8~m far from the ETM. On the other hand, That of KAGRA is 36 m where is 4.5 times larger. Therefore, one of the most difficult technologies of calibration is beam position measurement.
 
-We will demonstrate the system of BMS as  the new technology. The BMS system is consists of XXXX parts as shown in Fig.XXXX.
+We will demonstrate the system of BMS as  the new technology. The BMS system is consists of 3 parts as shown in Fig.XXXX.
 
 According to Eq.(\ref{eq:dx}), vector $\vec{a}$ and $\vec{b}$ corresponds to the rotation effect. $\vec{a}$ can be written as
 \begin{equation}
@@ -33,24 +33,44 @@ We will monitor the pollution of water due to cryo-pumping effect. The taken pic
 In second phase, we place the QPD and the pico motor. We will control the beam position using these components.
 \section{Operation}
 All the system is operated by MEDM system as shown in Fig.XXX.
+For monitoring the beam position, we use two pictures, which are with and without illuminator. We use the is Open Source Computer Vision Librarly (OpenCV) in python for image analysis, which is a library for open source computer vision developed and released by Intel.
 The operation strategy is listed as follows:
 \begin{enumerate}
  \item Take a picture with illuminator. We set the integration time to 30 sec.
- \item Estimate the origin of mirror coordinate using edge shape of the mirror.
+  \item Convert picture to gray scale.
+  \item Set the reasonable threshold to find a boundary of beams and edge of ETM. 
+   \item Mask the analysis region to separate the beam shape and ETM edge.
+ \item Estimate the origin of mirror coordinate by fitting of edge shape of the mirror.
  \item Turn off the illuminator and take picture with 30 sec integration time.
   \item Estimate the Pcal beam position and main interferometer position with no illumination picture.
-   \item Make a picture overplayed the coordinate of Pcal and origin as shown in Fig.XXXX.
+   \item Make a picture overplayed the coordinate of Pcal and origin as shown in Fig.~\ref{fig:Beam_mon}.
    \end{enumerate}
    \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/Beam_mon.eps}
-\caption{.} 
+\caption{Image of beam position monitor. We will over-plot the estimated beam position on the picture.} 
 \label{fig:Beam_mon} 
 \end{center}
 \end{figure}
 
 
-\section{Analysis}
+\section{Demonstration test}
+We tried the demonstration test using Telephoto camera with 150mm diameter mirror and dummy target.
+Figure XXX shows the test setup. We mount the target structure on the camera tripod. The size of target is $24 \times 24$~mm as shown in Fig XXX. The taken picture is shown in Fig XXX.
+We are trimming the target region as shown in Fig. XXX. The trimmed data is converted to gray scale. We set the threshold point at 228.
+Fig.~\ref{fig:Fiiting_terget} shows the datas over the threshold.
+We masked the data points as shown in Fig.~\ref{fig:Analysis_cam}.
+Finally, we have done a fitting and estimate the center point of the circle as shown in Table. XXXX.
+Then, we assumed the following equation:
+\begin{equation}
+y=\sqrt{r-(x-x_0)}+y_0.
+\end{equation} 
+The measured and expected parameters are consistent within 1 sigma error.
+Therefore, It imply that we can estimate the center point with 0.1 mm resolution.
+In the KAGRA, we use smaller telescope of 127mm diameter.
+We estimate the resolution when we use 127 mm telescope.
+The estimated resolution is $\times 150/127=$. It meet our requirement.
+
    \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/Fitting_target.eps}
@@ -60,7 +80,7 @@ The operation strategy is listed as follows:
 \end{figure}
    
 
-\section{Analysis}
+
    \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/Analysis_cam.eps}
@@ -68,7 +88,7 @@ The operation strategy is listed as follows:
 \label{fig:Analysis_cam} 
 \end{center}
 \end{figure}
-\section{Demonstration test}
+
 \section{Summary}
 
  
