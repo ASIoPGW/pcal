@@ -46,7 +46,10 @@ The absolute displacement is described as
 \begin{equation}
 dx=\frac{2 P \cos{\theta}}{c} s(f) \left( 1+\frac{I}{M}\vec{a}\cdot \vec{b}\right), \label{eq:dx}
 \end{equation}
-where $P$ is an absolute power of the laser, $c$ is the speed of light, $\theta$  is an incident angle of the laser, $I$ and $M$ are moment of inertia and mass of test mass, $\vec{a}$ and $\vec{b}$ is position vector of photon calibrator lasers and interferometer laser. Then, $s(f)$ is transfer function of the test masses. We simulated the transfer function of test mass as shown in Fig. XXX. We assumed the masses, shapes and Young's modules of the each pendulum mass and fiber as shown in Fig.XXX. According to transfer function, we can regard the motion of high frequency as free mass due to higher than the natural frequency. Therefore, we are able to assume as follows:
+where $P$ is an absolute power of the laser, $c$ is the speed of light, $\theta$  is an incident angle of the laser, $I$ and $M$ are moment of inertia and mass of test mass, $\vec{a}$ and $\vec{b}$ is position vector of photon calibrator lasers and interferometer laser. Then, $s(f)$ is transfer function of the test masses. 
+%We simulated the transfer function of test mass as shown in Fig. XXX. 
+We assumed the masses, shapes and Young's modules of the each pendulum mass and fiber. % as shown in Fig.XXX. 
+According to transfer function, we can regard the motion of high frequency as free mass due to higher than the natural frequency. Therefore, we are able to assume as follows:
 \begin{equation}
 s(f)=\frac{1}{M \omega^2},
 \end{equation}
@@ -87,8 +90,8 @@ uses the combination of obtained error signal($d_{\rm err}$) and feedback signal
 with considering the slow temporal variations in 
 aLIGO~\cite{LIGO-CAL,Tuyenbayev}.
 %\footnote{The detail document is https://arxiv.org/pdf/1608.05134.pdf}. 
-In this document, we assume the LIGO DARM control system which is shown in Figure~\ref{fig:L_DARM_control_loop}
-({\bf Ask experts how to control in bKAGRA, especially Actuator part}). 
+In this document, we assume the LIGO DARM control system which is shown in Figure~\ref{fig:L_DARM_control_loop}.
+%({\bf Ask experts how to control in bKAGRA, especially Actuator part}). 
 \begin{figure}
 \begin{center}
 %\includegraphics[width=8cm]{Figures/L_DARM_control_loop.eps}
@@ -201,8 +204,9 @@ To measure the laser power and to check the performance of AOM, we achieved the 
 %----------------------------------------------------------------------------------------
 
 \section{Calibration line of KAGRA}
-We will need one PCAL line as a standard candle for your DARM actuator, and 
-one line for each of the suspension stages that will be used for DARM 
+At least one PCAL calibration line is needed as a standard candle 
+for the DARM actuator calibration, and 
+another line for each of the suspension stages that will be used for DARM 
 actuation. In case of LIGO it has been made to do thus far with 1/2 
 as many lines as interferometer response parameters to intend to track, 
 because one can use the amplitude and phase for each line to obtain two 
