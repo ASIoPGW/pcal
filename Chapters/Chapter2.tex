@@ -205,8 +205,21 @@ As discussed in Section.~\ref{sec:darm_calib}, we need at least four calibration
 (i) two pcal calibration line ($x_{\rm pcal1,2}$) with $\sim$35Hz and $\sim$330Hz. 
 (ii) one calibration line to feedback signal ($x_{\rm ctrl}$) with $\sim$35Hz.
 (iii) one calibration line to end test mass ($x_{\rm T}$) with $\sim$35Hz
+More, to monitor the calibration accuracy and open loop transfer function,
+it will be better to add at least four calibration line (two for pcal and two for feedback), 
+frequencies will be $\sim$100Hz and $\sim$1000Hz.
 
-
+The total laser power with photon calibration can be calculated by following equation
+\begin{equation}
+P_{\rm laser} = \sum_i \sqrt{2} L S_n(f_i) \frac{1}{4} \frac{{\rm SNR}(f_i)}{\sqrt{T}} \frac{Mc(2 \pi f_i)^2}{2 \cos \theta}, 
+\end{equation}
+where $f_i$ is i-th calibration line frequency, 
+$L$ is arm length, $S_n(f_i)$ is sensitivity curve[strain(rms)/rHz], 
+$\sqrt{2}$ corresponds to conversion coefficients from peak value to effective value, 
+SNR($f_i$) is required signal to noise ratio, 
+$T_i$ is length of fourier transform, 
+$M$ is mirror mass,
+$c$ is light speed.
 
 %----------------------------------------------------------------------------------------
 
