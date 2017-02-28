@@ -2,68 +2,73 @@
 
 \chapter{Absolute power calibration} % Main chapter title
 \label{Chapter5} % For referencing the chapter elsewhere, use \ref{Chapter1} 
-\section{Introduction}
-\label{sec:intro}
-This section describes the in-situ calibration procedure of Photon Calibrator at each End station of KAGRA.
-
-\section{Theory of Operation}
-
-The Working Standard referred as WS  is an integrating sphere with InGaAs photo detector, which has been calibrated against LIGO Gold Standard (GS) in the lab at LHO. The LIGO Gold Standard is calibrated by NIST. 
-%SH Let's put KGS in Chapter 7
-%We also make the KAGRA Gold standard (KGS), which is calibrated in AIST.
-%SH Let's put KGS in Chapter 7
-KAGRA Working Standard (WSK) will be assembled at LHO and shipped to Japan 
-after transferring power standard respect to the LIGO GS. 
-We will use this working standard to calibrate the Transmitter Module Photo Detector (TxPD) and Receiver Module Photo detector (RxPD), which are inside the Transmitter module and Receiver module of Photon calibrator respectively. And we will crosscheck the KGS and LGS to estimate the uncertainty of different method.
-
-The following formula is used to obtain the calibration factor that will give the response of photodiodes in Photon calibrator modules in Watts/Volts:
-\
+This chapter describe the absolute power calibration procedure of KAGRA photon calibrator.
+The systematic error of the absolute power is most largest in LIGO.
+They measure the laser power with integrating sphere and InGaAs photodetector because displacement of mirror corresponds to laser power. 
+The absolute power injected to the ETM can be obtained as average of input power at Tx module and the output power at Rx module as follows:
 \begin{equation}
-\mathrm{TxPD} = \frac{\mathrm{TX}}{\mathrm{KWS}}*\frac{\mathrm{KWS}}{\mathrm{LGS}}*\mathrm{LGS}
+P=\frac{P_{TxPD}+P_{RxPD}}{2}=\frac{1+e}{2e}P_{RxPD},
 \end{equation}
+where $P_{TxPD}$ and $P_{RxPD}$ are the measured power of the transmitter module photo detector(TxPD) and the receiver module photodetector (RxPD), and $e=P_{TxPD}/P_{RxPD}$ is optical efficiency.
+Therefore, $P_{TxPD}$ and $P_{RxPD}$ limit the calibration accuracy of the absolute displacement of the mirror.
+To calibrate $P_{TxPD}$ and $P_{RxPD}$, we employ the working standard (WS) and the gold standard (GS). 
+
+The WS of KAGRA (WSK) is the combination of integrating sphere and InGaAs photo detector (see Fig.~\ref{fig:KWS}), which is calibrated against GS of LIGO (GSL) in LHO lab as calibrated by NIST. LIGO also make working standards for LHO and LLO as shown in Fig~\ref{fig:GS_WS}.
+The ratio of measured voltage of WS and GS detectors are obtained as
 \begin{equation}
-\mathrm{RxPD} = \frac{\mathrm{RX}}{\mathrm{KWS}}*\frac{\mathrm{KWS}}{\mathrm{LGS}}*\mathrm{LGS}
+\frac{V_{WSK}}{V_{GSL}}.
+\end{equation}
+We can calibrate the response of WS using GS through this equation.
+
+We will also use the WSK to calibrate the TxPD and RxPD, which are inside the Tx module and Rx module of Pcal, respectively. We will measure the ratio of voltage of TxPD and RxPD as follows
+\begin{equation}
+\frac{V_{TxPD}}{V_{KWS}}.
 \end{equation}
 
-\section{Instrument Settings}
-%\subsection{DAC Calibration:}
-%Provide a calibrated voltage using Martel voltage source and read it through the read back channel \verb|($(IFO):CAL-PCAL$(END)_WS_PD_INMON)|. One unit voltage should give back 1638 counts.  Provide 3 different voltages (0V, 1V and 2V) and record 15 seconds of data.  Record the values in the Calibration Log (T1500062).
+Finally,  we obtain the calibration power $P_{GW}$ using the power standard laser in NIST.
+Then, we can get the calibrated $P_{TxPD}$ and $P_{RxPD}$ as follows:
 
-%-------------------------------
-\section{End-station}
-%-------------------------------
-\section{Gold standard}
-%-------------------------------
-\section{Working standard}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=14cm]{Figures/GS_WS.eps}
-\caption{.} 
-\label{fig:GS_WS} 
-\end{center}
-\end{figure}
-
-\begin{figure}
-\begin{center}
-\includegraphics[width=14cm]{Figures/Toyama.eps}
-\caption{.} 
-\label{fig:Toyama} 
-\end{center}
-\end{figure}
+\begin{eqnarray}
+P_{TxPD}=\frac{V_{TxPD}}{V_{KWS}}\frac{V_{WSK}}{V_{GSL}}P_{GS}, \\
+P_{RxPD}=\frac{V_{RxPD}}{V_{KWS}}\frac{V_{WSK}}{V_{GSL}}P_{GS}
+\end{eqnarray}
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/KWS.eps}
-\caption{.} 
+\caption{KAGRA working standard.} 
 \label{fig:KWS} 
 \end{center}
 \end{figure}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/Keithlay.eps}
-\caption{.} 
-\label{fig:Keithlay} 
+\includegraphics[width=14cm]{Figures/GS_WS.eps}
+\caption{comparison with GS and WS.} 
+\label{fig:GS_WS} 
 \end{center}
 \end{figure}
+
+\section{Calibration in LHO}
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=14cm]{Figures/Keithlay.eps}
+%\caption{.} 
+%\label{fig:Keithlay} 
+%\end{center}
+%\end{figure}
+%-------------------------------
+\section{Calibration in End-station}
+%-------------------------------
+%\section{Gold standard}
+%-------------------------------
+%\section{Working standard}
+\section{Summary}
+
+
+
+
+
+
+
+
