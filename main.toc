@@ -17,9 +17,9 @@
 \contentsline {chapter}{\numberline {3}Instruments descriptions}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Layout of Photon calibrator}{11}{section.3.1}
 \contentsline {section}{\numberline {3.2}Transmitter (Tx) module}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Fiber laser}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Beam shutter}{14}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Half wave plate}{16}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.1}Fiber laser}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Beam shutter}{13}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Zeroth order half wave plate}{16}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Polarizer}{16}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Lens}{16}{subsection.3.2.5}
 \contentsline {subsection}{\numberline {3.2.6}Mirror}{17}{subsection.3.2.6}
@@ -35,20 +35,20 @@
 \contentsline {subsection}{\numberline {3.2.13}Structure}{25}{subsection.3.2.13}
 \contentsline {section}{\numberline {3.3}Periscope}{25}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Geometric optics}{25}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}View window}{27}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}View port window}{27}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Mirrors}{27}{subsection.3.3.3}
 \contentsline {section}{\numberline {3.4}Receiver module}{30}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}6inch Integrating sphere}{30}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Mirror}{30}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}QPD}{31}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Camera module}{31}{section.3.5}
+\contentsline {subsection}{\numberline {3.4.3}QPD}{30}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Camera module}{32}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Camera}{32}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Telescope}{32}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Focuser}{32}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}View window}{32}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Mirror}{35}{subsection.3.5.5}
-\contentsline {subsection}{\numberline {3.5.6}Illuminator}{35}{subsection.3.5.6}
-\contentsline {section}{\numberline {3.6}MEDM}{35}{section.3.6}
+\contentsline {subsection}{\numberline {3.5.4}View window}{33}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Mirror}{33}{subsection.3.5.5}
+\contentsline {subsection}{\numberline {3.5.6}Illuminator}{33}{subsection.3.5.6}
+\contentsline {section}{\numberline {3.6}MEDM}{33}{section.3.6}
 \contentsline {section}{\numberline {3.7}Summary}{35}{section.3.7}
 \contentsline {chapter}{\numberline {4}Elastic deformation}{37}{chapter.4}
 \contentsline {section}{\numberline {4.1}Finite Element Analysis}{37}{section.4.1}
@@ -68,5 +68,5 @@
 \contentsline {section}{\numberline {7.1}Two AOM}{47}{section.7.1}
 \contentsline {section}{\numberline {7.2}KAGRA Gold Standard}{47}{section.7.2}
 \contentsline {section}{\numberline {7.3}Crosscheck WS}{47}{section.7.3}
-\contentsline {chapter}{\numberline {8}Summary}{49}{chapter.8}
-\contentsline {chapter}{Bibliography}{51}{chapter*.59}
+\contentsline {chapter}{\numberline {8}Summary}{51}{chapter.8}
+\contentsline {chapter}{Bibliography}{53}{chapter*.61}

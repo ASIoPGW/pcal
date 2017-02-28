@@ -29,6 +29,7 @@ The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed
  Mirror material & Sapphire & Silica & Silica \\
  Mirror mass & 22.8 kg & 42 kg & 40 kg \\
   Mirror diameter & 220 mm & 340 mm & 350 mm \\
+    Mirror thickness & 150 mm & 200 mm & 200 mm \\
   Pcal laser power & 20 W & 2W & 3 W \\
   Laser frequency & 1047 nm & 1047 nm &1047 nm\\
   Incident angle& 0.72 deg & 8.75 deg &30 deg \\
@@ -122,8 +123,8 @@ Size & $98 \times 63.5 \times 36$ & mm & \\
 \end{tabular}
 \end{table}
 
-\subsection{Half wave plate}
-To control the polarization angle of incident beam, we employ the zero order half wave plate (HWP) made by the CVI laser optics. The model number of the HWP is QWPO-1047-05-2-R10 whose diameter are 12.7mm. The HWP is mounted on the rotation mount made by Thorlabs. The thick ness are optimized at 1047 nm.
+\subsection{Zeroth order half wave plate}
+To control the polarization angle of incident beam, we employ the zeroth order half wave plate (HWP) made by the CVI laser optics. The model number of the HWP is QWPO-1047-05-2-R10 whose diameter are 12.7mm. The HWP is mounted on the rotation mount made by Thorlabs. The thick ness are optimized at 1047 nm.
 The specification of the HWP is listed in Table~\ref{tab:HWP_spec}.
 \begin{table}
 \caption{Specification of HWP.}
@@ -151,7 +152,7 @@ We place two polarizers to define the polarization angle accurately. This is bec
 One polarizer is placed behind HWP. Another one is placed after AOM. The Polarizer is made by Karl-Lambrecht. We purchased TFPC12-1047 that is optimized at 1047 nm. 
 
 \subsection{Lens}
-We have dane a mode matching simulation using JamMt. We assumed laser beam to be gaussian distribution. We have to place the focus of the laser at the AOM. Thus, we decide the optimal position and focal length of the 1 inch lens (L1), where the assumed beam waist of the fiber laser and AOM are 0.25 mm (L-Tx-1), respectively. The estimated beam spot size is shown in Fig.~\ref{fig:Mode_L1}.
+We have dane a mode matching simulation using JamMt. We assumed laser beam to be gaussian distribution. We have to place the focus of the laser at the AOM. Thus, we decide the optimal position and focal length of the 1 inch lens (L1), where the assumed beam waist of the fiber laser and AOM are 0.25 mm (LTx1), respectively. The estimated beam spot size is shown in Fig.~\ref{fig:Mode_L1}.
 \begin{figure}
 \begin{center}
 \includegraphics[width=14cm]{Figures/Mode_L1.eps}
@@ -160,7 +161,7 @@ We have dane a mode matching simulation using JamMt. We assumed laser beam to be
 \end{center}
 \end{figure}
 
-Furthermore, we place two lenses for placing the focus at the surface of the ETM. We employ the combination of 1 inch negative lens (L-Tx-3) and 2 inch positive lens(L-Tx-4). The Gaussian beam can describe the following relation:
+Furthermore, we place two lenses for placing the focus at the surface of the ETM. We employ the combination of 1 inch negative lens (LTx3) and 2 inch positive lens(LTx4). The Gaussian beam can describe the following relation:
 \begin{equation}
 w(z)=\omega_0\sqrt{1+\left( \frac{\lambda z}{\pi \omega_0^2}\right)^2},
 \end{equation}
@@ -177,7 +178,7 @@ The estimated beam waist and beam spot is 3.5 mm and 5.5 mm as shown in Fig.~\re
 \end{center}
 \end{figure}
 
-We also place the 1 inch lens (L-Tx-2) at the front of the photo detector for the OFS.
+We also place the 1 inch lens (LTx2) at the front of the photo detector for the OFS.
 The calculated spot size is shown in Fig.~\ref{fig:Mode_L2}. The beam width at the detector is $110~\mathrm{\mu m}$
 \begin{figure}
 \begin{center}
@@ -196,10 +197,10 @@ The calculated spot size is shown in Fig.~\ref{fig:Mode_L2}. The beam width at t
 \toprule
 \tabhead{Lens number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Focal length (mm)} &\tabhead{z (mm)}   \\
 \midrule
-L-Tx-1 &PLCX250UV (CVI laser optics) & 25.4 & 286.457&507\\
-L-Tx-2 &PLCX250UV (CVI laser optics)  & 25.4& 286.457 &914\\
-L-Tx-3 &PLCC100UV (CVI laser optics)  & 25.4 & -114.538 &1080\\
-L-Tx-4 & PLCX300UV (CVI laser optics) & 50.8 & 343.615 &1323\\
+LTx1 &PLCX250UV (CVI laser optics) & 25.4 & 286.457&507\\
+LTx2 &PLCX250UV (CVI laser optics)  & 25.4& 286.457 &914\\
+LTx3 &PLCC100UV (CVI laser optics)  & 25.4 & -114.538 &1080\\
+LTx4 & PLCX300UV (CVI laser optics) & 50.8 & 343.615 &1323\\
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -232,20 +233,22 @@ We employ nine 1 inch mirrors and four 2 inch mirrors. The 1 inch mirror is made
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}  & \tabhead{Incident angle}  & \tabhead{Polarization}  \\
 \midrule
-M-Tx-1 &Y1S-1025-45 (CVI) &25.4  &45& \\
-M-Tx-2 &Y1S-1025-45 (CVI)  &25.4  &45& \\
-M-Tx-3 &Y1S-1025-45 (CVI) &25.4   &45& \\
-M-Tx-4 &Y1S-1025-45 (CVI)  &25.4   &45& \\
-M-Tx-5 &Y1S-1025-45 (CVI)  & 25.4  &45& \\
-M-Tx-6 &Y1S-1025-45 (CVI)&25.4  &55& \\
-M-Tx-7 &Y1S-1025-45 (CVI) &25.4   &35& \\
-M-Tx-8 &Y1S-1025-45 (CVI)&25.4   &45& \\
-M-Tx-9 &Y1S-1025-45 (CVI)  &25.4   &45& \\
-M-Tx-10 &Sigma-koki  & 50.8&45& \\
-M-Tx-u-1 &Sigma-koki  &  50.8&45& \\
-M-Tx-tu2 & Sigma-koki &  50.8&24.1& \\
-M-Tx-l-1 & Sigma-koki & 50.8 &45& \\
-M-Tx-l-2 &Sigma-koki  & 50.8 &20.9& \\
+MTx1 &Y1S-1025-45 (CVI) &25.4  &45& \\
+MTx2 &Y1S-1025-45 (CVI)  &25.4  &45& \\
+MTx3 &Y1S-1025-45 (CVI) &25.4   &45& \\
+MTx4 &Y1S-1025-45 (CVI)  &25.4   &45& \\
+MTx5 &Y1S-1025-45 (CVI)  & 25.4  &45& \\
+MTx6 &Y1S-1025-45 (CVI)&25.4  &55& \\
+MTx7 &Y1S-1025-45 (CVI) &25.4   &35& \\
+MTx8 &Y1S-1025-45 (CVI)&25.4   &45& \\
+MTx9 &Y1S-1025-45 (CVI)  &25.4   &45& \\
+MTx10 &Sigma-koki  & 50.8&45& \\
+MTxU1 &Sigma-koki  &  50.8&45& \\
+MTxL1 & Sigma-koki & 50.8 &45& \\
+MTxU2 &Sigma-koki  & 50.8 &20.9& \\
+MTxL2 & Sigma-koki &  50.8&24.1& \\
+
+
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -307,7 +310,7 @@ When we inject the signal, such as swept sine, gauss sine and hardware injection
  The estimation of the expected gain parameter is listed in Table.~\ref{tab:OFS_Gain}.
 
 \begin{table}
-\caption{Typical gein parameter of OFS. }
+\caption{Typical gain parameter of OFS. }
 \label{tab:OFS_Gain}
 \centering
 \begin{tabular}{ ccc}
@@ -363,7 +366,7 @@ Bragg angle&10.5&mrad&\@1064nm\\
 
 \subsection{Photo detector} \label{PD}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
-We developed the photo detector as shown in Fig.xxx. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
+We developed the photo detector as shown in Fig. XXXXX. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
 
 \subsubsection{Cover}
 The design of the cover is done by LIGO Pcal group. We make the detector cover in Academia Sinica, Institute of Physics. Figure~\ref{fig:detector_cover} shows the machined detector covers. We housed the circuit board into the cover coated by the black anodized aluminum (MIL-A-8625F, TYPEII,CLASS2). 
@@ -409,7 +412,7 @@ We newly improved the electrical circuit of the photon detector as shown in Fig.
 \begin{figure}
 \begin{center}
 \includegraphics[width=15cm]{Figures/Detector_circuit.eps}
-\caption{Circuit of photo detector designed by LIGO (D1300210).} 
+\caption{Circuit of photo detector designed by LIGO (D1300210-v4).} 
 \label{fig:Detector_circuit} 
 \end{center}
 \end{figure}
@@ -464,7 +467,7 @@ We consider the beam separation and focus position of the optical system for the
 \end{center}
 \end{figure}
 
-\subsection{View window}
+\subsection{View port window}
 One of the serious systematic errors are optical efficiency of the view port. Therefore, we have to reduce the reflectance of  view port at least 0.1 \%. We employ the fused silica optical window whose diameter and thickness are 100 mm and 0.5 inch. We place the AR coating on both surfaces of the window. Figure~\ref{fig:Pcal_win_0} shows the simulated transmittance of the view port. The effective diameter of the view port is about 3 inch. The incident angle of the beams are 1.6 degree. We mounted the first periscope at the vacuum side of the window because we should avoid optical lever path. We set the incident angle of periscope mirror as 50 degrees.
 
 \begin{figure}
@@ -521,18 +524,18 @@ We employ eight 3 inch mirrors. We place the HR coating on the polished fused si
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}   & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-M-P-1 &  Sigma-koki&76.2  &50.0deg& \\
-M-P-2 &  Sigma-koki &76.2  &50.0deg& \\
-M-P-u-3 &  Sigma-koki &76.2   &26.3deg& \\
-M-P-u4 &  Sigma-koki &76.2   &42.9deg& \\
-M-P-l-3 &  Sigma-koki & 76.2  &26.5deg& \\
-M-P-l-4 &  Sigma-koki &76.2  &41.7deg& \\
-M-P-u-5 &  Sigma-koki &76.2   &26.5deg& \\
-M-P-u6 & Sigma-koki &76.2   &41.7deg& \\
-M-P-l-5 & Sigma-koki & 76.2  &26.3deg& \\
-M-P-l-6 &Sigma-koki  &76.2  &42.9deg& \\
-M-P-7 &Sigma-koki  &76.2  &50.0deg& \\
-M-P-8 & Sigma-koki &76.2   &50.0deg& \\
+MP1 &  Sigma-koki&76.2  &50.0deg& \\
+MP2 &  Sigma-koki &76.2  &50.0deg& \\
+MPU3 &  Sigma-koki &76.2   &26.3deg& \\
+MPL3 &  Sigma-koki & 76.2  &26.5deg& \\
+MPU4 &  Sigma-koki &76.2   &42.9deg& \\
+MPL4 &  Sigma-koki &76.2  &41.7deg& \\
+MPU5 &  Sigma-koki &76.2   &26.5deg& \\
+MPL5 & Sigma-koki & 76.2  &26.3deg& \\
+MPU6 & Sigma-koki &76.2   &41.7deg& \\
+MPL6 &Sigma-koki  &76.2  &42.9deg& \\
+MP7 &Sigma-koki  &76.2  &50.0deg& \\
+MP8 & Sigma-koki &76.2   &50.0deg& \\
 
 \bottomrule\\
 \end{tabular}
@@ -566,10 +569,10 @@ We employ four 2 inch mirrors. We place the HR coating made by Siguma-koki as sh
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-M-Rx-1 &Sigma-koki&76.2 &21.7deg& \\
-M-Rx-2 &Sigma-koki &76.2 &23.3deg& \\
-M-Rx-3 &Sigma-koki&76.2   &21.7deg& \\
-M-Rx-4 &Sigma-koki&76.2     &23.3deg& \\
+MRx1 &Sigma-koki&76.2 &21.7deg& \\
+MRx2 &Sigma-koki &76.2 &23.3deg& \\
+MRx3 &Sigma-koki&76.2   &21.7deg& \\
+MRx4 &Sigma-koki&76.2     &23.3deg& \\
 \bottomrule\\
 \end{tabular}
 \end{table}
@@ -589,7 +592,7 @@ We will implement QPDs for beam position control, which made by Tholabs.  They a
 Substrate&	InGaAs&&\\
 Wavelength Range&1000 - 1700& nm&\\
 Detector Bandwidth	&150 &kHz& \\
-Recommended Spot Size	&$\phi0.2$ - $0.5$ & mm &\\
+Recommended Spot diameter	&$\phi0.2$ - $0.5$ & mm &\\
 \bottomrule\\
 \end{tabular}
 \end{table}

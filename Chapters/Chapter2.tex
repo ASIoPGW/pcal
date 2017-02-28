@@ -201,13 +201,46 @@ To measure the laser power and to check the performance of AOM, we achieved the 
 %----------------------------------------------------------------------------------------
 
 \section{Calibration line of KAGRA}
+We will need one PCAL line as a standard candle for your DARM actuator, and 
+one line for each of the suspension stages that will be used for DARM 
+actuation. In case of LIGO it has been made to do thus far with 1/2 
+as many lines as interferometer response parameters to intend to track, 
+because one can use the amplitude and phase for each line to obtain two 
+parameters. If we need to track the optical gain and coupled cavity pole 
+frequency (without Signal Recycling Cavity (SRC) detuning) then we will 
+need one line. If we need to track those as well as the SRC detuning spring 
+frequency and factor Q, we will need 2 lines.
+
+In the O1/O2 phase of LIGO, the interferometer configuration is made without 
+SRC detuning, or called Extreme Resonant Sideband Extraction (ERSE) 
+where the microscopic SRC phase is 90 deg.
+In this case, the optomechanical response can be approximated by a single pole,
+
+\begin{equation}
+C_{ERSE}(f) = \frac{g}{1+{\rm i}f/p}
+\end{equation}
+
+Where $f$ is the frequency, $g$ is the optical gain, and $p$ is coupled 
+cavity pole frequency, $p=f_a\times(1+r_s)/(1-r_s) =$ 365 Hz.
+In case of LIGO, $f_a=cT_i/8\pi L = $42 Hz and $r_s=\sqrt{1-T_s}$ 
+with transmissivity of Input Test Mass (ITM) and Signal Recycling Mirror (SRM) 
+as $T_i=0.014$ and $T_s=0.37$~\cite{OptSpringCal}.
+
+In case of KAGRA, the design values of $T_i=0.004$ and $T_s=0.1536$ give 
+the coupled cavity pole frequency $p=$ 387 Hz. One calibration line around 
+this frequency should be added to track the optical gain and the cavity pole 
+frequency.
+
 As discussed in Section.~\ref{sec:darm_calib}, we need at least four calibration line with following characteristics:
-(i) two pcal calibration line ($x_{\rm pcal1,2}$) with $\sim$35Hz and $\sim$330Hz. 
-(ii) one calibration line to feedback signal ($x_{\rm ctrl}$) with $\sim$35Hz.
-(iii) one calibration line to end test mass ($x_{\rm T}$) with $\sim$35Hz
+\begin{enumerate}
+\item two pcal calibration line ($x_{\rm pcal1,2}$) with $\sim$35Hz and $\sim$330Hz. 
+\item one calibration line to feedback signal ($x_{\rm ctrl}$) with $\sim$35Hz.
+\item one calibration line to end test mass ($x_{\rm T}$) with $\sim$35Hz.
+\end{enumerate}
 More, to monitor the calibration accuracy and open loop transfer function,
 it will be better to add at least four calibration line (two for pcal and two for feedback), 
 frequencies will be $\sim$100Hz and $\sim$1000Hz.
+
 
 The total laser power with photon calibration can be calculated by following equation
 \begin{equation}
