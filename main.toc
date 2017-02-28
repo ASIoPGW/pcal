@@ -27,9 +27,9 @@
 \contentsline {subsection}{\numberline {3.2.8}Beam splitter}{19}{subsection.3.2.8}
 \contentsline {subsection}{\numberline {3.2.9}Optical follower servo}{19}{subsection.3.2.9}
 \contentsline {subsection}{\numberline {3.2.10}Photo detector}{21}{subsection.3.2.10}
-\contentsline {subsubsection}{Cover}{23}{section*.25}
-\contentsline {subsubsection}{InGaAs detector}{23}{section*.27}
-\contentsline {subsubsection}{Electrical Circuit}{24}{section*.29}
+\contentsline {subsubsection}{Cover}{23}{section*.27}
+\contentsline {subsubsection}{InGaAs detector}{23}{section*.29}
+\contentsline {subsubsection}{Electrical Circuit}{24}{section*.31}
 \contentsline {subsection}{\numberline {3.2.11}Beam sampler}{24}{subsection.3.2.11}
 \contentsline {subsection}{\numberline {3.2.12}2 inch integrating sphere}{24}{subsection.3.2.12}
 \contentsline {subsection}{\numberline {3.2.13}Structure}{25}{subsection.3.2.13}
@@ -67,6 +67,8 @@
 \contentsline {chapter}{\numberline {7}Future upgrades}{47}{chapter.7}
 \contentsline {section}{\numberline {7.1}Two AOM}{47}{section.7.1}
 \contentsline {section}{\numberline {7.2}KAGRA Gold Standard}{47}{section.7.2}
-\contentsline {section}{\numberline {7.3}Crosscheck WS}{47}{section.7.3}
 \contentsline {chapter}{\numberline {8}Summary}{51}{chapter.8}
-\contentsline {chapter}{Bibliography}{53}{chapter*.61}
+\contentsline {chapter}{\numberline {A}Propagation of calibration errors into the estimated source parameters}{53}{appendix.A}
+\contentsline {section}{\numberline {A.1}DARM feedback loop modeling}{53}{section.A.1}
+\contentsline {section}{\numberline {A.2}Waveform modeling}{56}{section.A.2}
+\contentsline {chapter}{Bibliography}{59}{appendix*.69}
