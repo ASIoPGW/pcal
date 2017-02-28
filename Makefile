@@ -9,7 +9,8 @@ ${NAME}.pdf: ${NAME}.dvi
 ${NAME}.dvi: ${NAME}.tex\
              Chapters/Chapter1.tex Chapters/Chapter2.tex Chapters/Chapter3.tex\
              Chapters/Chapter4.tex Chapters/Chapter5.tex Chapters/Chapter6.tex\
-	     Chapters/Chapter7.tex Chapters/Chapter8.tex pcal.bib
+	     Chapters/Chapter7.tex Chapters/Chapter8.tex\
+             Appendices/AppendixA.tex pcal.bib
 	@latex  ${NAME}
 	@bibtex ${NAME}
 	@latex  ${NAME}
