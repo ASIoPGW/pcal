@@ -366,7 +366,15 @@ Bragg angle&10.5&mrad&\@1064nm\\
 
 \subsection{Photo detector} \label{PD}
 To detect the laser power, we use the photo detector. We place the photodetector at the working standard, Optical follower sarvo, Integrating sphere in Tx and Rx module.
-We developed the photo detector as shown in Fig. XXXXX. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
+We developed the photo detector as shown in Fig.~\ref{fig:KAGRA_detector}. We employ the InGaAs photo diode for absolute power measurement. The InGaAs diode is placed on the circuit board. The beam is collimated for the power detection reasonably. 
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/KAGRA_detector.eps}
+\caption{Developed photo detector for KAGRA Pcal.} 
+\label{fig:KAGRA_photodetector} 
+\end{center}
+\end{figure}
 
 \subsubsection{Cover}
 The design of the cover is done by LIGO Pcal group. We make the detector cover in Academia Sinica, Institute of Physics. Figure~\ref{fig:detector_cover} shows the machined detector covers. We housed the circuit board into the cover coated by the black anodized aluminum (MIL-A-8625F, TYPEII,CLASS2). 
@@ -374,7 +382,7 @@ The design of the cover is done by LIGO Pcal group. We make the detector cover i
 \begin{figure}
 \begin{center}
 \includegraphics[width=12cm]{Figures/Detector_cover.eps}
-\caption{Fabricated covor.} 
+\caption{Fabricated cover.} 
 \label{fig:detector_cover} 
 \end{center}
 \end{figure}
@@ -599,7 +607,7 @@ Recommended Spot diameter	&$\phi0.2$ - $0.5$ & mm &\\
 
 %----------------------------------------------------------------------------------------
 
-\section{Camera module}
+\section{Camera module} \label{Tcam_inst}
 The beam position of the ETM surface corresponds to systematic error of the rotation and elastic deformation. To measure the beam position, we measure the mirror surface directly. However, the KAGRA EXA/EYA chambers are placed at 36m far from the ETM. Thus, we employ the combination of telescope and high resolution camera, we call telephoto camera (TCam). We are tuning with focus point of the mirror using focuser.  We place the view port and mirror between the ETM and TCam. Figure~\ref{fig:Camera} shows the drawing of TCam unit.
 \subsection{Camera}
 Purpose of using the high resolution camera, we have to measure the beam position within 1 mm accuracy. Ww solved this problem by D810 digital camera made by Nikon. The D810 reprises the 36-megapixel resolution with $35.9 \times 24.0~\mathrm{mm}$ CMOS sensor. We remove the IR filter because the commercial camera is not sensitive to laser wavelength (1047 nm).
