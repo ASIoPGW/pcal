@@ -79,22 +79,7 @@ AOM diffraction efficiency (total 50$\%$). }
 \end{center}
 \end{figure}
 
-%------------------------------------------------%
-% Comment (T.Y.)
-%   - calib.システムチェックを行うにはインジェクション時の間違いが無い事を保証しなければならない。
-%       - インジェクション時に伝達関数を間違って再較正時にも伝達関数を間違った結果、
-%         それらが打ち消し合って正しいように見えてしまう事が多々ある。
-%   - インジェクションテスト自体はpcal無しでも可能だが以下の点がPcalの利点として上げられる
-%       - 間違いが無い事を保証する観点から
-%           - Injectionプロセスがシンプルなので間違いは少ないと期待出来る。
-%           - ループ外からのインジェクションなので間違い同士が打ち消し合う事も他手法と比べ少ないと期待。
-%             (AIフィルタ等共通の部分で間違いがあればこの限りではないが。)
-%       - Injection信号をfeedbackに加える必要がないので他手法に比べて(factor倍くらい?)
-%         大きな振幅でインジェクションしてもDACでサチら無いという利点はある。
-%   - 逆にpcalの課題として
-%       - 他手法と矛盾があった場合pcal自身の応答部分が正しい事をどのように保証するか
-%           - 複数の独立したアプローチでpcal自身の応答についてクロスチェック出来るのか？
-%------------------------------------------------%
+
 
  
 %----------------------------------------------------------------------------------------
@@ -210,11 +195,48 @@ calibration system.
 \item blind injection\\
 \end{itemize}
 When we apply hardware injection test, it will be better to inject signal without DARM control loop.
-The reasons are (i) limited by the fluctuation of feedback signals (ii) uncertainty of actuation efficiency
-(iii) uncertainty of higher frequency injection 
-(We don't know higher frequency injection by actuator works well or not.)
-Photon calibrator is also powerful tool for hardware injection test.
-To measure the laser power and to check the performance of AOM, we achieved the accurate hardware injection test.
+%The reasons are (i) limited by the fluctuation of feedback signals (ii) uncertainty of actuation efficiency
+%(iii) uncertainty of higher frequency injection 
+%(We don't know higher frequency injection by actuator works well or not.)
+%Photon calibrator is also powerful tool for hardware injection test.
+%To measure the laser power and to check the performance of AOM, we achieved the accurate hardware injection test.
+Ensure that there is no mistake (mis-understandings) in injection test 
+when we check and confirm the calibration system.
+In case of that there are two mis-understandings in injection test and calibration system, 
+we sometimes miss those mis-understandings due to counteract each other. 
+Reducing the systematic uncertainty especially for injection system is crucial.
+Injection test itself is possible without photon calibrator, 
+but there are advantages to have injection test with photon calibrator
+\begin{enumerate}
+\item Injection test by photon calibrator is simpler than other injection system\\
+\item We can injection test outside of DAEM main loop\\
+The counteract by two-misunderstanding can be reduced in photon calibrator.
+But we should take into account common system, such as DAC/AI filters\\
+\item Inject signals without considering feedback signals\\
+We don't need to consider the saturation in DAC, and the advantage of larger amplitude injection 
+because we don't take into account fluctuation of feedback signals.\\
+\item Dis-advantage of photon calibrator.\\
+We didn't establish the cross check of photon calibrator injection completely. 
+There are mis-matching between photon calibrator and other injection methods.
+Multiple approach of injection test will be important for the future calibration/injection tests. 
+\end{enumerate}
+
+%------------------------------------------------%
+% Comment (T.Y.)
+%   - calib.システムチェックを行うにはインジェクション時の間違いが無い事を保証しなければならない。
+%       - インジェクション時に伝達関数を間違って再較正時にも伝達関数を間違った結果、
+%         それらが打ち消し合って正しいように見えてしまう事が多々ある。
+%   - インジェクションテスト自体はpcal無しでも可能だが以下の点がPcalの利点として上げられる
+%       - 間違いが無い事を保証する観点から
+%           - Injectionプロセスがシンプルなので間違いは少ないと期待出来る。
+%           - ループ外からのインジェクションなので間違い同士が打ち消し合う事も他手法と比べ少ないと期待。
+%             (AIフィルタ等共通の部分で間違いがあればこの限りではないが。)
+%       - Injection信号をfeedbackに加える必要がないので他手法に比べて(factor倍くらい?)
+%         大きな振幅でインジェクションしてもDACでサチら無いという利点はある。
+%   - 逆にpcalの課題として
+%       - 他手法と矛盾があった場合pcal自身の応答部分が正しい事をどのように保証するか
+%           - 複数の独立したアプローチでpcal自身の応答についてクロスチェック出来るのか？
+%------------------------------------------------%
 
 \subsection{Photon pressure actuator}
 
