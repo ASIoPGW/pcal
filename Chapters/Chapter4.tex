@@ -1,5 +1,9 @@
 % Chapter 1
 
+%%%
+%\newcommand{\tabhead}[1]{\textbf{#1}}
+%%%
+
 \chapter{Elastic deformation} % Main chapter title
 
 \label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
@@ -20,28 +24,164 @@ calibrator~\cite{Daveloza,Karki}.
 In this chapter, the investigations to identify 
 the modes and their effect on the calibrator performance are discussed.  
 
+The modal analysis and simulation of the elastic deformation are made 
+by using Finite Element Analysis (FEA) software package, ANSYS~\cite{ANSYS}. 
+
 %\section{Free mass motion}
 %\section{Transfer function}
 %\section{Modal analysis}
 
-\section{Finite Element Analysis}
-The modal analysis and simulation of the elastic deformation are made 
-by using Finite Element Analysis (FEA) software package, ANSYS~\cite{ANSYS}.
-Figure~\ref{fig:elmodes} shows the summary of primary modes, drumhead and 
-butterfly modes compared between KAGRA and LIGO.
-Figure~\ref{fig:edeform} shows the displacement between the sensed motion 
-and rigid-body motion as a fundtion of frequency for optimally positiond 
-beams on KAGRA test mass, as well as $\pm$1 mm and $\pm$3 mm offsets from 
-the optimal positions.
+\section{Perfect Cylinder model}
+
+As the first step, we made the analysis in the perfect cylinder cases.
+Table.~\ref{tab:fem_cylpar} shows two sets of parameters similar to LIGO 
+and KAGRA end test mass (ETM). 
+It is known that two normal modes are most relevant in the calibration 
+frequency ranges. The mode resonant frequencies are also shown 
+in Table.~\ref{tab:fem_cylpar}.
+In the following analysis a cartesian coordiate system is defined 
+such that $x-y$ plane is on the circular surface of the cylinder 
+and $z$ axis is along the cylinder height.
+
+\begin{table}
+\caption{Simulation parameters and resuls for perfect cylinder studies.}
+\label{tab:fem_cylpar}
+\centering
+\begin{tabular}{ccc}
+\toprule
+\tabhead{Quantity} & \tabhead{LIGO}& \tabhead{KAGRA} \\
+\midrule
+Height [mm] & 200 & 110 \\
+Diameter [mm] & 340 & 150.2 \\
+Material & Silica & Sapphire \\
+Density [kg m$^{-3}$] & 2203 & 4000 \\
+Weight [kg] & 40.003 & 22.838 \\
+Poisson ratio & 0.1631 & 0.3 \\
+Young's modulus [GPa] & 72.6 & 400 \\
+Drumhead [Hz] & 8109 & 23798 \\
+Butterfly [Hz] & 5969 & 16058 \\
+Drumhead node [mm] & 109.0 & 65.3 \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\subsection{Modal displacement parameterization} \label{fem-dpar}
+
+The directional displacements in $z$ component, $\Delta z$ 
+can be well approximed by a simple polynomial function.
+For the drumhead mode, the displacement, $\Delta z_{DH}$ can be written as:
+\begin{equation}
+\label{eq:fem-drum}
+\Delta z_{DH} = p_0+p_1 r^2+p_2 r^4,
+\end{equation}
+where $r=\sqrt{x^2+y^2}$ and, $p_0$, $p_1$, $p_2$ are polynomial coefficients.
+Figure~\ref{fig:fem-dnode} shows the fitting of FEA results by 
+eq.~\ref{eq:fem-drum}. From this fitting we can estimate the 
+drumhead node position, $r_{DH}$ as the position where the $z$ displacement 
+is equalt to 0.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/elmodes.eps}
-\caption{Summary of drumhead and butterfly modes on KAGRA test mass 
-compared with LIGO test mass.~\cite{Daveloza}} 
-\label{fig:elmodes} 
+\includegraphics[width=7cm]{Figures/fem-nfit1.eps}
+\includegraphics[width=7cm]{Figures/fem-nfit2.eps}
+\caption{Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode 
+as a function of $r=\sqrt{x^2+y^2}$ for 
+LIGO case (left) and KAGRA case (right). 
+The fitted dnode positions, $r_{DH}$, where $\Delta z_{DH}=0$ 
+are 109.0~mm and 65.3~mm for LIGO and KAGRA cases, respectively.} 
+\label{fig:fem-dnode}
 \end{center}
 \end{figure}
+
+For the butterfly mode, the displacement, $\Delta z_{BF}$ 
+can be parameterized as:
+\begin{equation}
+\label{eq:fem-butt}
+\Delta z_{BF} = (p_1 r^2+p_2 r^4)\cos(2\theta+\theta_0),
+\end{equation}
+where $\theta=\arctan(y/x)$ and $\theta_0$ is a phase offset.
+Usually, we take $\theta_0=0$ and $\theta_0=\pi/4$ for 
+the two butterfly modes. The node lines where $\Delta z_{BF}=0$ lie 
+at $\theta=\$theta_0\pm\pi/2$. Fig.~\ref{fig:fem-bfly} shows 
+$\Delta z_{BF}=0$ as a function of $r$ and $\theta$ in the LIGO case.
+The KAGRA case show very similar behavior.
+The four node lines lie at $\theta=\pm1/4\pi$ and $\pm3/4\pi$.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/fem-bfly.eps}
+\caption{The $z$ displacement, $\Delta z_{BF}$, for the butterfly mode 
+as a function of $r=\sqrt{x^2+y^2}$ and $\theta=\arctan(y/x)$
+for the LIGO case. The KAGRA case show very similar behavior.
+The four node lines lie at $\theta=\pm1/4\pi$ and $\pm3/4\pi$.}
+\label{fig:fem-bfly}
+\end{center}
+\end{figure}
+
+\section{Real ETM model}
+
+The real structure of KAGRA ETM is not a perfect cylinder but 
+has two flat cuts at both sides with two ears used to hang the mirror. 
+Fig.~\ref{fig:fem-etm} 
+shows the CAD model of the KAGRA ETM. We made the similar FEA on the 
+realistic KAGRA ETM structure. The results are shown in 
+Table.~\ref{tab:fem-etm}, which are very close to those 
+obtained in the perfect cylinder model.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/fem-etm.eps}
+\caption{The CAD model of the KAGRA ETM with flat cuts and ears.}
+\label{fig:fem-etm}
+\end{center}
+\end{figure}
+
+%Figure~\ref{fig:elmodes} shows the summary of primary modes, drumhead and 
+%butterfly modes compared between KAGRA and LIGO.
+Figure~\ref{fig:edeform} shows the displacement between the sensed motion 
+and rigid-body motion as a function of frequency for optimally positioned 
+beams on KAGRA test mass, as well as $\pm$1 mm and $\pm$3 mm offsets from 
+the optimal positions.
+
+\begin{table}
+\caption{Simulation parameters and resuls for the KAGRA ETM CAD model.}
+\label{tab:fem-etm}
+\centering
+\begin{tabular}{ccc}
+\toprule
+\tabhead{Quantity} & \tabhead{Cylinder} & \tabhead{CAD model} \\
+\midrule
+Height [mm] & 110 & 110 \\
+Diameter [mm] & 150.2 & 150.2 \\
+Material & Sapphire & Sapphire \\
+Density [kg m$^{-3}$] & 4000 & 4000 \\
+Weight [kg] & 22.838 & 22.994 \\
+Poisson ratio & 0.3 & 0.3 \\
+Young's modulus [GPa] & 400 & 400 \\
+Drumhead [Hz] & 23798 & 23657 \\
+Butterfly [Hz] & 16058 & 15912 \\
+Drumhead node [mm] & 65.3 & 65.3 \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/fem-etm-dh.eps}
+\includegraphics[width=10cm]{Figures/fem-etm-bf.eps}
+\caption{Two modes for KAGRA ETM.}
+\label{fig:fem-etm-mode}
+\end{center}
+\end{figure}
+
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=14cm]{Figures/elmodes.eps}
+%\caption{Summary of drumhead and butterfly modes on KAGRA test mass 
+%compared with LIGO test mass.~\cite{Daveloza}} 
+%\label{fig:elmodes} 
+%\end{center}
+%\end{figure}
 
 \begin{figure}
 \begin{center}
