@@ -43,6 +43,17 @@ The KAGRA photon calibrator is placed around EXA/EYA chamber, which is installed
 \end{table}
 %----------------------------------------------------------------------------------------
 
+\section{Placement of modules}
+The modules are placed around the EXA/EYA chamber. We need to pay attention to conflict with other components, such as optical lever stage, walls of the tunnel, doors of the chamber and working space. Figure.~\ref{fig:stay_free} shows the stay free regions around the EXA/EYA chamber. We need to avoid the red regions for mounting modules. All the modules meet our requirements.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/Stay_free.eps}
+\caption{Stay free zone of the outside of the EXA/EYA chamber. All the components are placed at stay free region.} 
+\label{fig:Stay_free} 
+\end{center}
+\end{figure}
+
 \section{Transmitter (Tx) module}
 The Tx module is placed at the side of the EXA/EYA chamber. Figure~\ref{fig:Tx_module_overview} shows the view of Transmitter module. All the optical components are mounted on the $900~\mathrm{mm}\times  900~\mathrm{mm}$ breadboard (B9090L; Thorlabs)~\cite{Thorlabs}. The bread board is placed on the support structure. The electrical module for the control and readout are also hosed in the support structure. 
 
@@ -184,10 +195,10 @@ The estimated beam spot is 5.5 mm at Tx module with 3.5 mm beam waist as shown i
 \end{figure}
 
 We also place the 1 inch lens (LTx2) at the front of the photo detector for the OFS.
-The calculated spot size is shown in Fig.~\ref{fig:Mode_L2}. The beam width at the detector is $110~\mathrm{\mu m}$
+The calculated spot size is shown in Fig.~\ref{fig:Mode_L2}. The beam width at the detector is $1000~\mathrm{\mu m}$ which is less than clear aperture of detector (3~mm).
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/Mode_L1.eps}
+\includegraphics[width=14cm]{Figures/Mode_L2.eps}
 \caption{Result of mode matching calculation from AOM to photo detector focus using JamMt~\cite{JamMt}.} 
 \label{fig:Mode_L2} 
 \end{center}
@@ -203,7 +214,7 @@ The calculated spot size is shown in Fig.~\ref{fig:Mode_L2}. The beam width at t
 \tabhead{Lens number} & \tabhead{part number}& \tabhead{Diameter [mm]} & \tabhead{Focal length (mm)} &\tabhead{z (mm)} &\tabhead{$w_0$ (mm)}   \\
 \midrule
 LTx1 &PLCX250UV (CVI laser optics) & 25.4 & 286.457&507&0.25\\
-LTx2 &PLCX250UV (CVI laser optics)  & 25.4& 286.457 &507&0.25\\
+LTx2 &PLCX250UV (CVI laser optics)  & 25.4& 801.991 &768&1.00\\
 LTx3 &PLCC100UV (CVI laser optics)  & 25.4 & -114.538 &1080&-\\
 LTx4 & PLCX300UV (CVI laser optics) & 50.8 & 343.615 &1323&3.5\\
 \bottomrule\\
@@ -247,11 +258,11 @@ MTx6 &Y1S-1025-45 (CVI)&25.4  &55&S \\
 MTx7 &Y1S-1025-45 (CVI) &25.4   &35&S \\
 MTx8 &Y1S-1025-45 (CVI)&25.4   &45&S \\
 MTx9 &Y1S-1025-45 (CVI)  &25.4   &45&S \\
-MTx10 &Sigma-koki  & 50.8&45&S \\
-MTxU11 &Sigma-koki  &  50.8&45&S \\
-MTxL11 & Sigma-koki & 50.8 &45&S \\
-MTxU12 &Sigma-koki  & 50.8 &20.9&S \\
-MTxL12 & Sigma-koki &  50.8&24.1&S \\
+MTx10 &Sigma-koki(TBC)  & 50.8&45&S \\
+MTxU11 &Sigma-koki(TBC)  &  50.8&45&S \\
+MTxL11 & Sigma-koki(TBC) & 50.8 &45&S \\
+MTxU12 &Sigma-koki(TBC)  & 50.8 &20.9&S \\
+MTxL12 & Sigma-koki(TBC) &  50.8&24.1&S \\
 
 
 \bottomrule\\
@@ -537,18 +548,18 @@ We employ eight 3 inch mirrors. We place the HR coating on the polished fused si
 \toprule
 \tabhead{Mirror number} & \tabhead{part number}& \tabhead{Diameter [mm]}   & \tabhead{Incident angle}& \tabhead{Polarization}  \\
 \midrule
-MP1 &  Sigma-koki&76.2  &50.0deg&P \\
-MP2 &  Sigma-koki &76.2  &50.0deg&P\\
-MPU3 &  Sigma-koki &76.2   &26.3deg& \\
-MPL3 &  Sigma-koki & 76.2  &26.5deg& \\
-MPU4 &  Sigma-koki &76.2   &42.9deg& \\
-MPL4 &  Sigma-koki &76.2  &41.7deg& \\
-MPU5 &  Sigma-koki &76.2   &26.5deg& \\
-MPL5 & Sigma-koki & 76.2  &26.3deg& \\
-MPU6 & Sigma-koki &76.2   &41.7deg& \\
-MPL6 &Sigma-koki  &76.2  &42.9deg& \\
-MP7 &Sigma-koki  &76.2  &50.0deg&P \\
-MP8 & Sigma-koki &76.2   &50.0deg&P \\
+MP1 &  Sigma-koki(TBC)&76.2  &50.0deg&P \\
+MP2 &  Sigma-koki(TBC) &76.2  &50.0deg&P\\
+MPU3 &  Sigma-koki(TBC) &76.2   &26.3deg(TBD) &(TBD) \\
+MPL3 &  Sigma-koki(TBC) & 76.2  &26.5deg(TBD) & (TBD) \\
+MPU4 &  Sigma-koki (TBC)&76.2   &42.9deg(TBD) & (TBD) \\
+MPL4 &  Sigma-koki(TBC) &76.2  &41.7deg(TBD) & (TBD) \\
+MPU5 &  Sigma-koki (TBC)&76.2   &26.5deg(TBD) & (TBD) \\
+MPL5 & Sigma-koki (TBC)& 76.2  &26.3deg(TBD) & (TBD) \\
+MPU6 & Sigma-koki(TBC) &76.2   &41.7deg(TBD) & (TBD) \\
+MPL6 &Sigma-koki (TBC) &76.2  &42.9deg(TBD) & (TBD) \\
+MP7 &Sigma-koki (TBC) &76.2  &50.0deg&P \\
+MP8 & Sigma-koki (TBC)&76.2   &50.0deg&P \\
 
 \bottomrule\\
 \end{tabular}
