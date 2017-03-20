@@ -1,4 +1,4 @@
-% Chapter 1
+% Chapter 4
 
 %%%
 %\newcommand{\tabhead}[1]{\textbf{#1}}
@@ -39,7 +39,7 @@ and KAGRA end test mass (ETM).
 It is known that two normal modes are most relevant in the calibration 
 frequency ranges. The mode resonant frequencies are also shown 
 in Table.~\ref{tab:fem_cylpar}.
-In the following analysis a cartesian coordiate system is defined 
+In the following analysis a cartesian coordniate system is defined 
 such that $x-y$ plane is on the circular surface of the cylinder 
 and $z$ axis is along the cylinder height.
 
@@ -68,7 +68,7 @@ Drumhead node [mm] & 109.0 & 65.3 \\
 \subsection{Modal displacement parameterization} \label{fem-dpar}
 
 The directional displacements in $z$ component, $\Delta z$ 
-can be well approximed by a simple polynomial function.
+can be well approximated by a simple polynomial function.
 For the drumhead mode, the displacement, $\Delta z_{DH}$ can be written as:
 \begin{equation}
 \label{eq:fem-drum}
@@ -87,7 +87,7 @@ is equalt to 0.
 \caption{Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode 
 as a function of $r=\sqrt{x^2+y^2}$ for 
 LIGO case (left) and KAGRA case (right). 
-The fitted dnode positions, $r_{DH}$, where $\Delta z_{DH}=0$ 
+The fitted node positions, $r_{DH}$, where $\Delta z_{DH}=0$ 
 are 109.0~mm and 65.3~mm for LIGO and KAGRA cases, respectively.} 
 \label{fig:fem-dnode}
 \end{center}
@@ -118,6 +118,65 @@ The four node lines lie at $\theta=\pm1/4\pi$ and $\pm3/4\pi$.}
 \end{center}
 \end{figure}
 
+\subsection{Optimal beam position scan} \label{fem-opt}
+
+The total displacement sensed by the main interferometer beam can be 
+defined as the combination of the free-mass motion and the surface 
+displacement due to the elastic deformation. The free-mass motion, 
+$D_{\rm free}$ 
+can be written as
+\begin{equation}
+D_{\rm free}(f) = \frac{F}{m(2\pi f)^2},
+\end{equation}
+where $F$ is an external force, $m$ is the mirror mass and 
+$f$ is the frequency.
+
+In the coordinate system that $z$-axis is along the main interferometer 
+beam, the effective displacement sensed by the main interferometer beam,
+$D_{\rm eff}(f)$ is represented by the surface integral on the HR plane, 
+of the test mass, $\Omega_{\rm HR}$ :
+\begin{equation}
+D_{\rm eff}(f) = k_{I}\int_{\Omega_{\rm HR}}D(x,y;f)I(x,y){\rm d}x{\rm d}y,
+\end{equation}
+where $D(x,y;f)$ is the total displacement at $(x,y)$ for frequency $f$, 
+$I(x,y)$ is the interferometer beam profile, 
+\begin{equation}
+I(x,y) = \exp\left(-2\frac{x^2+y^2}{r_{\rm beam}^2}\right),
+\end{equation}
+and $k_{I}$ is a normalization constant defined as:
+\begin{equation}
+k_{I}\int_{\Omega_{\rm HR}}I(x,y){\rm d}x{\rm d}y = 1.
+\end{equation}
+
+In case of LIGO, $r_{\rm beam}=$ 62~mm and $k_{I}=$ 165.614~m$^{-2}$.
+In case of KAGRA, $r_{\rm beam}=$ 35.3~mm and $k_{I}=$ 2893.36~m$^{-2}$.
+Finally, the displacement ratio, $R(f)$ is defined as:
+\begin{equation}
+R(f) = \frac{D_{\rm eff}(f)}{D_{\rm free}(f)}.
+\end{equation}
+
+Fig.~\ref{fig:fem-optc} shows the displacement ratio, $R(f)$ 
+as a function fo frequency, $f$ for optimally positioned beams and 
+$\pm$2 mm and $\pm$4 mm offsets for LIGO case and KAGRA case. 
+The cross check of the simulation is also done with COMSOL~\cite{COMSOL} 
+and the agreement within 0.2~\% has been obtained.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/fem-lgc-opt.eps}
+\includegraphics[width=12cm]{Figures/fem-kgc-opt.eps}
+\caption{The ratio, $R(f)$ between the total sensed motion, 
+$D_{\rm eff(f)}$ and free mass motion, $D_{\rm free}(f)$ 
+as a function of frequency, $f$ for optimally positoned beams and 
+$\pm$2 mm and $\pm$4 mm offsets for (top) LIGO case and 
+(bottom) KAGRA case. The cross check of the simulation is also done 
+with COMSOL~\cite{COMSOL} and shown for optimum positoin and $\pm$2 mm 
+offsets with open cross symbols.} 
+\label{fig:fem-optc} 
+\end{center}
+\end{figure}
+
+
 \section{Real ETM model}
 
 The real structure of KAGRA ETM is not a perfect cylinder but 
@@ -127,6 +186,10 @@ shows the CAD model of the KAGRA ETM. We made the similar FEA on the
 realistic KAGRA ETM structure. The results are shown in 
 Table.~\ref{tab:fem-etm}, which are very close to those 
 obtained in the perfect cylinder model.
+Fig.~\label{fig:fem-etm-mode} shows the illustration of 
+$z$ displacements for two dominant modes, butterfly and drumhead modes.
+One particular effect in KAGRA ETM is that it is not symmetric in
+vertical direction along $y$-axis. Fig.~\ref{fig:fem-dnetm}
 
 \begin{figure}
 \begin{center}
@@ -138,8 +201,10 @@ obtained in the perfect cylinder model.
 
 %Figure~\ref{fig:elmodes} shows the summary of primary modes, drumhead and 
 %butterfly modes compared between KAGRA and LIGO.
-Figure~\ref{fig:edeform} shows the displacement between the sensed motion 
-and rigid-body motion as a function of frequency for optimally positioned 
+We made the same analysis as in Section~\ref{fem-opt} to obtain 
+the optimal position of beams. 
+Figure~\ref{fig:fem-opte} shows the displacement between the sensed motion 
+and free mass motion as a function of frequency for optimally positioned 
 beams on KAGRA test mass, as well as $\pm$1 mm and $\pm$3 mm offsets from 
 the optimal positions.
 
@@ -158,19 +223,30 @@ Density [kg m$^{-3}$] & 4000 & 4000 \\
 Weight [kg] & 22.838 & 22.994 \\
 Poisson ratio & 0.3 & 0.3 \\
 Young's modulus [GPa] & 400 & 400 \\
-Drumhead [Hz] & 23798 & 23657 \\
-Butterfly [Hz] & 16058 & 15912 \\
-Drumhead node [mm] & 65.3 & 65.3 \\
+Drumhead [Hz] & 23798 & 23658 \\
+Butterfly [Hz] & 16058 & 15913 \\
+Drumhead node [mm] & $\pm$65.3 & -66.5/62.7 \\
 \bottomrule\\
 \end{tabular}
 \end{table}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=10cm]{Figures/fem-etm-dh.eps}
-\includegraphics[width=10cm]{Figures/fem-etm-bf.eps}
-\caption{Two modes for KAGRA ETM.}
+\includegraphics[width=12cm]{Figures/kg-etm-dh.eps}
+\includegraphics[width=12cm]{Figures/kg-etm-bf.eps}
+\caption{Drumhead (top) and Butterfly (bottom) modes for KAGRA ETM.}
 \label{fig:fem-etm-mode}
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/fem-nfit3.eps}
+\caption{Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode 
+as a function of $y$ for KAGRA ETM model.
+The fitted dnode positions, $r_{DH}$, where $\Delta z_{DH}=0$ 
+are asymmetric and located at -66.5~mm and 62.7~mm.} 
+\label{fig:fem-dnetm}
 \end{center}
 \end{figure}
 
@@ -185,11 +261,14 @@ Drumhead node [mm] & 65.3 & 65.3 \\
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/edeform.eps}
+%\includegraphics[width=14cm]{Figures/edeform.eps}
+\includegraphics[width=12cm]{Figures/fem-kge-opt.eps}
 \caption{The ratio between the total sensed motion and rigid body motion 
-as a function of frequency for optimally positoned baams and 
-$\pm$1 mm and $\pm$3 mm offsets.} 
-\label{fig:edeform} 
+as a function of frequency for optimally positioned baams and 
+$\pm$1 mm and $\pm$3 mm offsets. The cross check of the simulation 
+is also done with COMSOL~\cite{COMSOL} and shown for optimum position 
+and $\pm$1 mm offsets with open cross symbols.} 
+\label{fig:fem-opte} 
 \end{center}
 \end{figure}
 
