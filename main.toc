@@ -1,0 +1,73 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\contentsline {chapter}{Abstract}{iii}{section*.1}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Calibration of a Gravitational-Wave detector}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Roles of the photon calibrator}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Schedule of KAGRA}{2}{section.1.3}
+\contentsline {section}{\numberline {1.4}Calibration requirements from data analysis}{3}{section.1.4}
+\contentsline {chapter}{\numberline {2}Photon calibrator}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Photon calibrator}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Purpose of photon calibrator}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Interferometer Calibration}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Hardware injection test}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Photon pressure actuator}{9}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Calibration line of KAGRA}{9}{section.2.3}
+\contentsline {chapter}{\numberline {3}Instruments descriptions}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Layout of Photon calibrator}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Placement of modules}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Transmitter (Tx) module}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Fiber laser}{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Beam shutter}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Zeroth order half wave plate}{16}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Polarizer}{16}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Lens}{16}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Mirror}{20}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}Optical mount with Pico-motor}{20}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Beam splitter}{22}{subsection.3.3.8}
+\contentsline {subsection}{\numberline {3.3.9}Optical follower servo}{22}{subsection.3.3.9}
+\contentsline {subsection}{\numberline {3.3.10}Photo detector}{23}{subsection.3.3.10}
+\contentsline {subsubsection}{Cover}{23}{section*.29}
+\contentsline {subsubsection}{InGaAs detector}{23}{section*.31}
+\contentsline {subsubsection}{Electrical Circuit}{26}{section*.33}
+\contentsline {subsection}{\numberline {3.3.11}Beam sampler}{26}{subsection.3.3.11}
+\contentsline {subsection}{\numberline {3.3.12}2 inch integrating sphere}{26}{subsection.3.3.12}
+\contentsline {subsection}{\numberline {3.3.13}Structure}{27}{subsection.3.3.13}
+\contentsline {section}{\numberline {3.4}Periscope}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Geometric optics}{27}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}View port window}{29}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Mirrors}{29}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Receiver module}{32}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}6 inch Integrating sphere}{32}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Mirror}{32}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}QPD}{33}{subsection.3.5.3}
+\contentsline {section}{\numberline {3.6}Camera module}{33}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Camera}{34}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Telescope}{34}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Focuser}{34}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}View port window}{34}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Mirror}{37}{subsection.3.6.5}
+\contentsline {subsection}{\numberline {3.6.6}Illuminator}{37}{subsection.3.6.6}
+\contentsline {section}{\numberline {3.7}MEDM}{37}{section.3.7}
+\contentsline {section}{\numberline {3.8}Summary}{37}{section.3.8}
+\contentsline {chapter}{\numberline {4}Elastic deformation}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Perfect Cylinder model}{39}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Modal displacement parameterization}{39}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Real ETM model}{41}{section.4.2}
+\contentsline {chapter}{\numberline {5}Absolute power calibration}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Calibration in LHO}{47}{section.5.1}
+\contentsline {section}{\numberline {5.2}Calibration in end-station}{47}{section.5.2}
+\contentsline {section}{\numberline {5.3}Summary}{49}{section.5.3}
+\contentsline {chapter}{\numberline {6}Beam position monitor}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Installation}{51}{section.6.1}
+\contentsline {section}{\numberline {6.2}Operation}{51}{section.6.2}
+\contentsline {section}{\numberline {6.3}Demonstration test}{52}{section.6.3}
+\contentsline {section}{\numberline {6.4}Summary}{54}{section.6.4}
+\contentsline {chapter}{\numberline {7}Future upgrades}{57}{chapter.7}
+\contentsline {section}{\numberline {7.1}Two AOM}{57}{section.7.1}
+\contentsline {section}{\numberline {7.2}KAGRA Gold Standard}{57}{section.7.2}
+\contentsline {chapter}{\numberline {8}Summary}{61}{chapter.8}
+\contentsline {chapter}{\numberline {A}Propagation of calibration errors into the estimated source parameters}{63}{appendix.A}
+\contentsline {section}{\numberline {A.1}DARM feedback loop modeling}{63}{section.A.1}
+\contentsline {section}{\numberline {A.2}Waveform modeling}{66}{section.A.2}
