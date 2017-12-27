@@ -1,97 +1,276 @@
-% Chapter 1
+% Chapter 4
 
-\chapter{Absolute power calibration} % Main chapter title
-\label{Chapter5} % For referencing the chapter elsewhere, use \ref{Chapter1} 
-This chapter describe the absolute power calibration procedure of KAGRA photon calibrator.
-The systematic error of the absolute power is most largest in LIGO.
-They measure the laser power with integrating sphere and InGaAs photodetector because displacement of mirror corresponds to laser power. 
-The absolute power injected to the ETM can be obtained as average of input power at Tx module and the output power at Rx module as follows:
+%%%
+%\newcommand{\tabhead}[1]{\textbf{#1}}
+%%%
+
+\chapter{Elastic deformation} % Main chapter title
+
+\label{Chapter4} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+%The elastic deformation is one of the serious systematic error in Photon calibrator.
+Calibration of interferometer above 1kHz is a challenging task. 
+It was demonstrated that the calibration forces applied by a centered 
+photon calibrator beam produce local elastic deformations which 
+significantly alter the sensed displacement of the 
+interferometer~\cite{Hild:2007,Goetz:2009}.
+Even stiff materials like fused silica or sapphire experience small 
+deformation when photon calibrator forces are applied. The response to 
+the excitation forces can be represented by the appropriate linear 
+combination of normal modes. These effects, however, can be mitigated 
+by applying at least two beams diametrically opposed and sufficiently 
+displaced from the center of the test mass. 
+This scheme was tested and implemented in LIGO and advanced LIGO photon 
+calibrator~\cite{Daveloza,Karki}.
+In this chapter, the investigations to identify 
+the modes and their effect on the calibrator performance are discussed.  
+
+The modal analysis and simulation of the elastic deformation are made 
+by using Finite Element Analysis (FEA) software package, ANSYS~\cite{ANSYS}. 
+
+%\section{Free mass motion}
+%\section{Transfer function}
+%\section{Modal analysis}
+
+\section{Perfect Cylinder model}
+
+As the first step, we made the analysis in the perfect cylinder cases.
+Table.~\ref{tab:fem_cylpar} shows two sets of parameters similar to LIGO 
+and KAGRA end test mass (ETM). 
+It is known that two normal modes are most relevant in the calibration 
+frequency ranges. The mode resonant frequencies are also shown 
+in Table.~\ref{tab:fem_cylpar}.
+In the following analysis a cartesian coordniate system is defined 
+such that $x-y$ plane is on the circular surface of the cylinder 
+and $z$ axis is along the cylinder height.
+
+\begin{table}
+\caption{Simulation parameters and resuls for perfect cylinder studies.}
+\label{tab:fem_cylpar}
+\centering
+\begin{tabular}{ccc}
+\toprule
+\tabhead{Quantity} & \tabhead{LIGO}& \tabhead{KAGRA} \\
+\midrule
+Diameter [mm] & 340 & 220 \\
+Thickness [mm] & 200 & 150.2 \\
+Material & Silica & Sapphire \\
+Density [kg m$^{-3}$] & 2203 & 4000 \\
+Weight [kg] & 40.003 & 22.838 \\
+Poisson ratio & 0.1631 & 0.3 \\
+Young's modulus [GPa] & 72.6 & 400 \\
+Drumhead [Hz] & 8109 & 23798 \\
+Butterfly [Hz] & 5969 & 16058 \\
+Drumhead node [mm] & 109.0 & 65.3 \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\subsection{Modal displacement parameterization} \label{fem-dpar}
+
+The directional displacements in $z$ component, $\Delta z$ 
+can be well approximated by a simple polynomial function.
+For the drumhead mode, the displacement, $\Delta z_{DH}$ can be written as:
 \begin{equation}
-P=\frac{P_{\mathrm{TxPD}}+P_{\mathrm{RxPD}}}{2}=\frac{1+e}{2e}P_{\mathrm{RxPD}},
+\label{eq:fem-drum}
+\Delta z_{DH} = p_0+p_1 r^2+p_2 r^4,
 \end{equation}
-where $P_{\mathrm{TxPD}}$ and $P_{\mathrm{RxPD}}$ are the measured power of the transmitter module photo detector(TxPD) and the receiver module photodetector (RxPD), and $e=P_{\mathrm{TxPD}}/P_{\mathrm{RxPD}}$ is optical efficiency.
-Therefore, $P_{\mathrm{TxPD}}$ and $P_{\mathrm{RxPD}}$ limit the calibration accuracy of the absolute displacement of the mirror.
-To calibrate $P_{\mathrm{TxPD}}$ and $P_{\mathrm{RxPD}}$, we employ the working standard (WS) and the gold standard (GS). 
+where $r=\sqrt{x^2+y^2}$ and, $p_0$, $p_1$, $p_2$ are polynomial coefficients.
+Figure~\ref{fig:fem-dnode} shows the fitting of FEA results by 
+eq.~\ref{eq:fem-drum}. From this fitting we can estimate the 
+drumhead node position, $r_{DH}$ as the position where the $z$ displacement 
+is equalt to 0.
 
-The WS of KAGRA (WSK) is the combination of integrating sphere and InGaAs photo detector (see Fig.~\ref{fig:KWS}), which is calibrated against GS of LIGO (GSL) in LHO lab as calibrated by NIST. LIGO also make working standards for LHO and LLO as shown in Fig~\ref{fig:GS_WS}.
-The ratio of measured voltage of WS and GS detectors are obtained as
+\begin{figure}
+\begin{center}
+\includegraphics[width=7cm]{Figures/fem-nfit1.eps}
+\includegraphics[width=7cm]{Figures/fem-nfit2.eps}
+\caption{Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode 
+as a function of $r=\sqrt{x^2+y^2}$ for 
+LIGO case (left) and KAGRA case (right). 
+The fitted node positions, $r_{DH}$, where $\Delta z_{DH}=0$ 
+are 109.0~mm and 65.3~mm for LIGO and KAGRA cases, respectively.} 
+\label{fig:fem-dnode}
+\end{center}
+\end{figure}
+
+For the butterfly mode, the displacement, $\Delta z_{BF}$ 
+can be parameterized as:
 \begin{equation}
-\frac{V_{\mathrm{WSK}}}{V_{\mathrm{GSL}}}.
+\label{eq:fem-butt}
+\Delta z_{BF} = (p_1 r^2+p_2 r^4)\cos(2\theta+\theta_0),
 \end{equation}
-We can calibrate the response of WS using GS through this equation.
+where $\theta=\arctan(y/x)$ and $\theta_0$ is a phase offset.
+Usually, we take $\theta_0=0$ and $\theta_0=\pi/4$ for 
+the two butterfly modes. The node lines where $\Delta z_{BF}=0$ lie 
+at $\theta=\$theta_0\pm\pi/2$. Fig.~\ref{fig:fem-bfly} shows 
+$\Delta z_{BF}=0$ as a function of $r$ and $\theta$ in the LIGO case.
+The KAGRA case show very similar behavior.
+The four node lines lie at $\theta=\pm1/4\pi$ and $\pm3/4\pi$.
 
-We will also use the WSK to calibrate the TxPD and RxPD, which are inside the Tx module and Rx module of Pcal, respectively. We will measure the ratio of voltage of TxPD and RxPD as follows
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/fem-bfly.eps}
+\caption{The $z$ displacement, $\Delta z_{BF}$, for the butterfly mode 
+as a function of $r=\sqrt{x^2+y^2}$ and $\theta=\arctan(y/x)$
+for the LIGO case. The KAGRA case show very similar behavior.
+The four node lines lie at $\theta=\pm1/4\pi$ and $\pm3/4\pi$.}
+\label{fig:fem-bfly}
+\end{center}
+\end{figure}
+
+\subsection{Optimal beam position scan} \label{fem-opt}
+
+The total displacement sensed by the main interferometer beam can be 
+defined as the combination of the free-mass motion and the surface 
+displacement due to the elastic deformation. The free-mass motion, 
+$D_{\rm free}$ 
+can be written as
 \begin{equation}
-\frac{V_{\mathrm{TxPD}}}{V_{\mathrm{KWS}}}.
+D_{\rm free}(f) = \frac{F}{m(2\pi f)^2},
+\end{equation}
+where $F$ is an external force, $m$ is the mirror mass and 
+$f$ is the frequency.
+
+In the coordinate system that $z$-axis is along the main interferometer 
+beam, the effective displacement sensed by the main interferometer beam,
+$D_{\rm eff}(f)$ is represented by the surface integral on the HR plane, 
+of the test mass, $\Omega_{\rm HR}$ :
+\begin{equation}
+D_{\rm eff}(f) = k_{I}\int_{\Omega_{\rm HR}}D(x,y;f)I(x,y){\rm d}x{\rm d}y,
+\end{equation}
+where $D(x,y;f)$ is the total displacement at $(x,y)$ for frequency $f$, 
+$I(x,y)$ is the interferometer beam profile, 
+\begin{equation}
+I(x,y) = \exp\left(-2\frac{x^2+y^2}{r_{\rm beam}^2}\right),
+\end{equation}
+and $k_{I}$ is a normalization constant defined as:
+\begin{equation}
+k_{I}\int_{\Omega_{\rm HR}}I(x,y){\rm d}x{\rm d}y = 1.
 \end{equation}
 
-Finally,  we obtain the calibration power $P_{\mathrm{GW}}$ using the power standard laser in NIST.
-Then, we can get the calibrated $P_{\mathrm{TxPD}}$ and $P_{\mathrm{RxPD}}$ as follows:
+In case of LIGO, $r_{\rm beam}=$ 62~mm and $k_{I}=$ 165.614~m$^{-2}$.
+In case of KAGRA, $r_{\rm beam}=$ 35.3~mm and $k_{I}=$ 2893.36~m$^{-2}$.
+Finally, the displacement ratio, $R(f)$ is defined as:
+\begin{equation}
+R(f) = \frac{D_{\rm eff}(f)}{D_{\rm free}(f)}.
+\end{equation}
 
-\begin{eqnarray}
-P_{\mathrm{TxPD}}=\frac{V_{\mathrm{TxPD}}}{V_{\mathrm{KWS}}}\frac{V_{\mathrm{WSK}}}{V_{\mathrm{GSL}}}P_{\mathrm{GS}}, \\
-P_{\mathrm{RxPD}}=\frac{V_{\mathrm{RxPD}}}{V_{\mathrm{KWS}}}\frac{V_{\mathrm{WSK}}}{V_{\mathrm{GSL}}}P_{\mathrm{GS}}
-\end{eqnarray}
+Fig.~\ref{fig:fem-optc} shows the displacement ratio, $R(f)$ 
+as a function fo frequency, $f$ for optimally positioned beams and 
+$\pm$2 mm and $\pm$4 mm offsets for LIGO case and KAGRA case. 
+The cross check of the simulation is also done with COMSOL~\cite{COMSOL} 
+and the agreement within 0.2~\% has been obtained.
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/KWS.eps}
-\caption{KAGRA working standard.} 
-\label{fig:KWS} 
+\includegraphics[width=12cm]{Figures/fem-lgc-opt.eps}
+\includegraphics[width=12cm]{Figures/fem-kgc-opt.eps}
+\caption{The ratio, $R(f)$ between the total sensed motion, 
+$D_{\rm eff(f)}$ and free mass motion, $D_{\rm free}(f)$ 
+as a function of frequency, $f$ for optimally positoned beams and 
+$\pm$2 mm and $\pm$4 mm offsets for (top) LIGO case and 
+(bottom) KAGRA case. The cross check of the simulation is also done 
+with COMSOL~\cite{COMSOL} and shown for optimum positoin and $\pm$2 mm 
+offsets with open cross symbols.} 
+\label{fig:fem-optc} 
+\end{center}
+\end{figure}
+
+
+\section{Real ETM model}
+
+The real structure of KAGRA ETM is not a perfect cylinder but 
+has two flat cuts at both sides with two ears used to hang the mirror. 
+Fig.~\ref{fig:fem-etm} 
+shows the CAD model of the KAGRA ETM. We made the similar FEA on the 
+realistic KAGRA ETM structure. The results are shown in 
+Table.~\ref{tab:fem-etm}, which are very close to those 
+obtained in the perfect cylinder model.
+Fig.~\label{fig:fem-etm-mode} shows the illustration of 
+$z$ displacements for two dominant modes, butterfly and drumhead modes.
+One particular effect in KAGRA ETM is that it is not symmetric in
+vertical direction along $y$-axis. Fig.~\ref{fig:fem-dnetm}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/fem-etm.eps}
+\caption{The CAD model of the KAGRA ETM with flat cuts and ears.}
+\label{fig:fem-etm}
+\end{center}
+\end{figure}
+
+%Figure~\ref{fig:elmodes} shows the summary of primary modes, drumhead and 
+%butterfly modes compared between KAGRA and LIGO.
+We made the same analysis as in Section~\ref{fem-opt} to obtain 
+the optimal position of beams. 
+Figure~\ref{fig:fem-opte} shows the displacement between the sensed motion 
+and free mass motion as a function of frequency for optimally positioned 
+beams on KAGRA test mass, as well as $\pm$1 mm and $\pm$3 mm offsets from 
+the optimal positions.
+
+\begin{table}
+\caption{Simulation parameters and resuls for the KAGRA ETM CAD model.}
+\label{tab:fem-etm}
+\centering
+\begin{tabular}{ccc}
+\toprule
+\tabhead{Quantity} & \tabhead{Cylinder} & \tabhead{CAD model} \\
+\midrule
+Diameter [mm] & 220 & 220 \\
+Thickness [mm] & 150.2 & 150.2 \\
+Material & Sapphire & Sapphire \\
+Density [kg m$^{-3}$] & 4000 & 4000 \\
+Weight [kg] & 22.838 & 22.994 \\
+Poisson ratio & 0.3 & 0.3 \\
+Young's modulus [GPa] & 400 & 400 \\
+Drumhead [Hz] & 23798 & 23658 \\
+Butterfly [Hz] & 16058 & 15913 \\
+Drumhead node [mm] & $\pm$65.3 & -66.5/62.7 \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=12cm]{Figures/kg-etm-dh.eps}
+\includegraphics[width=12cm]{Figures/kg-etm-bf.eps}
+\caption{Drumhead (top) and Butterfly (bottom) modes for KAGRA ETM.}
+\label{fig:fem-etm-mode}
 \end{center}
 \end{figure}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/GS_WS.eps}
-\caption{comparison with GS and WS.} 
-\label{fig:GS_WS} 
+\includegraphics[width=12cm]{Figures/fem-nfit3.eps}
+\caption{Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode 
+as a function of $y$ for KAGRA ETM model.
+The fitted dnode positions, $r_{DH}$, where $\Delta z_{DH}=0$ 
+are asymmetric and located at -66.5~mm and 62.7~mm.} 
+\label{fig:fem-dnetm}
 \end{center}
 \end{figure}
 
-\section{Calibration in LHO}
-We explain the calibration of WSK in LIGO.
-To avoid systematic error of localization from GS, we need to calibrate the displacement of mirror by each interferometer. LIGO use the GSL calibrated by NIST for calibration of absolute power of LLO and LHO.
-We also calibrate WSK using same GSL.
-To accurate measurement, we bring the WSK, photo detector and voltmeter to LHO.
-
-We employ  the four inch integrating sphere made by Labsphere. The model number of the integrating sphere is 3P-LPM-040-SL. We mount the photo detector at the top of integrating sphere.
-The detail of photo detector is written at Sec.~\ref{PD}.
-The voltmeter is make by Keithley company as shown in Fig.~ref{fig:Keithley}. The model number of voltmeter is 2100/100. To reduce the instrumental bias, we fix the pair of voltmeter and WS. 
-
-We check the time trend of the optical efficiency, $V_{\mathrm{GS}}/V_{\mathrm{WS}}$ by 4 month.
-\begin{figure}
-\begin{center}
-\includegraphics[width=14cm]{Figures/Keithlay.eps}
-\caption{Voltmeter made by keithlay.} 
-\label{fig:Keithley} 
-\end{center}
-\end{figure}
-%-------------------------------
-\section{Calibration in end-station}
-We calibrate the TxPD and RxPD in X/Y end station every month. When we calibrate the TxPD, we open the side box and mount the WSK as shown in Fig~\ref{fig:WSK_end_station}. We measure the power of two beams. We calculate the ratio between TxPD and sum of two beam voltage measured by WSK. 
-
+%\begin{figure}
+%\begin{center}
+%\includegraphics[width=14cm]{Figures/elmodes.eps}
+%\caption{Summary of drumhead and butterfly modes on KAGRA test mass 
+%compared with LIGO test mass.~\cite{Daveloza}} 
+%\label{fig:elmodes} 
+%\end{center}
+%\end{figure}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{Figures/WSK_end_station.eps}
-\caption{Calibration of end-station. We calibrate TxPD and RxPD using WSK.} 
-\label{fig:WSK_end_station} 
+%\includegraphics[width=14cm]{Figures/edeform.eps}
+\includegraphics[width=12cm]{Figures/fem-kge-opt.eps}
+\caption{The ratio between the total sensed motion and rigid body motion 
+as a function of frequency for optimally positioned baams and 
+$\pm$1 mm and $\pm$3 mm offsets. The cross check of the simulation 
+is also done with COMSOL~\cite{COMSOL} and shown for optimum position 
+and $\pm$1 mm offsets with open cross symbols.} 
+\label{fig:fem-opte} 
 \end{center}
 \end{figure}
 
-We also calibrate the RxPD. We replace from RxPD to WS and measure the ratio of the voltages. 
-
-We check the time trend of the optical efficiency, $V_{\mathrm{TxPD}}/V_{\mathrm{WS}}$, $V_{\mathrm{RxPD}}/V_{\mathrm{WS}}$, by 1 month.
-
-Furthermore, we monitor the time trend of $V_{\mathrm{TxPD}/V_{\mathrm{RxPD}}}$, everyday.
-
-If we find unstable region in time trend, we need to propagate the uncertainty as the systematic error.
-\section{Summary}
-This chapter has considered the absolute power calibration for KAGRA Pcal. The uncertainty of the displacement of ETM is corresponding to that of the absolute power of PCal laser. We will monitor the trend of each parameter because it propagate to the systematic error of h(t). 
-
-
-
-
-
-
+%\section{Elastic deformation}
+%\section{Summary}

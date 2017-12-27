@@ -3,28 +3,33 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Calibration lines.\relax }}{11}{table.caption.13}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Specification summary of photon calibrator~\cite {Virgo-PCAL,Karki,KAGRA-obs}.\relax }}{11}{table.caption.9}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Specification summary of CW fiber Laser~\cite {Keopsys}.\relax }}{17}{table.caption.14}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Specification of beam shutter~\cite {lasermet}.\relax }}{17}{table.caption.15}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Specification of HWP~\cite {CVI}.\relax }}{17}{table.caption.16}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Specification of lenses~\cite {CVI}.\relax }}{20}{table.caption.20}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Specification of Mirrors.\relax }}{21}{table.caption.23}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Specification of beam splitter~\cite {CVI}.\relax }}{22}{table.caption.24}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Typical gain parameter of OFS. \relax }}{23}{table.caption.26}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Specification of AOM~\cite {ISOMET}.\relax }}{24}{table.caption.27}
-\contentsline {table}{\numberline {3.10}{\ignorespaces Specification of InGaAs detector.\relax }}{25}{table.caption.32}
-\contentsline {table}{\numberline {3.11}{\ignorespaces Simulation parameter for ANSYS~\cite {ANSYS}\relax }}{29}{table.caption.42}
-\contentsline {table}{\numberline {3.12}{\ignorespaces Specification of Mirrors in periscope.\relax }}{32}{table.caption.43}
-\contentsline {table}{\numberline {3.13}{\ignorespaces Specification of Mirrors in Rx module.\relax }}{32}{table.caption.45}
-\contentsline {table}{\numberline {3.14}{\ignorespaces Specification of QPD.\relax }}{33}{table.caption.46}
-\contentsline {table}{\numberline {3.15}{\ignorespaces Specification of mirrors in camera\relax }}{35}{table.caption.49}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Specification summary of photon calibrator~\cite {Virgo-PCAL,Karki,KAGRA-obs}.\relax }}{13}{table.caption.16}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Specification summary of Yb CW fiber Laser~\cite {Keopsys}.\relax }}{19}{table.caption.25}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Measured beam parameters.\relax }}{20}{table.caption.27}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Specification of beam shutter~\cite {lasermet}.\relax }}{20}{table.caption.28}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Specification of HWP~\cite {CVI}.\relax }}{22}{table.caption.31}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Specification of lenses~\cite {CVI}.\relax }}{24}{table.caption.34}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Specification of Mirrors.\relax }}{25}{table.caption.37}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Specification of beam splitter~\cite {CVI}.\relax }}{26}{table.caption.38}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Specification of AOM~\cite {ISOMET}.\relax }}{27}{table.caption.39}
+\contentsline {table}{\numberline {3.10}{\ignorespaces Specification of InGaAs detector.\relax }}{28}{table.caption.43}
+\contentsline {table}{\numberline {3.11}{\ignorespaces Parameter of amplifier. \relax }}{29}{table.caption.47}
+\contentsline {table}{\numberline {3.12}{\ignorespaces Simulation parameter for ANSYS~\cite {ANSYS}\relax }}{32}{table.caption.55}
+\contentsline {table}{\numberline {3.13}{\ignorespaces Specification of Mirrors in periscope.\relax }}{35}{table.caption.56}
+\contentsline {table}{\numberline {3.14}{\ignorespaces Specification of Mirrors in Rx module.\relax }}{35}{table.caption.58}
+\contentsline {table}{\numberline {3.15}{\ignorespaces Specification of QPD.\relax }}{37}{table.caption.59}
+\contentsline {table}{\numberline {3.16}{\ignorespaces Specification of mirrors in camera\relax }}{38}{table.caption.62}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Simulation parameters and resuls for perfect cylinder studies.\relax }}{40}{table.caption.52}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Simulation parameters and resuls for the KAGRA ETM CAD model.\relax }}{42}{table.caption.56}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Typical gain parameter of OFS. \relax }}{42}{table.caption.66}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Simulation parameters and resuls for perfect cylinder studies.\relax }}{43}{table.caption.67}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Simulation parameters and resuls for the KAGRA ETM CAD model.\relax }}{47}{table.caption.72}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Fitting result of camera demonstration test.\relax }}{54}{table.caption.68}
+\contentsline {table}{\numberline {7.1}{\ignorespaces Fitting result of camera demonstration test.\relax }}{59}{table.caption.87}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

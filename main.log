@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  28 MAR 2017 15:04
+This is e-pTeX, Version 3.14159265-p3.7-160201-2.6 (utf8.euc) (TeX Live 2016) (preloaded format=platex 2016.8.12)  24 SEP 2017 03:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -137,8 +137,8 @@ Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/bk11.clo
-File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count109
 \c@chapter=\count110
@@ -1701,7 +1701,20 @@ File: english.lbx 2016/05/14 v3.4 biblatex localization (PK/JW/AB)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 
-No file main.aux.
+(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux
+
+LaTeX Warning: Label `Chapter1' multiply defined.
+
+) (./Chapters/Chapter3.aux
+
+LaTeX Warning: Label `tab:detector_spec' multiply defined.
+
+) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux
+
+LaTeX Warning: Label `fig:fem-etm-mode' multiply defined.
+
+) (./Chapters/Chapter6.aux) (./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux)
+(./Chapters/Chapter9.aux) (./Appendices/AppendixA.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 103.
@@ -1722,6 +1735,7 @@ LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 103.
 LaTeX Font Info:    ... okay on input line 103.
+
 (I search kanjifont definition file: . . ) (I search font definition file: . .
 . . . . . )
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 103.
@@ -1828,18 +1842,18 @@ Package caption Info: End \AtBeginDocument code.
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=404.02908pt
-* \textheight=693.49821pt
+* \textheight=699.10815pt
 * \oddsidemargin=13.08826pt
 * \evensidemargin=35.85056pt
 * \topmargin=-29.59087pt
-* \headheight=18.85364pt
-* \headsep=19.8738pt
-* \topskip=11.0pt
-* \footskip=27.46295pt
-* \marginparwidth=116.0pt
+* \headheight=17.21802pt
+* \headsep=18.06749pt
+* \topskip=10.0pt
+* \footskip=25.29494pt
+* \marginparwidth=125.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1871,12 +1885,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 103.
 LaTeX Info: Redefining \pageref on input line 103.
 LaTeX Info: Redefining \nameref on input line 103.
+
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -1887,10 +1899,16 @@ Package biblatex Info: Data encoding 'utf8' specified.
 \openout4 = `main-blx.bib'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
-No file main.bbl.
+Package biblatex Info: ... file 'main.bbl' found.
+ (./main.bbl
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 49.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 49.
+)
 Package biblatex Info: Reference section=0 on input line 103.
 Package biblatex Info: Reference segment=0 on input line 103.
+
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\ttitle' on input line 103.
@@ -1904,12 +1922,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\keywordnames' on input line 103.
 
 \c__siunitx_mathsf_int=\count355
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 103.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 103.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 103.
 \c__siunitx_mathtt_int=\count356
 1: section
 
@@ -1953,20 +1965,20 @@ LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
 LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
 (Font)              using `JY1/mc/m/n' instead on input line 158.
 
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 158.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 158.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 158.
 1: section
 
 LaTeX Font Warning: Font shape `JT1/mc/m/sl' undefined
-(Font)              using `JT1/mc/m/n' instead on input line 175.
+(Font)              using `JT1/mc/m/n' instead on input line 174.
 
 
 LaTeX Font Warning: Font shape `JY1/mc/m/sl' undefined
-(Font)              using `JY1/mc/m/n' instead on input line 175.
+(Font)              using `JY1/mc/m/n' instead on input line 174.
 
 [3
 
@@ -1986,31 +1998,48 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 199.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 199.
-
-
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
-
+ (./main.toc
+1: section
+[7])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
+ [8] (./main.lof
 1: section
-[7] [8
+[9
 
 ]
+Overfull \hbox (1.74753pt too wide) in paragraph at lines 42--42
+ [][] [][][]\T1/ppl/m/n/10 Mirror and Tele-photo cam-era (TCam). We place the T
+Cam on the struc-ture.The 
+ []
+
+
+Overfull \hbox (1.92621pt too wide) in paragraph at lines 45--45
+ [][] [][][]\T1/ppl/m/n/10 MEDM of KA-GRA pho-ton cal-i-bra-tor. The sys-tem is
+ based on LIGO MEDM.We 
+ []
+
+
+Overfull \hbox (5.11717pt too wide) in paragraph at lines 50--50
+ [][] [][][]\T1/ppl/m/n/10 The $\OML/cmm/m/it/10 z$ \T1/ppl/m/n/10 dis-place-me
+nt, $\OT1/cmr/m/n/10 ^^A\OML/cmm/m/it/10 z[]$\T1/ppl/m/n/10 , for the but-ter-f
+ly mode as a func-tion of $\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = []$ 
+ []
+
+[10])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
+ [11] [12
 
-1: section
-[9] [10
-
-]
+] (./main.lot)
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
 
 1: section
-[11] [12
+[13] [14
 
 ]
 1: section
@@ -2030,71 +2059,40 @@ LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
 (Font)              Font shape `JY1/gt/m/n' tried instead on input line 18.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 18.
-
-LaTeX Warning: Citation 'GW150914' on page 1 undefined on input line 36.
-
-
-LaTeX Warning: Citation 'GW151226' on page 1 undefined on input line 39.
-
-
-LaTeX Warning: Citation 'Klimenko' on page 1 undefined on input line 56.
-
 1: section
 [1
 
 
-]
-
-LaTeX Warning: Citation 'LIGO-CAL' on page 2 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'Karki' on page 2 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'Virgo-PCAL' on page 2 undefined on input line 64.
-
-
-LaTeX Warning: Citation 'Accadia' on page 2 undefined on input line 66.
-
-
-LaTeX Warning: Citation 'Clubley:2001' on page 2 undefined on input line 66.
-
-
-LaTeX Warning: Citation 'Mossavi:2006' on page 2 undefined on input line 66.
-
-
-LaTeX Warning: Citation 'Goetz:2009' on page 2 undefined on input line 68.
-
-
-LaTeX Warning: Citation 'VIR-018' on page 2 undefined on input line 77.
-
-
-Overfull \hbox (22.52303pt too wide) in paragraph at lines 79--88
-[]\T1/ppl/m/n/10.95 Calibration meth-ods with-out us-ing pho-ton cal-i-bra-tor 
-such as us-ing radio-frequency
+] [2]
+File: Figures/LVK.eps Graphic file (type eps)
+ <Figures/LVK.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 147--148
+ [] 
  []
 
-
-LaTeX Warning: Citation 'LV-obs' on page 2 undefined on input line 125.
-
-
-LaTeX Warning: Citation 'KAGRA-obs' on page 2 undefined on input line 127.
-
-
-Overfull \hbox (44.06044pt too wide) in paragraph at lines 125--128
-\T1/ppl/m/n/10.95 cur-rently in-stalling the in-stru-ment to meet the fol-low-i
-ng ob-ser-va-tion sched-ule [[]]: 
- []
-
-[2] [3]) [4]
+[3]) [4]
 \openout2 = `Chapters/Chapter2.aux'.
 
  (./Chapters/Chapter2.tex
 Chapter 2.
+File: Figures/Pcal_intro.eps Graphic file (type eps)
+<Figures/Pcal_intro.eps>
+File: Figures/Pcal_view.eps Graphic file (type eps)
+ <Figures/Pcal_view.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 41--42
+ [] 
+ []
 
-Overfull \hbox (8.74786pt too wide) in paragraph at lines 15--30
-\T1/ppl/m/n/10.95 Photon cal-i-bra-tor re-lies on pho-ton ra-di-a-tion pres-sur
-e from aux-il-iary power-modulated
+File: Figures/14m_VIS.eps Graphic file (type eps)
+<Figures/14m_VIS.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 78--79
+ [] 
+ []
+
+File: Figures/TF.eps Graphic file (type eps)
+<Figures/TF.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 85--86
+ [] 
  []
 
 1: section
@@ -2102,94 +2100,71 @@ e from aux-il-iary power-modulated
 
 
 
-]
-
-LaTeX Warning: Reference `tab:KAGRA_spec' on page 6 undefined on input line 58.
-
-
-
-LaTeX Warning: Reference `fig:kagra_pcal_displacement' on page 6 undefined on i
-nput line 60.
-
+] [6] [7]
 File: Figures/pcal_disp.eps Graphic file (type eps)
-<Figures/pcal_disp.eps>
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 77.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 77.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 88.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 88.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 88.
-
-
-LaTeX Warning: Citation 'LIGO-CAL' on page 6 undefined on input line 93.
-
-
-LaTeX Warning: Citation 'Tuyenbayev' on page 6 undefined on input line 93.
-
-
-LaTeX Warning: Reference `fig:L_DARM_control_loop' on page 6 undefined on input
- line 95.
-
-File: Figures/DARM_loop_and_CAL.eps Graphic file (type eps)
-<Figures/DARM_loop_and_CAL.eps>
-
-LaTeX Warning: Citation 'LIGO-CAL' on page 6 undefined on input line 104.
-
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 104.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 104.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 104.
-
-LaTeX Warning: Citation 'Tuyenbayev' on page 6 undefined on input line 104.
-
-
-LaTeX Warning: Citation 'LIGO-CAL' on page 6 undefined on input line 104.
-
-
-LaTeX Warning: Citation 'Tuyenbayev' on page 6 undefined on input line 104.
-
-
-Overfull \hbox (4.59177pt too wide) in paragraph at lines 90--113
-\T1/ppl/m/n/10.95 (DARM), uses the com-bi-na-tion of ob-tained er-ror signal($\
-OML/cmm/m/it/10.95 d[]$\T1/ppl/m/n/10.95 ) and feed-back signal($\OML/cmm/m/it/
-10.95 d[]$\T1/ppl/m/n/10.95 )
+ <Figures/pcal_disp.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 105--109
+ [] 
  []
 
-[6] [7]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 183.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 109.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 109.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 120.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 120.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 120.
+File: Figures/DARM_loop_and_CAL.eps Graphic file (type eps)
+<Figures/DARM_loop_and_CAL.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 132--136
+ [] 
+ []
+
+[8] [9]
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 212.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 183.
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 212.
 
-[8]
+[10]
+Overfull \hbox (14.13126pt too wide) in paragraph at lines 306--307
+[]\T1/ppl/m/n/10 five pcal cal-i-bra-tion line ($\OML/cmm/m/it/10 x[]$\T1/ppl/m
+/n/10 ) with $\OMS/cmsy/m/n/10 ^^X$\T1/ppl/m/n/10 7Hz,$\OMS/cmsy/m/n/10 ^^X$\T1
+/ppl/m/n/10 35Hz,$\OMS/cmsy/m/n/10 ^^X$\T1/ppl/m/n/10 330Hz,$\OMS/cmsy/m/n/10 ^
+^X$\T1/ppl/m/n/10 1000Hz and $\OMS/cmsy/m/n/10 ^^X$\T1/ppl/m/n/10 2000Hz. 
+ []
 
-LaTeX Warning: Citation 'OptSpringCal' on page 9 undefined on input line 270.
+
+LaTeX Warning: Reference `fig:Pcal_line_curve' on page 11 undefined on input li
+ne 314.
+
+File: Figures/Pcal_line_curve.eps Graphic file (type eps)
+<Figures/Pcal_line_curve.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 337--338
+ [] 
+ []
 
 
-LaTeX Warning: Reference `sec:darm_calib' on page 9 undefined on input line 277
-.
+Overfull \hbox (40.93489pt too wide) in paragraph at lines 346--354
+\T1/ppl/m/n/10 where $\OML/cmm/m/it/10 f[]$ \T1/ppl/m/n/10 is i-th cal-i-bra-ti
+on line fre-quency, $\OML/cmm/m/it/10 L$ \T1/ppl/m/n/10 is arm length, $\OML/cm
+m/m/it/10 S[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )$ \T1/ppl/m/
+n/10 is sen-si-tiv-ity curve [strain(rms)/rHz],
+ []
 
-[9]) [10]
+[11]) [12]
 \openout2 = `Chapters/Chapter3.aux'.
 
  (./Chapters/Chapter3.tex
 Chapter 3.
 
-LaTeX Warning: Reference `fig:Pcal_overview' on page 11 undefined on input line
- 12.
-
-
-LaTeX Warning: Reference `tab:KAGRA_spec' on page 11 undefined on input line 12
-.
+LaTeX Warning: Citation 'OFS' on page 13 undefined on input line 12.
 
 File: Figures/Pcal_overview.eps Graphic file (type eps)
 <Figures/Pcal_overview.eps>
@@ -2198,734 +2173,271 @@ Overfull \hbox (22.76225pt too wide) in paragraph at lines 15--16
  []
 
 
-LaTeX Warning: Citation 'Virgo-PCAL' on page 11 undefined on input line 22.
+LaTeX Warning: Reference `Yend_anchoconve r' on page 13 undefined on input line
+ 47.
 
 
-LaTeX Warning: Citation 'Karki' on page 11 undefined on input line 22.
+LaTeX Warning: Reference `Xend_anchor' on page 13 undefined on input line 47.
 
-
-LaTeX Warning: Citation 'KAGRA-obs' on page 11 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Virgo-PCAL' on page 11 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'Karki' on page 11 undefined on input line 22.
-
-
-LaTeX Warning: Citation 'KAGRA-obs' on page 11 undefined on input line 22.
-
-
-LaTeX Warning: Reference `fig:stay_free' on page 11 undefined on input line 47.
-
-
-1: section
-[11
-
-
-
-] [12]
 File: Figures/Stay_free.eps Graphic file (type eps)
- <Figures/Stay_free.eps>
+<Figures/Stay_free.eps>
+File: Figures/Yend_anchor.eps Graphic file (type eps)
+ <Figures/Yend_anchor.eps>
+File: Figures/Xend_anchor.eps Graphic file (type eps)
+ <Figures/Xend_anchor.eps>
+1: section
+[13
 
-LaTeX Warning: Reference `fig:Tx_module_overview' on page 13 undefined on input
- line 58.
 
 
-LaTeX Warning: Citation 'Thorlabs' on page 13 undefined on input line 58.
-
+] [14] [15]
 File: Figures/Tx_module_overview.eps Graphic file (type eps)
-<Figures/Tx_module_overview.eps>
-
-LaTeX Warning: Reference `fig:Tx_module_layout' on page 13 undefined on input l
-ine 68.
-
+ <Figures/Tx_module_overview.eps>
+File: Figures/Support_pict.eps Graphic file (type eps)
+ <Figures/Support_pict.eps>
 File: Figures/Tx_module_layout.eps Graphic file (type eps)
+
 <Figures/Tx_module_layout.eps>
-
-LaTeX Warning: Reference `fig:Laser' on page 13 undefined on input line 79.
-
-
-LaTeX Warning: Citation 'Keopsys' on page 13 undefined on input line 79.
-
-
-LaTeX Warning: Reference `tab:Laser_spec' on page 13 undefined on input line 79
-.
-
-
-Overfull \hbox (0.35063pt too wide) in paragraph at lines 79--80
-\T1/ppl/m/n/10.95 num-ber of the laser is CYFL-TERA-20-LP-1047-AM1-RGO-OM1-T305
--C1 [[]].
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 99--100
+ [] 
  []
 
+[16]
 File: Figures/Laser.eps Graphic file (type eps)
-<Figures/Laser.eps>
+ <Figures/Laser.eps>
+File: Figures/Laser_block.eps Graphic file (type eps)
+ <Figures/Laser_block.eps>
 
-LaTeX Warning: Citation 'Keopsys' on page 13 undefined on input line 84.
-
-
-LaTeX Warning: Citation 'Keopsys' on page 13 undefined on input line 84.
-
-[13] [14] [15]
-
-LaTeX Warning: Citation 'Keopsys' on page 16 undefined on input line 90.
+LaTeX Warning: Reference `beam_parameter' on page 17 undefined on input line 15
+9.
 
 
-LaTeX Warning: Citation 'Keopsys' on page 16 undefined on input line 90.
+LaTeX Warning: Reference `beam_parameter' on page 17 undefined on input line 15
+9.
 
-
-Overfull \hbox (30.68684pt too wide) in paragraph at lines 93--120
- [][] 
- []
-
-
-LaTeX Warning: Citation 'lasermet' on page 16 undefined on input line 123.
-
-
-LaTeX Warning: Reference `MEDM' on page 16 undefined on input line 123.
-
-
-LaTeX Warning: Reference `tab:Beam_shutter_spec' on page 16 undefined on input 
-line 123.
-
-
-LaTeX Warning: Citation 'lasermet' on page 16 undefined on input line 126.
-
-
-LaTeX Warning: Citation 'lasermet' on page 16 undefined on input line 126.
-
-
-LaTeX Warning: Citation 'CVI' on page 16 undefined on input line 143.
-
-
-LaTeX Warning: Reference `tab:HWP_spec' on page 16 undefined on input line 144.
-
-
-
-LaTeX Warning: Citation 'CVI' on page 16 undefined on input line 146.
-
-
-LaTeX Warning: Citation 'CVI' on page 16 undefined on input line 146.
-
-
-LaTeX Warning: Citation 'Karl_Lambrecht' on page 16 undefined on input line 168
-.
-
-
-LaTeX Warning: Citation 'JamMt' on page 16 undefined on input line 171.
-
-
-LaTeX Warning: Reference `fig:Mode_L1' on page 16 undefined on input line 171.
-
+File: Figures/w_z.eps Graphic file (type eps)
+<Figures/w_z.eps>
+File: Figures/Laser_shutter.eps Graphic file (type eps)
+ <Figures/Laser_shutter.eps>
+File: Figures/Shutter_pin.eps Graphic file (type eps)
+ <Figures/Shutter_pin.eps>
+[17] [18] [19] [20] [21]
+File: Figures/Pol.eps Graphic file (type eps)
+ <Figures/Pol.eps>
 File: Figures/Mode_L1.eps Graphic file (type eps)
-<Figures/Mode_L1.eps>
-
-LaTeX Warning: Citation 'JamMt' on page 16 undefined on input line 175.
-
-
-LaTeX Warning: Citation 'JamMt' on page 16 undefined on input line 175.
-
-[16] [17]
-
-LaTeX Warning: Reference `fig:Mode_L3L4' on page 18 undefined on input line 188
-.
-
-File: Figures/Mode_L3L4.eps Graphic file (type eps)
-<Figures/Mode_L3L4.eps>
-
-LaTeX Warning: Citation 'JamMt' on page 18 undefined on input line 192.
-
-
-LaTeX Warning: Citation 'JamMt' on page 18 undefined on input line 192.
-
-
-LaTeX Warning: Reference `fig:Mode_L2' on page 18 undefined on input line 198.
-
-File: Figures/Mode_L2.eps Graphic file (type eps)
-<Figures/Mode_L2.eps>
-
-LaTeX Warning: Citation 'JamMt' on page 18 undefined on input line 202.
-
-
-LaTeX Warning: Citation 'JamMt' on page 18 undefined on input line 202.
-
-
-LaTeX Warning: Reference `tab:Tx_lenses_spec' on page 18 undefined on input lin
-e 206.
-
-
-LaTeX Warning: Citation 'CVI' on page 18 undefined on input line 206.
-
-
-LaTeX Warning: Citation 'CVI' on page 18 undefined on input line 209.
-
-
-LaTeX Warning: Citation 'CVI' on page 18 undefined on input line 209.
-
-
-Overfull \hbox (126.23203pt too wide) in paragraph at lines 212--222
+ <Figures/Mode_L1.eps> [22]
+Overfull \hbox (86.20265pt too wide) in paragraph at lines 282--291
  [][] 
  []
 
-
-LaTeX Warning: Citation 'CVI' on page 18 undefined on input line 225.
-
-
-LaTeX Warning: Citation 'Sigmakoki' on page 18 undefined on input line 225.
-
-
-LaTeX Warning: Reference `fig:225_HR' on page 18 undefined on input line 225.
-
-
-LaTeX Warning: Reference `fig:45_HR' on page 18 undefined on input line 225.
-
-
-LaTeX Warning: Reference `fig:Tx_module_layout' on page 18 undefined on input l
-ine 226.
-
-
-LaTeX Warning: Reference `tab:Tx_mirror_spec' on page 18 undefined on input lin
-e 226.
-
-[18] [19]
+[23]
 File: Figures/225_HR.eps Graphic file (type eps)
  <Figures/225_HR.eps>
-
-LaTeX Warning: Citation 'Sigmakoki' on page 20 undefined on input line 231.
-
-
-LaTeX Warning: Citation 'Sigmakoki' on page 20 undefined on input line 231.
-
 File: Figures/45_HR.eps Graphic file (type eps)
-<Figures/45_HR.eps>
+ <Figures/45_HR.eps>
 
-LaTeX Warning: Citation 'Sigmakoki' on page 20 undefined on input line 239.
-
-
-LaTeX Warning: Citation 'Sigmakoki' on page 20 undefined on input line 239.
+LaTeX Warning: Citation 'OFS' on page 24 undefined on input line 379.
 
 
-Overfull \hbox (29.00145pt too wide) in paragraph at lines 248--270
+Overfull \hbox (41.76581pt too wide) in paragraph at lines 385--411
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:Tx_module_layout' on page 20 undefined on input l
-ine 273.
-
-
-LaTeX Warning: Citation 'Newport' on page 20 undefined on input line 274.
-
-
-LaTeX Warning: Reference `tab:BS_spec' on page 20 undefined on input line 277.
-
-
-LaTeX Warning: Citation 'CVI' on page 20 undefined on input line 279.
-
-
-LaTeX Warning: Citation 'CVI' on page 20 undefined on input line 279.
-
-[20] [21]
-
-LaTeX Warning: Reference `fig:OFS_diagram' on page 22 undefined on input line 3
-08.
-
-File: Figures/OFS_diagram.eps Graphic file (type eps)
-<Figures/OFS_diagram.eps>
-
-LaTeX Warning: Reference `tab:OFS_Gain' on page 22 undefined on input line 326.
-
-
-
-LaTeX Warning: Reference `PD' on page 22 undefined on input line 344.
-
-
-LaTeX Warning: Reference `tab:OFS_Gain' on page 22 undefined on input line 345.
-
-
-
-LaTeX Warning: Citation 'ISOMET' on page 22 undefined on input line 349.
-
-
-LaTeX Warning: Reference `tab:AOM_spec' on page 22 undefined on input line 349.
-
-
-[22]
-
-LaTeX Warning: Citation 'ISOMET' on page 23 undefined on input line 352.
-
-
-LaTeX Warning: Citation 'ISOMET' on page 23 undefined on input line 352.
-
-
-Overfull \hbox (79.55609pt too wide) in paragraph at lines 355--381
- [][] 
- []
-
-
-LaTeX Warning: Reference `fig:KAGRA_photodetector' on page 23 undefined on inpu
-t line 385.
-
+[24] [25]
 File: Figures/KAGRA_detector.eps Graphic file (type eps)
-<Figures/KAGRA_detector.eps>
+ <Figures/KAGRA_detector.eps>
 
-LaTeX Warning: Reference `fig:detector_cover' on page 23 undefined on input lin
-e 396.
-
-File: Figures/Detector_cover.eps Graphic file (type eps)
-<Figures/Detector_cover.eps>
-
-LaTeX Warning: Citation 'Excelitas' on page 23 undefined on input line 407.
-
-
-LaTeX Warning: Reference `tab:detector_spec' on page 23 undefined on input line
- 407.
-
-
-LaTeX Warning: Reference `fig:Photo_detector' on page 23 undefined on input lin
-e 428.
-
-
-LaTeX Warning: Reference `fig:Detector_circuit' on page 23 undefined on input l
-ine 428.
+LaTeX Warning: Reference `fig:detector_cover' on page 26 undefined on input lin
+e 426.
 
 File: Figures/Photo_detector.eps Graphic file (type eps)
 <Figures/Photo_detector.eps>
 File: Figures/Detector_circuit.eps Graphic file (type eps)
  <Figures/Detector_circuit.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 438--439
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 461--462
  [] 
  []
 
-[23] [24] [25]
-Overfull \hbox (1.88771pt too wide) in paragraph at lines 450--452
-[]\T1/ppl/m/n/10.95 The op-er-a-tional prin-ci-ple is quite straight-for-ward. 
-From a col-li-mated in-put beam,
+[26] [27] [28]
+File: Figures/Structure.eps Graphic file (type eps)
+ <Figures/Structure.eps>
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 503--504
+ [] 
  []
-
-
-LaTeX Warning: Citation 'Spectralon' on page 26 undefined on input line 454.
-
-
-LaTeX Warning: Reference `Chapter5' on page 26 undefined on input line 454.
-
-[26]
-
-LaTeX Warning: Reference `fig:Periscope_overview' on page 27 undefined on input
- line 462.
 
 File: Figures/Periscope_overview.eps Graphic file (type eps)
 <Figures/Periscope_overview.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 467--468
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 519--520
  [] 
  []
 
-
-LaTeX Warning: Reference `fig:Kikakougaku_position' on page 27 undefined on inp
-ut line 474.
-
-
-LaTeX Warning: Reference `fig:Kikakougaku' on page 27 undefined on input line 4
-74.
-
-[27] [28]
+[29] [30] [31]
 File: Figures/Kikakougaku_position.eps Graphic file (type eps)
  <Figures/Kikakougaku_position.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 481--482
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 533--534
  [] 
  []
 
 File: Figures/Kikakougaku.eps Graphic file (type eps)
 <Figures/Kikakougaku.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 488--489
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 540--541
  [] 
  []
 
-
-LaTeX Warning: Reference `fig:Pcal_win_0' on page 29 undefined on input line 49
-5.
-
 File: Figures/Pcal_win_0.eps Graphic file (type eps)
 <Figures/Pcal_win_0.eps>
-Overfull \hbox (22.76225pt too wide) in paragraph at lines 499--500
+Overfull \hbox (22.76225pt too wide) in paragraph at lines 551--552
  [] 
  []
 
 File: Figures/Periscope_window.eps Graphic file (type eps)
 <Figures/Periscope_window.eps>
-
-LaTeX Warning: Citation 'Cosmotech' on page 29 undefined on input line 513.
-
-
-LaTeX Warning: Reference `fig:Pcal_window' on page 29 undefined on input line 5
-13.
-
-
-LaTeX Warning: Citation 'ANSYS' on page 29 undefined on input line 514.
-
-
-LaTeX Warning: Reference `tab:ANSYS_win' on page 29 undefined on input line 514
-.
-
 File: Figures/Ansys_window.eps Graphic file (type eps)
-<Figures/Ansys_window.eps>
-
-LaTeX Warning: Citation 'ANSYS' on page 29 undefined on input line 519.
-
-
-LaTeX Warning: Citation 'ANSYS' on page 29 undefined on input line 519.
-
-
-LaTeX Warning: Citation 'ANSYS' on page 29 undefined on input line 525.
-
-
-LaTeX Warning: Citation 'ANSYS' on page 29 undefined on input line 525.
-
-
-LaTeX Warning: Citation 'Sigmakoki' on page 29 undefined on input line 540.
-
-
-LaTeX Warning: Reference `fig:45_HR' on page 29 undefined on input line 540.
-
-
-LaTeX Warning: Reference `fig:225_HR' on page 29 undefined on input line 540.
-
-
-LaTeX Warning: Reference `tab:Periscope_mirror_spec' on page 29 undefined on in
-put line 541.
-
-
-Overfull \hbox (27.29277pt too wide) in paragraph at lines 547--566
- [][] 
- []
-
-
-LaTeX Warning: Citation 'Thorlabs' on page 29 undefined on input line 572.
-
+ <Figures/Ansys_window.eps> [32] [33] [34]
 File: Figures/Rx_module_layout.eps Graphic file (type eps)
-<Figures/Rx_module_layout.eps> [29] [30] [31]
 
-LaTeX Warning: Reference `PD' on page 32 undefined on input line 584.
-
-
-LaTeX Warning: Reference `fig:45_HR' on page 32 undefined on input line 587.
-
-
-LaTeX Warning: Reference `fig:225_HR' on page 32 undefined on input line 587.
-
-
-LaTeX Warning: Reference `tab:Rx_mirror_spec' on page 32 undefined on input lin
-e 587.
-
-
-Overfull \hbox (3.29082pt too wide) in paragraph at lines 592--602
- [][] 
- []
-
-
-LaTeX Warning: Reference `tab:detector_spec' on page 32 undefined on input line
- 607.
-
-[32]
-
-LaTeX Warning: Reference `fig:Camera' on page 33 undefined on input line 627.
-
-
-LaTeX Warning: Citation 'Nikon' on page 33 undefined on input line 630.
-
-[33]
-
-LaTeX Warning: Citation 'Skywatcher' on page 34 undefined on input line 633.
-
-
-LaTeX Warning: Reference `fig:ML_focus' on page 34 undefined on input line 638.
-
-
+<Figures/Rx_module_layout.eps> [35] [36]
 File: Figures/Camera.eps Graphic file (type eps)
-<Figures/Camera.eps>
-
-LaTeX Warning: Reference `tab:Camera_mirror_spec' on page 34 undefined on input
- line 642.
-
-
-LaTeX Warning: Reference `tab:Camera_mirror_spec' on page 34 undefined on input
- line 642.
-
+ <Figures/Camera.eps>
 File: Figures/ML_focus.eps Graphic file (type eps)
+
 <Figures/ML_focus.eps>
-
-LaTeX Warning: Citation 'Cosmotech' on page 34 undefined on input line 657.
-
-
-LaTeX Warning: Reference `fig:Camera_window' on page 34 undefined on input line
- 657.
-
 File: Figures/Camera_view_window.eps Graphic file (type eps)
-<Figures/Camera_view_window.eps>
-
-LaTeX Warning: Reference `tab:Camera_mirror_spec' on page 34 undefined on input
- line 683.
-
-[34] [35] [36]
-
-LaTeX Warning: Citation 'MEDM' on page 37 undefined on input line 691.
-
-
-LaTeX Warning: Reference `fig:MEDM' on page 37 undefined on input line 693.
-
+ <Figures/Camera_view_window.eps> [37] [38] [39]
 File: Figures/MEDM.eps Graphic file (type eps)
-<Figures/MEDM.eps>) [37] [38]
+
+<Figures/MEDM.eps>) [40]
 \openout2 = `Chapters/Chapter4.aux'.
 
  (./Chapters/Chapter4.tex
 Chapter 4.
-
-LaTeX Warning: Citation 'Hild:2007' on page 39 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Goetz:2009' on page 39 undefined on input line 15.
-
-
-LaTeX Warning: Citation 'Daveloza' on page 39 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'Karki' on page 39 undefined on input line 23.
-
-
-LaTeX Warning: Citation 'ANSYS' on page 39 undefined on input line 28.
-
-
-LaTeX Warning: Reference `tab:fem_cylpar' on page 39 undefined on input line 37
-.
-
-
-LaTeX Warning: Reference `tab:fem_cylpar' on page 39 undefined on input line 41
-.
-
-
-LaTeX Warning: Reference `fig:fem-dnode' on page 39 undefined on input line 78.
-
-
-
-LaTeX Warning: Reference `eq:fem-drum' on page 39 undefined on input line 79.
-
-File: Figures/fem-nfit1.eps Graphic file (type eps)
-<Figures/fem-nfit1.eps>
-File: Figures/fem-nfit2.eps Graphic file (type eps)
- <Figures/fem-nfit2.eps>
-
-LaTeX Warning: Reference `fig:fem-bfly' on page 39 undefined on input line 105.
-
-
-File: Figures/fem-bfly.eps Graphic file (type eps)
-<Figures/fem-bfly.eps>
-
-LaTeX Warning: Reference `fig:fem-etm' on page 39 undefined on input line 125.
-
-
-LaTeX Warning: Reference `tab:fem-etm' on page 39 undefined on input line 128.
-
+File: Figures/OFS_diagram.eps Graphic file (type eps)
+<Figures/OFS_diagram.eps>)
 1: section
-[39
+[41
 
 
 
-] [40]
-File: Figures/fem-etm.eps Graphic file (type eps)
- <Figures/fem-etm.eps>
-
-LaTeX Warning: Reference `fig:edeform' on page 41 undefined on input line 141.
-
-File: Figures/fem-etm-dh.eps Graphic file (type eps)
-<Figures/fem-etm-dh.eps>
-File: Figures/fem-etm-bf.eps Graphic file (type eps)
- <Figures/fem-etm-bf.eps>
-File: Figures/edeform.eps Graphic file (type eps)
- <Figures/edeform.eps>)
-[41] [42] [43]
+] [42]
 \openout2 = `Chapters/Chapter5.aux'.
 
- (./Chapters/Chapter5.tex [44
+ (./Chapters/Chapter5.tex
+Chapter 5.
+1: section
+[43
 
 
 
 ]
-Chapter 5.
+File: Figures/fem-nfit1.eps Graphic file (type eps)
+ <Figures/fem-nfit1.eps>
+File: Figures/fem-nfit2.eps Graphic file (type eps)
+ <Figures/fem-nfit2.eps>
+File: Figures/fem-bfly.eps Graphic file (type eps)
+ <Figures/fem-bfly.eps>
+[44]
+File: Figures/fem-lgc-opt.eps Graphic file (type eps)
+ <Figures/fem-lgc-opt.eps>
+File: Figures/fem-kgc-opt.eps Graphic file (type eps)
+ <Figures/fem-kgc-opt.eps>
+File: Figures/fem-etm.eps Graphic file (type eps)
+ <Figures/fem-etm.eps>
+File: Figures/kg-etm-dh.eps Graphic file (type eps)
 
-Overfull \hbox (7.08821pt too wide) in paragraph at lines 11--15
-\T1/ppl/m/n/10.95 de-tec-tor(TxPD) and the re-ceiver mod-ule pho-tode-tec-tor (
-RxPD), and $\OML/cmm/m/it/10.95 e \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 P[]=
-P[]$
- []
+<Figures/kg-etm-dh.eps>
+File: Figures/kg-etm-bf.eps Graphic file (type eps)
+ <Figures/kg-etm-bf.eps>
+File: Figures/fem-nfit3.eps Graphic file (type eps)
+ <Figures/fem-nfit3.eps>
+File: Figures/fem-kge-opt.eps Graphic file (type eps)
 
-
-LaTeX Warning: Reference `fig:KWS' on page 45 undefined on input line 16.
-
-
-LaTeX Warning: Reference `fig:GS_WS' on page 45 undefined on input line 16.
-
-File: Figures/KWS.eps Graphic file (type eps)
-<Figures/KWS.eps>
-File: Figures/GS_WS.eps Graphic file (type eps)
- <Figures/GS_WS.eps>
-1: section
-[45] [46]
-
-LaTeX Warning: Reference `PD' on page 47 undefined on input line 59.
-
-File: Figures/Keithlay.eps Graphic file (type eps)
-<Figures/Keithlay.eps>
-
-LaTeX Warning: Reference `fig:WSK_end_station' on page 47 undefined on input li
-ne 72.
-
-File: Figures/WSK_end_station.eps Graphic file (type eps)
-<Figures/WSK_end_station.eps> [47] [48]) [49]
+<Figures/fem-kge-opt.eps>) [45] [46] [47] [48] [49]
 \openout2 = `Chapters/Chapter6.aux'.
 
- (./Chapters/Chapter6.tex [50
+ (./Chapters/Chapter6.tex
+[50
 
 
 
 ]
 Chapter 6.
-
-LaTeX Warning: Reference `eq:dx' on page 51 undefined on input line 12.
-
-
-LaTeX Warning: Reference `Chapter4' on page 51 undefined on input line 24.
-
-
-LaTeX Warning: Reference `Tcam_inst' on page 51 undefined on input line 29.
-
-
-LaTeX Warning: Reference `fig:MEDM' on page 51 undefined on input line 34.
-
+File: Figures/KWS.eps Graphic file (type eps)
+<Figures/KWS.eps>
+File: Figures/GS_WS.eps Graphic file (type eps)
+ <Figures/GS_WS.eps>
 1: section
-[51]
+[51] [52]
+File: Figures/Keithlay.eps Graphic file (type eps)
+ <Figures/Keithlay.eps>
+File: Figures/WSK_end_station.eps Graphic file (type eps)
+ <Figures/WSK_end_station.eps> [53] [54]
+File: Figures/Power_standard.eps Graphic file (type eps)
 
-LaTeX Warning: Reference `fig:Beam_mon' on page 52 undefined on input line 45.
-
-File: Figures/Beam_mon.eps Graphic file (type eps)
-<Figures/Beam_mon.eps>
-
-LaTeX Warning: Reference `fig:Camera_test_setup' on page 52 undefined on input 
-line 58.
-
-File: Figures/Camera_test_setup.eps Graphic file (type eps)
-<Figures/Camera_test_setup.eps>
-
-LaTeX Warning: Reference `fig:Camera_result' on page 52 undefined on input line
- 68.
-
-File: Figures/Camera_result.eps Graphic file (type eps)
-<Figures/Camera_result.eps>
-
-LaTeX Warning: Reference `fig:Fitting_terget' on page 52 undefined on input lin
-e 78.
-
-
-LaTeX Warning: Reference `fig:Analysis_cam' on page 52 undefined on input line 
-80.
-
-[52] [53]
-File: Figures/Analysis_cam.eps Graphic file (type eps)
- <Figures/Analysis_cam.eps>
-
-LaTeX Warning: Reference `fig:Fitting_target' on page 54 undefined on input lin
-e 90.
-
-
-LaTeX Warning: Reference `tab:Tcam_demo_fitting' on page 54 undefined on input 
-line 90.
-
-File: Figures/Fitting_target.eps Graphic file (type eps)
-<Figures/Fitting_target.eps>) [54] [55]
+<Figures/Power_standard.eps>
+File: Figures/Toyama.eps Graphic file (type eps)
+ <Figures/Toyama.eps>) [55] [56]
 \openout2 = `Chapters/Chapter7.aux'.
 
- (./Chapters/Chapter7.tex [56
+
+(./Chapters/Chapter7.tex
+Chapter 7.
+1: section
+[57
 
 
 
 ]
-Chapter 7.
+File: Figures/Beam_mon.eps Graphic file (type eps)
+ <Figures/Beam_mon.eps>
+File: Figures/Camera_test_setup.eps Graphic file (type eps)
+ <Figures/Camera_test_setup.eps>
+File: Figures/Camera_result.eps Graphic file (type eps)
 
-LaTeX Warning: Reference `fig:Adv_Tx_module_layout' on page 57 undefined on inp
-ut line 7.
+<Figures/Camera_result.eps>
 
-File: Figures/Adv_Tx_module_layout.eps Graphic file (type eps)
-<Figures/Adv_Tx_module_layout.eps>
+LaTeX Warning: Reference `fig:Fitting_terget' on page 58 undefined on input lin
+e 78.
 
-LaTeX Warning: Reference `fig:Power_standard' on page 57 undefined on input lin
-e 20.
-
-
-LaTeX Warning: Citation 'EUROMET' on page 57 undefined on input line 20.
-
-
-LaTeX Warning: Reference `fig:Toyama' on page 57 undefined on input line 20.
-
-File: Figures/Power_standard.eps Graphic file (type eps)
-<Figures/Power_standard.eps>
-
-LaTeX Warning: Citation 'EUROMET' on page 57 undefined on input line 27.
-
-
-LaTeX Warning: Citation 'EUROMET' on page 57 undefined on input line 27.
-
-File: Figures/Toyama.eps Graphic file (type eps)
-<Figures/Toyama.eps>)
-1: section
-[57] [58] [59]
+File: Figures/Analysis_cam.eps Graphic file (type eps)
+<Figures/Analysis_cam.eps>
+File: Figures/Fitting_target.eps Graphic file (type eps)
+ <Figures/Fitting_target.eps> [58] [59] [60])
+[61]
 \openout2 = `Chapters/Chapter8.aux'.
 
- (./Chapters/Chapter8.tex [60
+ (./Chapters/Chapter8.tex [62
 
 
 
 ]
 Chapter 8.
+1: section
+[63] [64
+
+]
+Chapter 9.
 )
 1: section
-[61]
+[65]
+\openout2 = `Chapters/Chapter9.aux'.
+
+ (./Chapters/Chapter9.tex [66
+
+
+
+]
+Chapter 10.
+)
+1: section
+[67]
 \openout2 = `Appendices/AppendixA.aux'.
 
- (./Appendices/AppendixA.tex [62
+ (./Appendices/AppendixA.tex [68
 
 
 
 ]
 Appendix A.
-
-LaTeX Warning: Reference `Chapter1' on page 63 undefined on input line 13.
-
-
-LaTeX Warning: Citation 'LIGO-CAL' on page 63 undefined on input line 21.
-
-
-LaTeX Warning: Citation 'Tuyenbayev' on page 63 undefined on input line 21.
-
-
-LaTeX Warning: Reference `fig:appa-olg' on page 63 undefined on input line 21.
-
-
-LaTeX Warning: Reference `fig:appa-cal1' on page 63 undefined on input line 35.
-
-
-
-LaTeX Warning: Reference `fig:appa-cal2' on page 63 undefined on input line 35.
-
-
-
-LaTeX Warning: Reference `fig:appa-cal3' on page 63 undefined on input line 36.
-
-
-
-LaTeX Warning: Citation 'Tuyenbayev' on page 63 undefined on input line 38.
-
-
-LaTeX Warning: Citation 'Tuyenbayev' on page 63 undefined on input line 39.
-
 File: Figures/appa-olg.eps Graphic file (type eps)
 <Figures/appa-olg.eps>
 File: Figures/appa-cal1.eps Graphic file (type eps)
@@ -2936,79 +2448,811 @@ File: Figures/appa-cal3.eps Graphic file (type eps)
 
 <Figures/appa-cal3.eps>
 1: section
-[63]
-
-Package scrlayer-scrpage Warning: \headheight to low.
-(scrlayer-scrpage)                At least 27.2pt needed,
-(scrlayer-scrpage)                but only 18.85364pt found.
-(scrlayer-scrpage)                I'll enlarge \headheight, for further
-(scrlayer-scrpage)                processing, but you should do this yourself,
-(scrlayer-scrpage)                e.g., setting geometry's option
-(scrlayer-scrpage)                `head=27.2pt'.
-(scrlayer-scrpage)                I'll also decrease \topmargin on input line 7
-7.
-
-
-Overfull \vbox (8.34636pt too high) has occurred while \output is active []
-
-
-[64] [65]
-
-LaTeX Warning: Citation 'Tanaka-Tagoshi' on page 66 undefined on input line 106
-.
-
-
-Overfull \hbox (43.90935pt too wide) in paragraph at lines 104--107
-$\OML/cmm/m/it/10.95 ^^X[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n
-/10.95 ) = \OML/cmm/m/it/10.95 f[]$\T1/ppl/m/n/10.95 , $\OML/cmm/m/it/10.95 ^^X
-[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it
-/10.95 f[]$\T1/ppl/m/n/10.95 , $\OML/cmm/m/it/10.95 ^^X[]\OT1/cmr/m/n/10.95 (\O
-ML/cmm/m/it/10.95 f\OT1/cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 f[]$\T1/ppl/m/n/1
-0.95 , $\OML/cmm/m/it/10.95 ^^X[]\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 f\OT1/
-cmr/m/n/10.95 ) = \OML/cmm/m/it/10.95 f[]$\T1/ppl/m/n/10.95 , and $\OML/cmm/m/i
-t/10.95 q \OT1/cmr/m/n/10.95 = \OML/cmm/m/it/10.95 ^^YGMc[]$ \T1/ppl/m/n/10.95 
-[[]]. 
- []
-
-
-LaTeX Warning: Reference `fig:appa-cmp' on page 66 undefined on input line 118.
-
-
-
-LaTeX Warning: Reference `fig:appa-sim' on page 66 undefined on input line 120.
-
-
-
-LaTeX Warning: Reference `fig:appa-sim' on page 66 undefined on input line 122.
-
-
+[69] [70] [71]
 File: Figures/appa-cmp.eps Graphic file (type eps)
-<Figures/appa-cmp.eps>
+ <Figures/appa-cmp.eps>
 File: Figures/appa-sim1.eps Graphic file (type eps)
  <Figures/appa-sim1.eps>
 File: Figures/appa-sim2.eps Graphic file (type eps)
- <Figures/appa-sim2.eps>)
-[66] [67] [68]
 
-LaTeX Warning: Empty bibliography on input line 288.
+<Figures/appa-sim2.eps>) [72] [73] [74]
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+1: section
+[75
+
+
+]
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
+
+
+Package biblatex Warning: \mkbibnamefirst is deprecated, please use \mkbibnameg
+iven. Using \mkbibnamegiven.
+
+
+Package biblatex Warning: \mkbibnamelast is deprecated, please use \mkbibnamefa
+mily. Using \mkbibnamefamily.
+
+
+Package biblatex Warning: \mkbibnameaffix is deprecated, please use \mkbibnames
+uffix. Using \mkbibnamesuffix.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 292.
+[76]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 292.
-(./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
+ (./main.aux (./Chapters/Chapter1.aux) (./Chapters/Chapter2.aux)
 (./Chapters/Chapter3.aux) (./Chapters/Chapter4.aux) (./Chapters/Chapter5.aux)
 (./Chapters/Chapter6.aux) (./Chapters/Chapter7.aux) (./Chapters/Chapter8.aux)
-(./Appendices/AppendixA.aux))
+(./Chapters/Chapter9.aux) (./Appendices/AppendixA.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 292.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 292.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E4103152E60F7E027A78C832E38B1D11;5748.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  0223476AEC56DAAA802BFD596B7D076D;4550.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3016,7 +3260,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -3028,12 +3272,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28357 strings out of 493693
- 598334 string characters out of 6149787
- 818857 words of memory out of 5000000
- 31562 multiletter control sequences out of 15000+600000
- 41497 words of font info for 95 fonts, out of 8000000 for 9000
+ 28555 strings out of 493693
+ 602792 string characters out of 6149787
+ 843444 words of memory out of 5000000
+ 31704 multiletter control sequences out of 15000+600000
+ 39568 words of font info for 87 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 58i,20n,84p,10377b,1889s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,20n,83p,10377b,2328s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (80 pages, 188216 bytes).
+Output written on main.dvi (90 pages, 343000 bytes).

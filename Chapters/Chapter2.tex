@@ -14,10 +14,10 @@
 \section{Photon calibrator}
 Photon calibrator relies on photon radiation pressure from auxiliary 
 power-modulated laser beams reflecting on the test mass to apply periodic 
-forces via the recoil of photons. Controlling and measuring the laser power 
+forces via the recoil of photons as shown in Fig.~\ref{fig:Pcal_intro}. Controlling and measuring the laser power 
 accurately is one of the principal challenges of Pcal development. 
 The KAGRA Pcal system consists of transmitter module, in-vacuum periscope, 
-Receiver module and Beam monitor system. The transmitter module accurately 
+Receiver module and Beam monitor system as shown in Fig.~\ref{fig:Pcal_view}. The transmitter module accurately 
 modulates the beam power with internal feedback loop called optical follower 
 servo. Two laser beams from the transmitter module enter the vacuum enclosure 
 and relayed by mirrors mounted to a periscope structure located inside the 
@@ -27,6 +27,24 @@ other set of mirrors mounted to the periscope and enter the receiver module.
 Capturing the beams reflected from the test mass is important to ensure 
 that the applied power is exactly same as modulated without losing 
 somewhere in the beam path.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=10cm]{Figures/Pcal_intro.eps}
+\caption{End test mass and Pcal beams. Photon calibrator push the mirror surface using the radiation pressure. } 
+\label{fig:Pcal_intro} 
+\end{center}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/Pcal_view.eps}
+\caption{Schematic view of KAGRA photon calibrator. } 
+\label{fig:Pcal_view} 
+\end{center}
+\end{figure}
+
+
 
 An important aspect of the performance of the Pcal system is the locations 
 of the beam spots on the test mass surface. The photon pressure forces can 
@@ -46,16 +64,30 @@ The absolute displacement is described as
 \begin{equation}
 dx=\frac{2 P \cos{\theta}}{c} s(f) \left( 1+\frac{M}{I}\vec{a}\cdot \vec{b}\right), \label{eq:dx}
 \end{equation}
-where $P$ is an absolute power of the laser, $c$ is the speed of light, $\theta$  is an incident angle of the laser, $I$ and $M$ are moment of inertia and mass of test mass, $\vec{a}$ and $\vec{b}$ is position vector of photon calibrator lasers and interferometer laser. Then, $s(f)$ is transfer function of the test masses. 
-%We simulated the transfer function of test mass as shown in Fig. XXX. 
+where $P$ is an absolute power of the laser, $c$ is the speed of light, $\theta$  is an incident angle of the laser, $I$ and $M$ are moment of inertia and mass of test mass, $\vec{a}$ and $\vec{b}$ is position vector of photon calibrator lasers and interferometer laser. Then, $s(f)$ is transfer function of the test masses. The end test mass is suspended by the 14 m vibration isolation system as shown in Fig.~\ref{fig:14m_VIS}.
 We assumed the masses, shapes and Young's modules of the each pendulum mass and fiber. % as shown in Fig.XXX. 
+We simulated the transfer function of 14 m cryogenic payroad as shown in Fig.~\ref{fig:TF} . 
 According to transfer function, we can regard the motion of high frequency as free mass due to higher than the natural frequency. Therefore, we are able to assume as follows:
 \begin{equation}
 s(f)=\frac{1}{M \omega^2},
 \end{equation}
 where $\omega$ is the angular frequency of test mass.
 
-Using the KAGRA Photon calibrator parameters, which are listed in Table~\ref{tab:KAGRA_spec}, we estimated the frequency dependence of maximum displacement 
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/14m_VIS.eps}
+\caption{14 m vibration isolation system with cryogenic payload. Sapphire end test mass is suspended by this system.  } 
+\label{fig:14m_VIS} 
+\end{center}
+\end{figure}
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/TF.eps}
+\caption{Transfer function of the cryogenic payload system. } 
+\label{fig:TF} 
+\end{center}
+\end{figure}
+The KAGRA Photon calibrator parameters, which are listed in Table~\ref{tab:KAGRA_spec}, we estimated the frequency dependence of maximum displacement 
 in case of using full laser power to one frequency. 
 Figure.~\ref{fig:kagra_pcal_displacement} is the result.
 In this calculation, we assume the 25$\%$ of total laser power can use for mirror displacement, 
@@ -70,7 +102,7 @@ The maximum displacement for each frequency can be written by
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=10cm]{Figures/pcal_disp.eps}
+\includegraphics[width=15cm]{Figures/pcal_disp.eps}
 \caption{Frequency dependence of maximum displacement by KAGRA Pcal. 
 Assumption 1: Using total laser power to one frequency.
 Assumption 2: pessimistic estimation of transmitter module optical efficiency and 
@@ -97,7 +129,7 @@ In this document, we assume the LIGO DARM control system which is shown in Figur
 \begin{figure}
 \begin{center}
 %\includegraphics[width=8cm]{Figures/L_DARM_control_loop.eps}
-\includegraphics[width=10cm]{Figures/DARM_loop_and_CAL.eps}
+\includegraphics[width=15cm]{Figures/DARM_loop_and_CAL.eps}
 %\caption{Schematic diagram of the LIGO DARM control loop.}
 \caption{Schematic diagram of the real-time interferometer differential 
 arm (DARM) control loop and calibration pipeline adopted 
@@ -125,50 +157,47 @@ Coupled-cavity response is approximated by a single pole ($f_{\rm C}(t)$).
 
 The actuation function$A(f,t)$ can be written in
 \begin{equation}
-A(f,t) = \kappa_{\rm PU}(t)(A_{\rm P,0}(f)+A_{\rm U,0}(f)) + \kappa_{\rm T}(t) A_{\rm T,0}(f).
+A(f,t) = \kappa_{\rm M}(t)A_{\rm M,0}(f)+\kappa_{\rm I}(t)A_{\rm I,0}(f) + \kappa_{\rm T}(t) A_{\rm T,0}(f).
 \end{equation}
-$A_{\rm P,0}(f)$, $A_{\rm U,0}(f)$ and $A_{\rm T,0}(f)$ are models of the actuation function 
+$A_{\rm M,0}(f)$, $A_{\rm I,0}(f)$ and $A_{\rm T,0}(f)$ are models of the actuation function 
 of the penultimate, upper-intermediate and the test mass stage 
-when both $\kappa_{\rm PU}(t_0)$ and $\kappa_{\rm T}(t_0)$ are set to 1.
+when both $\kappa_{\rm M}(t_0)$, $\kappa_{\rm I}(t_0)$, and $\kappa_{\rm T}(t_0)$ are set to 1.
 
 To monitor those four time variation parameters, 
 $\kappa_{\rm C}(t)$, $f_{\rm C}(t)$, $\kappa_{\rm PU}(t)$ and $\kappa_{\rm T}(t)$, 
 we need to inject modulated excitations into the DARM loop.
-Also, to measure the $\kappa_{\rm C}(t)$ individually form $\kappa_{\rm PU}(t)$ and $\kappa_{\rm T}(t)$,
+Also, to measure the $\kappa_{\rm C}(t)$ individually form $\kappa_{\rm M}(t)$,$\kappa_{\rm I}(t)$ and $\kappa_{\rm T}(t)$,
 we need additional system to inject modulated excitations to ETM.
 Photon calibrator is powerful tool for this purpose.
 So, we should inject following four modulated excitations;
-(i) two modulated excitations using a photon calibrator system ($x_{\rm pcal1}$ and $x_{\rm pcal2}$)
+(i) five modulated excitations using a photon calibrator system ($x_{\rm pcal_i}$ ~($i=1,2,...,5$))
 (ii) one modulated excitations into the overall DARM actuation ($x_{\rm ctrl}$)
 (iii) one modulated excitations into the test mass stage actuation ($x_{\rm T}$).
 The responses in $d_{\rm err}$ at time $t=t'$ for each modulated excitations can be written by
 \begin{eqnarray}
-d_{\rm err, t'}(f_{\rm pcal1}) &=& \frac{C(f_{\rm pcal1},t')}{1+G(f_{\rm pcal1},t')} x_{\rm pcal1} \\
-d_{\rm err, t'}(f_{\rm pcal2}) &=& \frac{C(f_{\rm pcal2},t')}{1+G(f_{\rm pcal2},t')} x_{\rm pcal2} \\
+d_{\rm err, t'}(f_{\rm pcal_i}) &=& \frac{C(f_{\rm pcal_i},t')}{1+G(f_{\rm pcal_i},t')} x_{\rm pcal_i} ~ (i=1,2, ..., 5) \\
 d_{\rm err, t'}(f_{\rm ctrl}) &=& \frac{-A(f_{\rm ctrl}, t')C(f_{\rm ctrl},t')}{1+G(f_{\rm ctrl},t')} x_{\rm ctrl}  \\
 d_{\rm err, t'}(f_{\rm T}) &=& \frac{\kappa_{\rm T}(t') A_{\rm T,0}(f_{\rm T}, t')C(f_{\rm T},t')}{1+G(f_{\rm T},t')} x_{\rm T} 
 \end{eqnarray}
-Using $x_{\rm pcal1}$ and $x_{\rm T}$ modulated excitations, $\kappa_{\rm T}(t')$ is obtained.
-Using $x_{\rm ctrl}$ modulated excitation and $\kappa_{\rm T}(t')$, $\kappa_{\rm PU}(t')$ and $A(f,t')$ are obtained. 
-Using $x_{\rm pcal2}$ modulated excitation and $A(f,t')$, $\kappa_{\rm C}(t')$ and $f_{\rm C}(t')$ are obtained.
+Using $x_{\rm pcal2}$ and $x_{\rm T}$ modulated excitations, $\kappa_{\rm T}(t')$ is obtained.
+Using $x_{\rm ctrl}$ modulated excitation and $\kappa_{\rm T}(t')$, $\kappa_{\rm M}(t')$,$\kappa_{\rm I}(t')$ and $A(f,t')$ are obtained. 
+Using $x_{\rm pcal1}$ and $x_{\rm pcal3}$ modulated excitation and $A(f,t')$, $\kappa_{\rm C}(t')$ and $f_{\rm C}(t')$ are obtained.
+Using $x_{\rm pcal4}$ and $x_{\rm pcal5}$ modulated excitations, high frequency transfer function is obtained.
 
-Finally, $\Delta L_{\rm ext}(t)$ is reconstructed by following equation:
+Finally, $h(t)$ is reconstructed by following equation:
 \begin{eqnarray}
-\Delta L_{\rm ext}(t) = &[{\cal P}(f_{\rm C}(t))/ \kappa_{\rm C}(t) * {\cal Q} ]^{-1} * d_{\rm err}(t) \nonumber \\
-& + [ 
-  \kappa_{\rm PU}(t)({\cal A}_{\rm P,0} + {\cal A}_{\rm U,0}) + \kappa_{\rm T}(t) {\cal A}_{\rm T,0}  
-]
-* d_{\rm ctrl}(t),
+h(t)=\frac{\Delta L_{\rm ext}(t)}{L} &= &{\cal C} ^{-1} * d_{\rm err}(t)/L  +  {\cal A}* d_{\rm ctrl}(t)/L ,
 \end{eqnarray}
 where ${\cal P}(f_{\rm C}(t))$, ${\cal Q}$, ${\cal A_{\rm P,0}}$, ${\cal A_{\rm U,0}}$ and ${\cal A_{\rm T,0}}$  
-are the time-domain filters created from $P(f,t)$, $Q(f)$, $A_{\rm P,0}(f)$, $A_{\rm U,0}(f)$ and $A_{\rm T,0}(f)$, and $*$ denotes convolution.
+are the time-domain filters created from $P(f,t)$, $Q(f)$, $A_{\rm M,0}(f)$, $A_{\rm I,0}(f)$ and $A_{\rm T,0}(f)$, and $*$ denotes convolution.
 
 To reduced the systematic uncertainty, frequencies of modulated excitations are selected with following conditions:
-(1) Frequencies of $x_{\rm pcal1}$ , $x_{\rm ctrl}$ and $x_{\rm T}$ should be in a narrow frequency band.
-(2) Such frequency band should be selected where the magnitude of the transfer functions of 
+(1) Frequency of $x_{\rm pcal1}$ should be much less than coupled-cavity pole frequency.
+(2) Frequencies of $x_{\rm pcal2}$ , $x_{\rm ctrl}$ and $x_{\rm T}$ should be in a narrow frequency band.
+(3) Such frequency band should be selected where the magnitude of the transfer functions of 
 the combined penultimate and upper intermediate mass stage and the test mass stage are 
 approximately equal.
-(3) Frequencies of $x_{\rm pcal2}$ should be near the coupled-cavity pole frequency.
+(4) Frequencies of $x_{\rm pcal3}$ should be near the coupled-cavity pole frequency.
 
 
 \subsection{Hardware injection test}
@@ -238,8 +267,6 @@ Multiple approach of injection test will be important for the future calibration
 %           - 複数の独立したアプローチでpcal自身の応答についてクロスチェック出来るのか？
 %------------------------------------------------%
 
-\subsection{Photon pressure actuator}
-
 %----------------------------------------------------------------------------------------
 
 \section{Calibration line of KAGRA}
@@ -274,9 +301,9 @@ the coupled cavity pole frequency $p=$ 387 Hz. One calibration line around
 this frequency should be added to track the optical gain and the cavity pole 
 frequency.
 
-As discussed in Section.~\ref{sec:darm_calib}, we need at least four calibration line with following characteristics:
+As discussed in Section.~\ref{sec:darm_calib}, we need at least five calibration lines with following characteristics:
 \begin{enumerate}
-\item two pcal calibration line ($x_{\rm pcal1,2}$) with $\sim$35Hz and $\sim$330Hz. 
+\item five pcal calibration line ($x_{\rm pcal1,2,3,4,5}$) with $\sim$7Hz,$\sim$35Hz,$\sim$330Hz,$\sim$1000Hz  and $\sim$2000Hz. 
 \item one calibration line to feedback signal ($x_{\rm ctrl}$) with $\sim$35Hz.
 \item one calibration line to end test mass ($x_{\rm T}$) with $\sim$35Hz.
 \end{enumerate}
@@ -284,6 +311,34 @@ More, to monitor the calibration accuracy and open loop transfer function,
 it will be better to add at least four calibration line (two for pcal and two for feedback), 
 frequencies will be $\sim$100Hz and $\sim$1000Hz.
 
+We summarized the current calibration line as shown in Table.~\ref{tab:Cal_line} and Fig.~\ref{fig:Pcal_line_curve}.
+
+\begin{table}
+\caption{Calibration lines.}
+\label{tab:Cal_line}
+\centering
+\begin{tabular}{ccc}
+\toprule
+\tabhead{Line name} & \tabhead{} & \tabhead{Frequency} \\
+\midrule
+ $x_{pcal}$& $f_{cal1}$ & 7Hz  \\
+ & $f_{cal2}$ & 35Hz  \\
+ & $f_{cal3}$ & 330Hz  \\
+ & $f_{cal4}$ & 1000Hz  \\
+ & $f_{cal5}$ & 3000Hz  \\ \hline
+ $x_{ctrl}$& $f_{ctrl}$ & 35Hz  \\  \hline
+ $x_T$& $f_{T}$ & 35Hz  \\
+\bottomrule\\
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{Figures/Pcal_line_curve.eps}
+\caption{Simulated calibration lines. } 
+\label{fig:Pcal_linw_curve} 
+\end{center}
+\end{figure}
 
 The total laser power with photon calibration can be calculated by following equation
 \begin{equation}
@@ -293,9 +348,16 @@ where $f_i$ is i-th calibration line frequency,
 $L$ is arm length, $S_n(f_i)$ is sensitivity curve [strain(rms)/rHz], 
 $\sqrt{2}$ corresponds to conversion coefficients from peak value to effective value, 
 SNR($f_i$) is required signal to noise ratio, 
-$T_i$ is length of fourier transform, 
+$T_i$ is length of Fourier transform, 
 $M$ is mirror mass,
 $c$ is light speed.
 
 %----------------------------------------------------------------------------------------
-
+\section{Requirement of photon calibrator}
+\subsection{Relative power noise}
+\subsection{Harmonics noise}
+\subsection{Rotation}
+\subsection{Elastic deformation}
+\subsection{Mass of test mass}
+\subsection{Incident angle}
+\subsection{Absolute laser power}

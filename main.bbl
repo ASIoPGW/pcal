@@ -1,0 +1,974 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\sortlist[entry]{none/global/}
+  \entry{GW150914}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=ABP}{%
+         family={Abbott},
+         family_i={A\bibinitperiod},
+         given={B.\bibnamedelima P.},
+         given_i={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABP+1}
+    \strng{fullhash}{ABP+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.116.061102
+    \endverb
+    \verb{eprint}
+    \verb 1602.03837
+    \endverb
+    \field{number}{6}
+    \field{pages}{061102}
+    \field{title}{{Observation of Gravitational Waves from a Binary Black Hole
+  Merger}}
+    \field{volume}{116}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2016}
+  \endentry
+
+  \entry{GW151226}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=ABP}{%
+         family={Abbott},
+         family_i={A\bibinitperiod},
+         given={B.\bibnamedelima P.},
+         given_i={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABP+1}
+    \strng{fullhash}{ABP+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevLett.116.241103
+    \endverb
+    \verb{eprint}
+    \verb 1606.04855
+    \endverb
+    \field{number}{24}
+    \field{pages}{241103}
+    \field{title}{{GW151226: Observation of Gravitational Waves from a
+  22-Solar-Mass Binary Black Hole Coalescence}}
+    \field{volume}{116}
+    \field{journaltitle}{Phys. Rev. Lett.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Klimenko}{article}{}
+    \name{author}{10}{}{%
+      {{hash=KS}{%
+         family={Klimenko},
+         family_i={K\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=VG}{%
+         family={Vedovato},
+         family_i={V\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=DM}{%
+         family={Drago},
+         family_i={D\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Mazzolo},
+         family_i={M\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=MG}{%
+         family={Mitselmakher},
+         family_i={M\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=PC}{%
+         family={Pankow},
+         family_i={P\bibinitperiod},
+         given={C.},
+         given_i={C\bibinitperiod},
+      }}%
+      {{hash=PG}{%
+         family={Prodi},
+         family_i={P\bibinitperiod},
+         given={G.},
+         given_i={G\bibinitperiod},
+      }}%
+      {{hash=RV}{%
+         family={Re},
+         family_i={R\bibinitperiod},
+         given={V.},
+         given_i={V\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Salemi},
+         family_i={S\bibinitperiod},
+         given={F.},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=YI}{%
+         family={Yakushin},
+         family_i={Y\bibinitperiod},
+         given={I.},
+         given_i={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS+2}
+    \strng{fullhash}{KSVGDMMGMGPCPGRVSFYI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevD.83.102001
+    \endverb
+    \verb{eprint}
+    \verb 1101.5408
+    \endverb
+    \field{pages}{102001}
+    \field{title}{{Localization of gravitational wave sources with networks of
+  advanced detectors}}
+    \field{volume}{D83}
+    \field{journaltitle}{Phys. Rev.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.IM}
+    \field{year}{2011}
+  \endentry
+
+  \entry{LIGO-CAL}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=ABP}{%
+         family={Abbott},
+         family_i={A\bibinitperiod},
+         given={B.\bibnamedelima P.},
+         given_i={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABP+1}
+    \strng{fullhash}{ABP+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{eprint}
+    \verb 1602.03845
+    \endverb
+    \field{pages}{03845}
+    \field{title}{{Calibration of the Advanced LIGO detectors for the discovery
+  of the binary black-hole merger GW150914}}
+    \verb{url}
+    \verb https://arxiv.org/abs/1602.03845
+    \endverb
+    \field{volume}{1602}
+    \field{journaltitle}{arXiv}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Karki}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=KS}{%
+         family={Karki},
+         family_i={K\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS+1}
+    \strng{fullhash}{KS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1063/1.4967303
+    \endverb
+    \verb{eprint}
+    \verb 1608.05055
+    \endverb
+    \field{number}{11}
+    \field{pages}{114503}
+    \field{title}{{The Advanced LIGO Photon Calibrators}}
+    \field{volume}{87}
+    \field{journaltitle}{Rev. Sci. Instrum.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.IM}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Virgo-PCAL}{article}{}
+    \name{author}{3}{}{%
+      {{hash=RL}{%
+         family={Rolland},
+         family_i={R\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+      {{hash=MF}{%
+         family={Marion},
+         family_i={M\bibinitperiod},
+         given={F.},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=MB}{%
+         family={Mours},
+         family_i={M\bibinitperiod},
+         given={B.},
+         given_i={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{RL+1}
+    \strng{fullhash}{RLMFMB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{15}
+    \field{title}{Conceptual design of Advanced Virgo photon calibration}
+    \verb{url}
+    \verb https://tds.virgo-gw.eu/ql/?c=10722
+    \endverb
+    \field{volume}{0013A}
+    \field{journaltitle}{Virgo TDS}
+    \field{year}{2015}
+  \endentry
+
+  \entry{Accadia}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=AT}{%
+         family={Accadia},
+         family_i={A\bibinitperiod},
+         given={T.},
+         given_i={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AT+1}
+    \strng{fullhash}{AT+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1088/0264-9381/31/16/165013
+    \endverb
+    \verb{eprint}
+    \verb 1401.6066
+    \endverb
+    \field{pages}{165013}
+    \field{title}{{Reconstruction of the gravitational wave signal $h(t)$
+  during the Virgo science runs and independent validation with a photon
+  calibrator}}
+    \field{volume}{31}
+    \field{journaltitle}{Class. Quant. Grav.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2014}
+  \endentry
+
+  \entry{Clubley:2001}{article}{}
+    \name{author}{4}{}{%
+      {{hash=CDA}{%
+         family={Clubley},
+         family_i={C\bibinitperiod},
+         given={D.\bibnamedelima A.},
+         given_i={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=NGP}{%
+         family={Newton},
+         family_i={N\bibinitperiod},
+         given={G.\bibnamedelima P.},
+         given_i={G\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=SKD}{%
+         family={Skeldon},
+         family_i={S\bibinitperiod},
+         given={K.\bibnamedelima D.},
+         given_i={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+      {{hash=HJ}{%
+         family={Hough},
+         family_i={H\bibinitperiod},
+         given={J.},
+         given_i={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CDA+1}
+    \strng{fullhash}{CDANGPSKDHJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/S0375-9601(01)00231-6
+    \endverb
+    \field{pages}{85\bibrangedash 88}
+    \field{title}{{Calibration of the Glasgow 10-m prototype laser
+  interferometric gravitational wave detector using photon pressure}}
+    \field{volume}{A283}
+    \field{journaltitle}{Phys. Lett.}
+    \field{year}{2001}
+  \endentry
+
+  \entry{Mossavi:2006}{article}{}
+    \name{author}{10}{}{%
+      {{hash=MK}{%
+         family={Mossavi},
+         family_i={M\bibinitperiod},
+         given={K.},
+         given_i={K\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Hewitson},
+         family_i={H\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+      {{hash=HS}{%
+         family={Hild},
+         family_i={H\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={Seifert},
+         family_i={S\bibinitperiod},
+         given={F.},
+         given_i={F\bibinitperiod},
+      }}%
+      {{hash=WU}{%
+         family={Weiland},
+         family_i={W\bibinitperiod},
+         given={U.},
+         given_i={U\bibinitperiod},
+      }}%
+      {{hash=SJR}{%
+         family={Smith},
+         family_i={S\bibinitperiod},
+         given={J.\bibnamedelima R.},
+         given_i={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=LH}{%
+         family={Luck},
+         family_i={L\bibinitperiod},
+         given={H.},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=GH}{%
+         family={Grote},
+         family_i={G\bibinitperiod},
+         given={H.},
+         given_i={H\bibinitperiod},
+      }}%
+      {{hash=WB}{%
+         family={Willke},
+         family_i={W\bibinitperiod},
+         given={B.},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Danzmann},
+         family_i={D\bibinitperiod},
+         given={K.},
+         given_i={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MK+1}
+    \strng{fullhash}{MKHMHSSFWUSJRLHGHWBDK1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1016/j.physleta.2005.12.053
+    \endverb
+    \field{pages}{1\bibrangedash 3}
+    \field{title}{{A photon pressure calibrator for the GEO 600 gravitational
+  wave detector}}
+    \field{volume}{A353}
+    \field{journaltitle}{Phys. Lett.}
+    \field{year}{2006}
+  \endentry
+
+  \entry{Goetz:2009}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=GE}{%
+         family={Goetz},
+         family_i={G\bibinitperiod},
+         given={E.},
+         given_i={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GE+1}
+    \strng{fullhash}{GE+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1088/0264-9381/26/24/245011
+    \endverb
+    \verb{eprint}
+    \verb 0910.5591
+    \endverb
+    \field{pages}{245011}
+    \field{title}{{Precise calibration of LIGO test mass actuators using photon
+  radiation pressure}}
+    \field{volume}{26}
+    \field{journaltitle}{Class. Quant. Grav.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2009}
+  \endentry
+
+  \entry{VIR-018}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MB}{%
+         family={Mours},
+         family_i={M\bibinitperiod},
+         given={B.},
+         given_i={B\bibinitperiod},
+      }}%
+      {{hash=RL}{%
+         family={Rolland},
+         family_i={R\bibinitperiod},
+         given={L.},
+         given_i={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MBRL1}
+    \strng{fullhash}{MBRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{07}
+    \field{title}{Determining the sign of h-rec with the photon calibrator}
+    \verb{url}
+    \verb https://tds.virgo-gw.eu/?content=3&r=1861
+    \endverb
+    \field{volume}{018A}
+    \field{journaltitle}{Virgo TDS}
+    \field{year}{2007}
+  \endentry
+
+  \entry{LV-obs}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=ABP}{%
+         family={Abbott},
+         family_i={A\bibinitperiod},
+         given={B.\bibnamedelima P.},
+         given_i={B\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ABP+1}
+    \strng{fullhash}{ABP+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1007/lrr-2016-1
+    \endverb
+    \field{issn}{1433-8351}
+    \field{number}{1}
+    \field{pages}{1}
+    \field{title}{Prospects for Observing and Localizing Gravitational-Wave
+  Transients with Advanced LIGO and Advanced Virgo}
+    \verb{url}
+    \verb http://dx.doi.org/10.1007/lrr-2016-1
+    \endverb
+    \field{volume}{19}
+    \field{journaltitle}{Living Reviews in Relativity}
+    \field{year}{2016}
+  \endentry
+
+  \entry{KAGRA-obs}{article}{}
+    \name{author}{1}{}{%
+      {{hash=AM}{%
+         family={Ando},
+         family_i={A\bibinitperiod},
+         given={M.},
+         given_i={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AM1}
+    \strng{fullhash}{AM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{{Observation Scenario Paper}}
+    \field{volume}{G1706116}
+    \field{journaltitle}{JGW}
+    \field{year}{2017}
+  \endentry
+
+  \entry{Tuyenbayev}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=TD}{%
+         family={Tuyenbayev},
+         family_i={T\bibinitperiod},
+         given={D.},
+         given_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TD+1}
+    \strng{fullhash}{TD+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1088/0264-9381/34/1/015002
+    \endverb
+    \verb{eprint}
+    \verb 1608.05134
+    \endverb
+    \field{number}{1}
+    \field{pages}{015002}
+    \field{title}{{Improving LIGO calibration accuracy by tracking and
+  compensating for slow temporal variations}}
+    \field{volume}{34}
+    \field{journaltitle}{Class. Quant. Grav.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{astro-ph.IM}
+    \field{year}{2017}
+  \endentry
+
+  \entry{OptSpringCal}{article}{}
+    \name{author}{1}{}{%
+      {{hash=HE}{%
+         family={Hall},
+         family_i={H\bibinitperiod},
+         given={E},
+         given_i={E},
+      }}%
+    }
+    \strng{namehash}{HE1}
+    \strng{fullhash}{HE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{G1601599}
+    \field{title}{Calibrating optical springs}
+    \verb{url}
+    \verb https://dcc.ligo.org/LIGO-G1601599/public
+    \endverb
+    \field{journaltitle}{LIGO-DCC}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Thorlabs}{article}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={Thorlabs},
+         family_i={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb https://www.thorlabs.com
+    \endverb
+  \endentry
+
+  \entry{Keopsys}{article}{}
+    \name{author}{1}{}{%
+      {{hash=K}{%
+         family={Keopsys},
+         family_i={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{K1}
+    \strng{fullhash}{K1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.keopsys.com/
+    \endverb
+  \endentry
+
+  \entry{lasermet}{article}{}
+    \name{author}{1}{}{%
+      {{hash=l}{%
+         family={lasermet},
+         family_i={l\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{l1}
+    \strng{fullhash}{l1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{LS-10-12}
+    \verb{url}
+    \verb http://www.lasermet.com
+    \endverb
+  \endentry
+
+  \entry{CVI}{article}{}
+    \name{author}{1}{}{%
+      {{hash=loC}{%
+         prefix={laser},
+         prefix_i={l\bibinitperiod},
+         family={optics},
+         family_i={o\bibinitperiod},
+         given={CVI},
+         given_i={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{oCl1}
+    \strng{fullhash}{oCl1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb https://www.cvilaseroptics.com
+    \endverb
+  \endentry
+
+  \entry{Karl_Lambrecht}{article}{}
+    \name{author}{1}{}{%
+      {{hash=P}{%
+         family={Polarizer},
+         family_i={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{P1}
+    \strng{fullhash}{P1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{TFPC12-1047}
+    \verb{url}
+    \verb http://www.klccgo.com
+    \endverb
+  \endentry
+
+  \entry{JamMt}{article}{}
+    \name{author}{1}{}{%
+      {{hash=J}{%
+         family={JamMt},
+         family_i={J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{J1}
+    \strng{fullhash}{J1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.sr.bham.ac.uk/dokuwiki/doku.php?id=geosim:jammt
+    \endverb
+  \endentry
+
+  \entry{Sigmakoki}{article}{}
+    \name{author}{1}{}{%
+      {{hash=Sk}{%
+         family={Sigma-koki},
+         family_i={S\bibinitperiod-k\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{Sk1}
+    \strng{fullhash}{Sk1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.sigma-koki.com
+    \endverb
+  \endentry
+
+  \entry{Newport}{article}{}
+    \name{author}{1}{}{%
+      {{hash=N}{%
+         family={Newport},
+         family_i={N\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{N1}
+    \strng{fullhash}{N1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb https://www.newport.com
+    \endverb
+  \endentry
+
+  \entry{ISOMET}{article}{}
+    \name{author}{1}{}{%
+      {{hash=loI}{%
+         prefix={laser},
+         prefix_i={l\bibinitperiod},
+         family={optics},
+         family_i={o\bibinitperiod},
+         given={ISOMET},
+         given_i={I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{oIl1}
+    \strng{fullhash}{oIl1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.isomet.com
+    \endverb
+  \endentry
+
+  \entry{Excelitas}{article}{}
+    \name{author}{1}{}{%
+      {{hash=E}{%
+         family={Excelitas},
+         family_i={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{E1}
+    \strng{fullhash}{E1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.excelitas.com/Pages/Index.aspx
+    \endverb
+  \endentry
+
+  \entry{Spectralon}{article}{}
+    \name{author}{1}{}{%
+      {{hash=L}{%
+         family={Labsphere},
+         family_i={L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{L1}
+    \strng{fullhash}{L1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Spectralon}
+    \verb{url}
+    \verb https://www.labsphere.com/
+    \endverb
+  \endentry
+
+  \entry{Cosmotech}{article}{}
+    \name{author}{1}{}{%
+      {{hash=C}{%
+         family={Cosmotech},
+         family_i={C\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{C1}
+    \strng{fullhash}{C1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb https://www.cosmotec-co.jp
+    \endverb
+  \endentry
+
+  \entry{ANSYS}{article}{}
+    \field{volume}{17.1}
+    \field{journaltitle}{ANSYS\textregistered Academic Research, Release}
+    \field{year}{2016}
+  \endentry
+
+  \entry{Nikon}{article}{}
+    \name{author}{1}{}{%
+      {{hash=D}{%
+         family={D810},
+         family_i={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{D1}
+    \strng{fullhash}{D1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.nikon-image.com/products/slr/lineup/d810/
+    \endverb
+  \endentry
+
+  \entry{Skywatcher}{article}{}
+    \name{author}{1}{}{%
+      {{hash=S}{%
+         family={Skywatcher},
+         family_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{S1}
+    \strng{fullhash}{S1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{title}{Maksutov-Cassegrain}
+    \verb{url}
+    \verb http://ca.skywatcher.com/_english/01_products/01_list.php?cid=6
+    \endverb
+  \endentry
+
+  \entry{MEDM}{article}{}
+    \name{author}{1}{}{%
+      {{hash=ME}{%
+         family={MEDM},
+         family_i={M\bibinitperiod},
+         given={Epics},
+         given_i={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{ME1}
+    \strng{fullhash}{ME1}
+    \field{labelnamesource}{author}
+    \verb{url}
+    \verb http://www.aps.anl.gov/epics/extensions/medm/
+    \endverb
+  \endentry
+
+  \entry{Hild:2007}{article}{}
+    \true{moreauthor}
+    \name{author}{1}{}{%
+      {{hash=HS}{%
+         family={Hild},
+         family_i={H\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HS+1}
+    \strng{fullhash}{HS+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1088/0264-9381/24/22/025
+    \endverb
+    \verb{eprint}
+    \verb 0710.1229
+    \endverb
+    \field{pages}{5681\bibrangedash 5688}
+    \field{title}{{Photon pressure induced test mass deformation in
+  gravitational-wave detectors}}
+    \field{volume}{24}
+    \field{journaltitle}{Class. Quant. Grav.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2007}
+  \endentry
+
+  \entry{Daveloza}{article}{}
+    \name{author}{7}{}{%
+      {{hash=DHP}{%
+         family={Daveloza},
+         family_i={D\bibinitperiod},
+         given={H.\bibnamedelima P.},
+         given_i={H\bibinitperiod\bibinitdelim P\bibinitperiod},
+      }}%
+      {{hash=ABM}{%
+         family={Afrin\bibnamedelima Badhan},
+         family_i={A\bibinitperiod\bibinitdelim B\bibinitperiod},
+         given={M},
+         given_i={M},
+      }}%
+      {{hash=DM}{%
+         family={Diaz},
+         family_i={D\bibinitperiod},
+         given={M},
+         given_i={M},
+      }}%
+      {{hash=KK}{%
+         family={Kawabe},
+         family_i={K\bibinitperiod},
+         given={K},
+         given_i={K},
+      }}%
+      {{hash=KPN}{%
+         family={Konverski},
+         family_i={K\bibinitperiod},
+         given={P.\bibnamedelima N.},
+         given_i={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Landry},
+         family_i={L\bibinitperiod},
+         given={M},
+         given_i={M},
+      }}%
+      {{hash=SRL}{%
+         family={Savage},
+         family_i={S\bibinitperiod},
+         given={R.\bibnamedelima L.},
+         given_i={R\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DHP+1}
+    \strng{fullhash}{DHPABMDMKKKPNLMSRL1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{number}{1}
+    \field{pages}{012007}
+    \field{title}{Controlling calibration errors in gravitational-wave
+  detectors by precise location of calibration forces}
+    \verb{url}
+    \verb http://stacks.iop.org/1742-6596/363/i=1/a=012007
+    \endverb
+    \field{volume}{363}
+    \field{journaltitle}{Journal of Physics: Conference Series}
+    \field{year}{2012}
+  \endentry
+
+  \entry{COMSOL}{article}{}
+    \field{volume}{5.2a}
+    \field{journaltitle}{COMSOL\textregistered Multiphysics, Release}
+    \field{year}{2016}
+  \endentry
+
+  \entry{EUROMET}{article}{}
+    \name{author}{1}{}{%
+      {{hash=KS}{%
+         family={Kuck},
+         family_i={K\bibinitperiod},
+         given={S.},
+         given_i={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KS1}
+    \strng{fullhash}{KS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{pages}{EUROMET.PR\bibrangedash S2}
+    \field{title}{Responsivity of detectors for radiant power of lasers, Final
+  Report, Edited by Stefan Kuck}
+    \field{volume}{156}
+    \field{journaltitle}{EUROMET Comparison Project}
+    \field{year}{2009}
+  \endentry
+
+  \entry{Tanaka-Tagoshi}{article}{}
+    \name{author}{2}{}{%
+      {{hash=TT}{%
+         family={Tanaka},
+         family_i={T\bibinitperiod},
+         given={Takahiro},
+         given_i={T\bibinitperiod},
+      }}%
+      {{hash=TH}{%
+         family={Tagoshi},
+         family_i={T\bibinitperiod},
+         given={Hideyuki},
+         given_i={H\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{TTTH1}
+    \strng{fullhash}{TTTH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1103/PhysRevD.62.082001
+    \endverb
+    \verb{eprint}
+    \verb gr-qc/0001090
+    \endverb
+    \field{pages}{082001}
+    \field{title}{{The Use of new coordinates for the template space in
+  hierarchical search for gravitational waves from inspiraling binaries}}
+    \field{volume}{D62}
+    \field{journaltitle}{Phys. Rev.}
+    \field{eprinttype}{arXiv}
+    \field{eprintclass}{gr-qc}
+    \field{year}{2000}
+  \endentry
+\endsortlist
+\endinput
