@@ -1,78 +1,24 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {english}
+\babel@toc {english}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Observation scenario of LIGO, Virgo and KAGRA.\relax }}{3}{figure.caption.6}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces End test mass and Pcal beams. Photon calibrator push the mirror surface using the radiation pressure. \relax }}{6}{figure.caption.7}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Schematic view of KAGRA photon calibrator. \relax }}{6}{figure.caption.8}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces 14 m vibration isolation system with cryogenic payload. Sapphire end test mass is suspended by this system. \relax }}{7}{figure.caption.9}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Transfer function of the cryogenic payload system. \relax }}{7}{figure.caption.10}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Frequency dependence of maximum displacement by KAGRA Pcal. Assumption 1: Using total laser power to one frequency. Assumption 2: pessimistic estimation of transmitter module optical efficiency and AOM diffraction efficiency (total 50$\%$). \relax }}{8}{figure.caption.11}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Schematic diagram of the real-time interferometer differential arm (DARM) control loop and calibration pipeline adopted from~\cite {LIGO-CAL,Tuyenbayev}.\relax }}{9}{figure.caption.12}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Simulated calibration lines. \relax }}{12}{figure.caption.14}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces KAGRA photon calibrator. The calibration systems are placed around the EXA/EYA chamber. We mount the optical lever and optical baffle as well. The EXA/EYA chambers are placed at 36 m far from the ETM. Transmitter module, receiver module and Tcam module are mounted on the ground by using eagle anchor (M20; SUS304).Each the component is connected aluminum duct to reduce the ghost of the image. We also mount the silica window for Tcam, Tx and Rx module.\relax }}{14}{figure.caption.15}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Stay free zone of the outside of the EXA/EYA chamber. All the components are placed at stay free region.\relax }}{14}{figure.caption.17}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Drawing of Y-end anchor hole position.\relax }}{15}{figure.caption.18}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Drawing of X-end anchor position.\relax }}{15}{figure.caption.19}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Transmitter module of KAGRA Pcal. We place the optical table on the triangle table. The readout and control device are housed into the legs of table.\relax }}{16}{figure.caption.20}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Structure of the transmitter module. We mount the electronics chassis under the Tx module.\relax }}{17}{figure.caption.21}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Optical layout of KAGRA photon calibrator. The laser power is modulated and controlled by the acousto-optic modulators (AOMs).\relax }}{18}{figure.caption.22}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces The fiber laser and drawing of isolator. The module is placed under the Tx module~\cite {Keopsys}. The maximum laser power is 20 W.\relax }}{18}{figure.caption.23}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Isolator stand. The Isolator of the laser is mounted on the aluminum block.\relax }}{19}{figure.caption.24}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Result of beam measurement.\relax }}{20}{figure.caption.26}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Picture of laser shutter.\relax }}{21}{figure.caption.29}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Pin assign of the laser shutter.\relax }}{21}{figure.caption.30}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces The measured polarization responce of HWP.\relax }}{22}{figure.caption.32}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Result of mode matching calculation from faber laser to AOM focus using JamMt~\cite {JamMt}.\relax }}{23}{figure.caption.33}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces The simulated HR coating on the fused silica mirror for 22.5 degree of incident angle~\cite {Sigmakoki}. \relax }}{24}{figure.caption.35}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces The simulated HR coating on the fused silica mirror for 45 degree of incident angle~\cite {Sigmakoki}. \relax }}{25}{figure.caption.36}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Developed photo detector for KAGRA Pcal.\relax }}{27}{figure.caption.40}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces The picture of photo detector. The diameter of photo detector is 3~mm. We control the incident power by changing diameter of the collimator and resistance of trans impedance amplifier\relax }}{28}{figure.caption.45}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Circuit of photo detector designed by LIGO (D1300210-v4).\relax }}{28}{figure.caption.46}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Structure of Tx module.\relax }}{30}{figure.caption.48}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Periscope structure. We place the twelve 3-inch mirrors in total. The red and blue line correspond to lower and upper beam path, respectively. The upper and lower beams push the node point of the mirror surface.\relax }}{31}{figure.caption.49}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Schematic view of periscope position. We optimized the periscope positions. We fix the separation of Tx module mirror, and each distance, $L_{win}, L_{m1},L_{m2}$ and $L_{m3}$. $x$ is distance from the window.\relax }}{32}{figure.caption.50}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Calculated separation of $D_{win}$, $D_{m2}$, and $D_{m3}$ by changing the distance from the window. Blue, Green and Red curves are separation position on the window, MP2 and MP3. Purple dashed lines are incident angle of the laser to window. We find the optimal point at 355 mm point corresponding to 1.6 degree incident angle.\relax }}{33}{figure.caption.51}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Simulated reflection of AR coating of one surface. We optimize the coating frequency at 1047 nm. This plot is provided by Sigma-koki.\relax }}{33}{figure.caption.52}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces View window with periscope. We mount the AR coated fused silica window on the ICF152 flange. The AR coating is optimized at 1047~nm. We mount the periscope at the vacuum side of the window. The incident angle of the periscope is 50 degrees.\relax }}{34}{figure.caption.53}
-\contentsline {figure}{\numberline {3.26}{\ignorespaces Simulated deformation of Pcal window~\cite {ANSYS}. The center deformation is $0.85~\mathrm {\mu m}$.\relax }}{34}{figure.caption.54}
-\contentsline {figure}{\numberline {3.27}{\ignorespaces Optical layout of receiver module. We mounted QPD for monitoring beam position drift. Total power of the laser is measured by the integrating sphere.\relax }}{36}{figure.caption.57}
-\contentsline {figure}{\numberline {3.28}{\ignorespaces Mirror and Telephoto camera (TCam). We place the TCam on the structure.The image of ETM is referred by two mirrors. One mirror is mounted in vacuums. Another is placed at outside of chamber. The specification of mirrors are listed in Table.~\ref {tab:Camera_mirror_spec}.\relax }}{38}{figure.caption.60}
-\contentsline {figure}{\numberline {3.29}{\ignorespaces Moon light focuser.\relax }}{38}{figure.caption.61}
-\contentsline {figure}{\numberline {3.30}{\ignorespaces Window design. We employ the AR coated fused silica window.\relax }}{39}{figure.caption.63}
-\contentsline {figure}{\numberline {3.31}{\ignorespaces MEDM of KAGRA photon calibrator. The system is based on LIGO MEDM.We improve this system for BPM.\relax }}{40}{figure.caption.64}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagram of feedback loop for OFS.\relax }}{41}{figure.caption.65}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode as a function of $r=\sqrt {x^2+y^2}$ for LIGO case (left) and KAGRA case (right). The fitted node positions, $r_{DH}$, where $\Delta z_{DH}=0$ are 109.0~mm and 65.3~mm for LIGO and KAGRA cases, respectively.\relax }}{44}{figure.caption.68}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces The $z$ displacement, $\Delta z_{BF}$, for the butterfly mode as a function of $r=\sqrt {x^2+y^2}$ and $\theta =\mathop {\mathgroup \symoperators arctan}\nolimits (y/x)$ for the LIGO case. The KAGRA case show very similar behavior. The four node lines lie at $\theta =\pm 1/4\pi $ and $\pm 3/4\pi $.\relax }}{44}{figure.caption.69}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The ratio, $R(f)$ between the total sensed motion, $D_{\rm eff(f)}$ and free mass motion, $D_{\rm free}(f)$ as a function of frequency, $f$ for optimally positoned beams and $\pm $2 mm and $\pm $4 mm offsets for (top) LIGO case and (bottom) KAGRA case. The cross check of the simulation is also done with COMSOL~\cite {COMSOL} and shown for optimum positoin and $\pm $2 mm offsets with open cross symbols.\relax }}{46}{figure.caption.70}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces The CAD model of the KAGRA ETM with flat cuts and ears.\relax }}{47}{figure.caption.71}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Drumhead (top) and Butterfly (bottom) modes for KAGRA ETM.\relax }}{48}{figure.caption.73}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Fitting of $z$ displacements, $\Delta z_{DH}$ of the drumhead mode as a function of $y$ for KAGRA ETM model. The fitted dnode positions, $r_{DH}$, where $\Delta z_{DH}=0$ are asymmetric and located at -66.5~mm and 62.7~mm.\relax }}{49}{figure.caption.74}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces The ratio between the total sensed motion and rigid body motion as a function of frequency for optimally positioned baams and $\pm $1 mm and $\pm $3 mm offsets. The cross check of the simulation is also done with COMSOL~\cite {COMSOL} and shown for optimum position and $\pm $1 mm offsets with open cross symbols.\relax }}{49}{figure.caption.75}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces KAGRA working standard.\relax }}{52}{figure.caption.76}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces comparison with GS and WS.\relax }}{52}{figure.caption.77}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Voltmeter made by keithlay.\relax }}{53}{figure.caption.78}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Calibration of end-station. We calibrate TxPD and RxPD using WSK.\relax }}{54}{figure.caption.79}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance comparison of laser power standard system at 1064nm wavelength and 1W power in the national standard institutions in the world~\cite {EUROMET}. \relax }}{55}{figure.caption.80}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces .\relax }}{56}{figure.caption.81}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Image of beam position monitor. We will over-plot the estimated beam position on the picture.\relax }}{58}{figure.caption.82}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Setup of demonstration test. We place the camera at 36m far from the ETM. This distance correspond to KAGRA configration.\relax }}{59}{figure.caption.83}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Raw data of Image analysis (left picture). We are trimming the target region. The size of target is $24 \times 24$~mm.\relax }}{59}{figure.caption.84}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Strategy of analysis. First we trim the data around the target. Second we convert to Gray scale. Third we set the threshold. Fourth, we pick up the data point using mask. \relax }}{59}{figure.caption.85}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Fitting result of image analysis. Black dots are data points larger than threshold. We masked data around outer circle. Red circle is best fitting.\relax }}{60}{figure.caption.86}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Transfer functions of DARM open loop gain and actuators assumed in this simulation.\relax }}{70}{figure.caption.88}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Deformation of $R(f)$ due to the relative calibration bias on $G_C$.\relax }}{70}{figure.caption.89}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Deformation of $R(f)$ due to the relative calibration bias on $f_C$.\relax }}{71}{figure.caption.90}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Deformation of $R(f)$ due to the calibration bias on $A_T$.\relax }}{71}{figure.caption.91}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Comparisons of relative deformed (red solid lines) and fitted (blue dashed lines) wave forms with respect to the true one, in the three cases where $G_C$, $f_C$ and $A_T$ are biased by $\pm 10\%$, $\pm 30$ deg., and $\pm 10\%$, respectively.\relax }}{73}{figure.caption.92}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces The systematic bias on the five source parameters as a function of variations of calibration parameters assuming the signal similar to GW150914 (left), and the extreme case where the GW150914 source is 200~Mpc away (right).\relax }}{74}{figure.caption.93}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces KAGRA photon calibrator. The calibration systems are placed around the EXA chamber. We mount the optical lever and optical baffle as well. The EXA chamber is placed at 36 m far from the ETMX. Transmitter module, receiver module and Tcam module are mounted on the ground by using eagle anchor (M20; SUS304). Each component is connected by aluminum duct to reduce the ghost of the image. We also mount the silica window for Tcam, Tx and Rx module.\relax }}{2}{figure.caption.6}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Stay free zone of the outside of the EXA/EYA chamber. All the components are placed at stay free region.\relax }}{2}{figure.caption.8}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Drawing of Y-end anchor hole position.\relax }}{3}{figure.caption.9}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Drawing of X-end anchor position.\relax }}{3}{figure.caption.10}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Transmitter module of the KAGRA Pcal. We place the optical table on the triangle table. The readout and control devices are housed into the legs of table.\relax }}{4}{figure.caption.11}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Optical layout of KAGRA photon calibrator. The laser power is modulated and controlled by the acousto-optic modulators (AOMs).\relax }}{5}{figure.caption.12}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces The fiber laser and drawing of isolator. The module is placed under the Tx module~\cite {Keopsys}. The maximum laser power is 20 W.\relax }}{6}{figure.caption.13}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Isolator stand. The Isolator of the laser is mounted on the aluminum block.\relax }}{6}{figure.caption.14}
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Output of active power control.\relax }}{7}{figure.caption.16}
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Result of active current control.\relax }}{8}{figure.caption.17}
+\contentsline {figure}{\numberline {1.11}{\ignorespaces Result of beam measurement.\relax }}{8}{figure.caption.18}
+\contentsline {figure}{\numberline {1.12}{\ignorespaces The measured polarization response of HWP.\relax }}{9}{figure.caption.21}
+\contentsline {figure}{\numberline {1.13}{\ignorespaces Result of mode matching calculation from faber laser to AOM focus using JamMt~\cite {JamMt}.\relax }}{10}{figure.caption.22}
+\contentsline {figure}{\numberline {1.14}{\ignorespaces Result of mode matching calculation from AOM to ETMX focus using JamMt~\cite {JamMt}. $z=0$ is at AOM. \relax }}{11}{figure.caption.23}
+\contentsline {figure}{\numberline {1.15}{\ignorespaces The simulated HR coating on the fused silica mirror for 22.5 degree of incident angle~\cite {Sigmakoki}. \relax }}{12}{figure.caption.25}
+\contentsline {figure}{\numberline {1.16}{\ignorespaces The simulated HR coating on the fused silica mirror for 45 degree of incident angle~\cite {Sigmakoki}. \relax }}{13}{figure.caption.26}
+\contentsline {figure}{\numberline {1.17}{\ignorespaces Developed photo detector for KAGRA Pcal.\relax }}{15}{figure.caption.30}
+\contentsline {figure}{\numberline {1.18}{\ignorespaces The picture of photo detector. The diameter of photo detector is 3~mm. We control the incident power by changing diameter of the collimator and resistance of trans impedance amplifier\relax }}{16}{figure.caption.35}
+\contentsline {figure}{\numberline {1.19}{\ignorespaces Circuit of photo detector designed by LIGO (D1300210-v4).\relax }}{17}{figure.caption.36}
+\contentsline {figure}{\numberline {1.20}{\ignorespaces Structure of Tx module.\relax }}{18}{figure.caption.38}
+\contentsline {figure}{\numberline {1.21}{\ignorespaces Optical layout of receiver module. We mounted QPD for monitoring beam position drift. Total power of the laser is measured by the integrating sphere.\relax }}{19}{figure.caption.39}

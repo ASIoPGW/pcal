@@ -58,6 +58,7 @@ bookmarksopen=true,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
+\usepackage{comment}
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
@@ -76,14 +77,14 @@ bookmarksopen=true,colorlinks=true,citecolor=blue,linkcolor=blue,urlcolor=blue}
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
-\thesistitle{KAGRA photon calibrator} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\thesistitle{KAGRA photon calibrator in X-end} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
 \supervisor{Prof. Rick \textsc{Savage}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
 %\author{Yuki \textsc{Inoue}, Sadakazu Haino, Nobuyuki Kanda, 
 %Takahiro Yamamoto, Takaaki Yokozawa\\on the behalf of Calibration sub-group}
-\author{Y. \textsc{Inoue}, Y. Chu, S. Haino, B. Hsieh, N. Kanda, T.Shishido, T. Tomaru, T. Yamamoto, and T. Yokozawa\\
-on the behalf of Calibration sub-group}
+\author{C. Kozakai, Y. \textsc{Inoue}, Y. Chu, S. Haino, B. Hsieh, N. Kanda, T.Shishido, T. Tomaru, T. Yamamoto, and T. Yokozawa\\
+on behalf of the Calibration sub-group}
 % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
@@ -157,14 +158,15 @@ on the behalf of Calibration sub-group}
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-Accurate calibration of the output of the Gravitational Wave (GW) signal is crucial to determine the physics parameters of the sources.  Also in the situation of global detector network, a less relative biases between these detectors are important on the science of GW astronomy. LIGO, Virgo and KAGRA employ the photon calibrator that can calibrate the absolute displacement of the test mass by pushing the mirror surface with photon pressure. 
-We employ three unique technologies for the KAGRA photon calibrator. (i)20W High power laser allow us the broadband calibration. (ii) We employ two optical follower servo for measuring the transfer function and mitigating the rotation effect of cryogenic suspension system. (iii) Beam position monitoring system is used for minimizing  the elastic deformation.  One of the serious systematic errors at high-frequency region is the elastic deformation of the mirror. 
+Accurate calibration of the output of the Gravitational Wave (GW) signal is crucial to determine the physics parameters of the sources.  Also in the situation of global detector network, less relative bias between these detectors are important on the science of GW astronomy. LIGO, Virgo and KAGRA employ the photon calibrator that can calibrate the absolute displacement of the test mass by pushing the mirror surface with photon pressure. 
+We employ three unique technologies for the KAGRA photon calibrator. (i)20W High power laser allows us the broadband calibration. (ii) We employ two optical follower servo for measuring the transfer function and mitigating the rotation effect of cryogenic suspension system. (iii) Beam position monitoring system is used for minimizing  the elastic deformation.  One of the serious systematic errors at high-frequency region is the elastic deformation of the mirror. 
 
-In this document, we report the design of the KAGRA 
-photon calibrator in order to achieve the absolute accuracy of 
-1\% and 1 degree to meet 
-the calibration requirements of second-generation GW detectors 
-in the new era of GW astronomy.
+In this document, we report the current status of the KAGRA 
+photon calibrator in X-end.
+% in order to achieve the absolute accuracy of 
+%1\% and 1 degree to meet 
+%the calibration requirements of second-generation GW detectors 
+%in the new era of GW astronomy.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -259,15 +261,16 @@ YI and SH acknowledge the supports by Academia Sinica and MoST in Taiwan.
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-\include{Chapters/Chapter1}
-\include{Chapters/Chapter2} 
+\include{Chapters/Setting}
+%\include{Chapters/Chapter1}
+%\include{Chapters/Chapter2} 
 \include{Chapters/Chapter3}
-\include{Chapters/Chapter4} 
-\include{Chapters/Chapter5} 
-\include{Chapters/Chapter6} 
-\include{Chapters/Chapter7} 
-\include{Chapters/Chapter8} 
-\include{Chapters/Chapter9} 
+%\include{Chapters/Chapter4} 
+%\include{Chapters/Chapter5} 
+%\include{Chapters/Chapter6} 
+%\include{Chapters/Chapter7} 
+%\include{Chapters/Chapter8} 
+%\include{Chapters/Chapter9} 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
@@ -277,7 +280,7 @@ YI and SH acknowledge the supports by Academia Sinica and MoST in Taiwan.
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
+%\include{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 

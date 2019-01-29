@@ -8,7 +8,7 @@
 %
 % Authors:
 % Vel (vel@latextemplates.com)
-% Johannes Böttcher
+% Johannes B\UTF{00F6}ttcher
 %
 % Notes:
 % 1) This class file defines the structure and layout of the template file (main.tex).
@@ -207,8 +207,8 @@
 %----------------------------------------------------------------------------------------
 
 \DeclareDocumentCommand{\thesistitle} { o m }{
-	\IfBooleanTF{#1} {\DeclareDocumentCommand{\shorttitle}{ }{#1}
-	{\DeclareDocumentCommand{\shorttitle}{}{#2}}}
+%	\IfBooleanTF{#1} {\DeclareDocumentCommand{\shorttitle}{ }{#1}
+%	{\DeclareDocumentCommand{\shorttitle}{}{#2}}}
 	\DeclareDocumentCommand{\@title}{ }{#2}
 	\DeclareDocumentCommand{\ttitle}{ }{#2}
 }

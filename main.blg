@@ -1,0 +1,75 @@
+This is BibTeX, Version 0.99d (TeX Live 2018)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+The style file: biblatex.bst
+A level-1 auxiliary file: Chapters/Setting.aux
+A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Chapters/Chapter5.aux
+A level-1 auxiliary file: Chapters/Chapter6.aux
+A level-1 auxiliary file: Chapters/Chapter7.aux
+A level-1 auxiliary file: Chapters/Chapter8.aux
+A level-1 auxiliary file: Chapters/Chapter9.aux
+A level-1 auxiliary file: Appendices/AppendixA.aux
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: main-blx.bib
+Database file #2: pcal.bib
+Warning--I didn't find a database entry for "OFS"
+Biblatex version: 3.8
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+You've used 27 entries,
+            6268 wiz_defined-function locations,
+            1338 strings with 11530 characters,
+and the built_in function-call counts, 87140 in all, are:
+= -- 4715
+> -- 1853
+< -- 414
++ -- 1575
+- -- 708
+* -- 5321
+:= -- 7569
+add.period$ -- 0
+call.type$ -- 27
+change.case$ -- 145
+chr.to.int$ -- 30
+cite$ -- 52
+duplicate$ -- 10273
+empty$ -- 9435
+format.name$ -- 1154
+if$ -- 18591
+int.to.chr$ -- 0
+int.to.str$ -- 50
+missing$ -- 0
+newline$ -- 573
+num.names$ -- 912
+pop$ -- 8664
+preamble$ -- 1
+purify$ -- 236
+quote$ -- 0
+skip$ -- 3387
+stack$ -- 0
+substring$ -- 6010
+swap$ -- 2531
+text.length$ -- 464
+text.prefix$ -- 4
+top$ -- 1
+type$ -- 906
+warning$ -- 0
+while$ -- 992
+width$ -- 0
+write$ -- 547
+(There was 1 warning)
